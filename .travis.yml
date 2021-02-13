@@ -5,10 +5,10 @@ before_script:
   - npm install @11ty/eleventy -g
 script: eleventy --pathprefix="/eleventy-base-blog/"
 deploy:
-  local-dir: _site
+  local-dir: public
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  github-token: $GITHUB_TOKEN # Set in travis-ci.org dashboard, marked secure
   keep-history: true
   on:
     branch: master
