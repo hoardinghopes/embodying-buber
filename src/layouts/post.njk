@@ -11,6 +11,14 @@ layout: base.njk
       </time>
       <span> | </span>
       <span>{{ content | readingTime }} read</span>
+      {% if epistemic.status %}
+      <br><br>
+      Epistemic Status (1-5): {{ epistemic.status }}
+      {% endif %}
+      {% if epistemic.effort %}
+      <br>
+      Epistemic Effort (1-5): {{ epistemic.effort}}
+      {% endif %}
     </div>
   </header>
 
@@ -21,7 +29,7 @@ layout: base.njk
   <aside class="post__aside">
     <div class="post__tags">
       {% for tag in tags | pageTags %}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        {% set tagUrl %}/tags/{{ tag | slug}}/{% endset %}
         <a href="{{ tagUrl | url }}">#{{ tag }}</a>
       {% endfor %}
     </div>

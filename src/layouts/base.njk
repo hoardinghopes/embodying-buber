@@ -51,7 +51,7 @@
 
   </head>
   <body>
-    <div class="layout-wrapper" style="background-image: url('/images/{{ banner }}')">
+    <div class="layout-wrapper"{% if banner %} style="background-image: url('/images/{{ banner }}')"{% endif %}>
 
       <header class="header">
         <div class="header__content">

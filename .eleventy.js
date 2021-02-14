@@ -3,7 +3,6 @@ const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fs = require("fs");
 const path = require("path");
-
 const isDev = process.env.APP_ENV === "development";
 
 const manifestPath = path.resolve(
@@ -82,7 +81,7 @@ module.exports = function(eleventyConfig) {
         });
 
         for (const tag of tags) {
-          tagSet.add(tag);
+          tagSet.add({ tag });
         }
       }
     });
