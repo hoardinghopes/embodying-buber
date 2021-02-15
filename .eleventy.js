@@ -81,7 +81,7 @@ module.exports = function(eleventyConfig) {
         });
 
         for (const tag of tags) {
-          tagSet.add({ tag });
+          tagSet.add(tag);
         }
       }
     });

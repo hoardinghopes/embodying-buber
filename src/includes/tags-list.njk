@@ -1,5 +1,6 @@
 {% for tag in collections.tagList %}
-  {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+{{ tag | log }}
+  {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
 
   <a href="{{ tagUrl | url }}" class="post-tag">#{{ tag }}</a>
 
