@@ -55,7 +55,7 @@ We feel that there could be something more, something more lasting and fulfillin
 
 Once we have experienced it, we are transformed, and we come to see every other being as a _You_, and gain a sense of loving responsibility for the whole world.
 
-Thus we no longer feels alienated from the world and do not worry about the meaninglessness of life.
+Thus we no longer feel alienated from the world and do not worry about the meaninglessness of life.
 
 ## That's all fine, in theory
 
