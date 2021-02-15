@@ -4,6 +4,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fs = require("fs");
 const path = require("path");
 const isDev = process.env.APP_ENV === "development";
+const site = require("./src/data/site");
 
 const manifestPath = path.resolve(
   __dirname,
@@ -31,6 +32,12 @@ module.exports = function(eleventyConfig) {
     return manifest["main.css"]
       ? `<link href="${manifest["main.css"]}" rel="stylesheet" />`
       : "";
+  });
+
+  eleventyConfig.addShortcode("clickystats", function() {
+    if (site.clickystats.install) {
+    }
+    return site.clickystats.script;
   });
 
   eleventyConfig.addShortcode("bundledjs", function() {
