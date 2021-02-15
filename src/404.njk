@@ -6,6 +6,16 @@ eleventyExcludeFromCollections: true
 ---
 
 <div class="not-found">
-  <h1>404</h1>
-  <p>Oops. Page not Found,  <a href="{{ '/' | url }}">Go home</a>.</p>
+  <h1>404 Page not found</h1>
+  
+  <p>Oops. You asked for <span id="replaceable">a page that doesn't exist yet.</span>. Sorry to say, I haven't written this page yet.
+
+    <p>Come back soon to see if you're trying to read the future. In the mean time, <a href="{{ '/' | url }}">the homepage is the best place to start again</a>.</p>
 </div>
+
+<script lang="js">
+var el = document.getElementById("replaceable");
+el.innerHTML = location.href;
+
+// post this location.href to IFTT so that I can track what people are asking for.
+</script>
