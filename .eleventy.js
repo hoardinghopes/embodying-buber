@@ -7,7 +7,6 @@ const isDev = process.env.APP_ENV === "development";
 const site = require("./src/data/site");
 const markdownIt = require("markdown-it");
 const mdFootnotes = require("markdown-it-footnote");
-const gitlog = require("gitlog").default;
 
 const manifestPath = path.resolve(
   __dirname,
@@ -44,23 +43,6 @@ module.exports = function(eleventyConfig) {
       }
     }
     return "";
-  });
-
-  eleventyConfig.addShortcode("gitinfo", function() {
-    const options = {
-      repo: __dirname + "/.git",
-      number: 1,
-      nameStatus: false,
-      fields: ["abbrevHash", "subject", "authorName", "authorDate"]
-    };
-    const info = gitlog(options)[0];
-
-    return `
-    <meta name="commit.hash" content="${info.abbrevHash}" />
-    <meta name="commit.datetime" content="${info.authorDate}" />
-    <meta name="commit.author" content="${info.authorName}" />
-    <meta name="commit.message" content="${info.subject}" />
-    `;
   });
 
   eleventyConfig.addShortcode("bundledjs", function() {

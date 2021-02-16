@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="buildtime" content="{{site.buildtime | readableDateTime}}">
 
-    {% gitinfo %}
+    {%- include "gitinfo.njk" -%}
 
     <meta name="date.created" content="{{page.date}}" />
 
@@ -13,6 +13,7 @@
     {% bundledcss %}
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet"/>
+    <link rel="icon" type= “image/x-icon” href="/images/favicon.ico">
 
     <title>
       {{-  title  | escape }}
@@ -22,32 +23,8 @@
       {%- endif -%}
     </title>
 
-    <link rel="icon" type= “image/x-icon” href="/images/favicon.ico">
 
-    <meta property="og:title" content="{{  title or site.name | escape }}">
-    <meta property="og:site_name" content="{{ site.name }}"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="{{ site.url + page.url }}"/>
-    <meta name="twitter:card" content="summary_large_image">
-    {% if site.author.twitterHandle %}
-      <meta name="twitter:creator" content="@{{ site.author.twitterHandle | replace('@', '') }}"/>
-    {% endif %}
-    {% set desc = description %}
-    {% if not desc %}
-      {% set desc = content | striptags | truncate(140) %}
-    {% endif %}
-    {% if desc %}
-      <meta name="description" content="{{ desc | escape  }}">
-      <meta property="og:description" content="{{ desc | escape }}">
-      <meta name="description" content="{{ desc | escape }}"/>
-    {% endif %}
-    {% if not socialImage %}
-      {% set socialImage = site.defaultSocialImage %}
-    {% endif %}
-    {% if socialImage %}
-      <meta property="og:image" content="{{ socialImage | url | absoluteUrl(site.url) }}"/>
-      <meta name="twitter:image" content="{{ socialImage | url | absoluteUrl(site.url) }}"/>
-    {% endif %}
+    {% include "meta-head.njk" %}
 
   </head>
   <body>
@@ -63,29 +40,7 @@
             </a>
           </h1>
 
-          {% if site.headerLinks %}
-            <nav class="nav">
-              <ul class="nav__list">
-                {% for item in site.headerLinks %}
-                  {% set currentAttribute = '' %}
-                  {% set externalAttribute = '' %}
-
-                  {% if item.external %}
-                    {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
-                  {% endif %}
-
-                  {% if page.url == item.url %}
-                    {% set currentAttribute = 'aria-current="page"' %}
-                  {% endif %}
-
-                  <li class="nav-item">
-                    <a href="{{ item.url | url }}" {{ currentAttribute | safe }} {{ externalAttribute | safe }}>{{ item.text }}</a>
-                  </li>
-                {% endfor %}
-              </ul>
-            </nav>
-
-          {% endif %}
+        {% include "header-links.njk" %}
 
         </div>
       </header>
@@ -98,46 +53,7 @@
         <div class="footer__content">
           {% if banner %}{{ banner.attribute | safe }}{% endif %}
 
-          <ul class="hero__social-links">
-            {% if site.socialLinks %}
-              {% for item in site.socialLinks %}
-                {% set externalAttribute = '' %}
-
-                {% if item.external %}
-                  {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
-                {% endif %}
-
-                <li>
-                  <a href="{{ item.url | url }}" {{ externalAttribute | safe }} >{{ item.text }}</a>
-                </li>
-              {% endfor %}
-            {% endif %}
-
-            {% if site.footerLinks %}
-
-              {% for item in site.footerLinks %}
-                {% set externalAttribute = '' %}
-
-                {% if item.external %}
-                  {% set externalAttribute = 'target="_blank" rel="noopener noreferrer"' %}
-                {% endif %}
-
-                <li>
-                  <a href="{{ item.url | url }}" {{ externalAttribute | safe }} >{{ item.text }}</a>
-                </li>
-              {% endfor %}
-            {% endif %}
-          </ul>
-
-          {% if site.showFooterAttribution %}
-            <p class="footer__attribution">
-          Created by
-      <a href="https://twitter.com/yinkakun" target="_blank" rel="noopener">Yinka,</a>
-       Powered by <a href="https://www.11ty.dev" target="_blank" rel="noopener">11ty,</a>
-        Checkout <a href="https://github.com/yinkakun/eleventy-duo" target="_blank" rel="noopener noreferrer">project's github repo </a>
-            </p>
-          {% endif %}
-
+          {% include "footer-links.njk" %}
         </div>
 
     </footer>
