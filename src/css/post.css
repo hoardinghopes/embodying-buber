@@ -54,3 +54,22 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
+.footnotes {
+  margin-top: 4rem;
+}
+.footnotes ol {
+  margin-left: 1rem;
+  list-style-position: unset;
+}
+
+.footnotes li {
+  font-size: var(--text-sm);
+  margin-bottom: 1rem;
+}
+.footnotes p {
+  font-size: var(--text-sm);
+}
+.footnotes li a {
+  text-decoration: none;
+}

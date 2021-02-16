@@ -5,6 +5,7 @@ layout: base.njk
 <article class="post">
   <header class="post__header">
     <h1>{{ title }}</h1>
+
     <div class="post__details">
       <time datetime="{{ page.date | htmlDateString }}">
         {{ page.date | readableDate }}
@@ -20,6 +21,7 @@ layout: base.njk
       Epistemic Effort (1-5): {{ epistemic.effort}}
       {% endif %}
     </div>
+
   </header>
 
   <main class="post__content">

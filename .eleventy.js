@@ -5,6 +5,9 @@ const fs = require("fs");
 const path = require("path");
 const isDev = process.env.APP_ENV === "development";
 const site = require("./src/data/site");
+const markdownIt = require("markdown-it");
+const mdFootnotes = require("markdown-it-footnote");
+const gitlog = require("gitlog").default;
 
 const manifestPath = path.resolve(
   __dirname,
@@ -35,9 +38,29 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("clickystats", function() {
-    if (site.clickystats.install) {
+    if (!isDev) {
+      if (site.clickystats.install) {
+        return site.clickystats.script;
+      }
     }
-    return site.clickystats.script;
+    return "";
+  });
+
+  eleventyConfig.addShortcode("gitinfo", function() {
+    const options = {
+      repo: __dirname + "/.git",
+      number: 1,
+      nameStatus: false,
+      fields: ["abbrevHash", "subject", "authorName", "authorDate"]
+    };
+    const info = gitlog(options)[0];
+
+    return `
+    <meta name="commit.hash" content="${info.abbrevHash}" />
+    <meta name="commit.datetime" content="${info.authorDate}" />
+    <meta name="commit.author" content="${info.authorName}" />
+    <meta name="commit.message" content="${info.subject}" />
+    `;
   });
 
   eleventyConfig.addShortcode("bundledjs", function() {
@@ -47,13 +70,22 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("excerpt", post => {
-    const content = post.replace(/(<([^>]+)>)/gi, "");
+    // this is filtering the HTML, not the markdown
+    let content = post.replace(/(<([^>]+)>)/gi, ""); //remove tags
+    content = content.replace("tl;dr", ""); // remove tl;dr
+    content = content.replace(/([\[\d\]]*)/g, ""); // remove any footnote remnants
     return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
   });
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
       "dd LLL yyyy"
+    );
+  });
+
+  eleventyConfig.addFilter("readableDateTime", dateObj => {
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
+      "dd LLL yyyy, HH:mm"
     );
   });
 
@@ -65,8 +97,18 @@ module.exports = function(eleventyConfig) {
     if (n < 0) {
       return array.slice(n);
     }
-
     return array.slice(0, n);
+  });
+
+  eleventyConfig.addFilter("pageTags", tags => {
+    const generalTags = ["all", "nav", "post", "posts"];
+
+    return tags
+      .toString()
+      .split(",")
+      .filter(tag => {
+        return !generalTags.includes(tag);
+      });
   });
 
   eleventyConfig.addCollection("tagList", function(collection) {
@@ -83,7 +125,6 @@ module.exports = function(eleventyConfig) {
             case "posts":
               return false;
           }
-
           return true;
         });
 
@@ -92,20 +133,11 @@ module.exports = function(eleventyConfig) {
         }
       }
     });
-
     return [...tagSet];
   });
 
-  eleventyConfig.addFilter("pageTags", tags => {
-    const generalTags = ["all", "nav", "post", "posts"];
-
-    return tags
-      .toString()
-      .split(",")
-      .filter(tag => {
-        return !generalTags.includes(tag);
-      });
-  });
+  const markdownLib = markdownIt({ html: true }).use(mdFootnotes);
+  eleventyConfig.setLibrary("md", markdownLib);
 
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {

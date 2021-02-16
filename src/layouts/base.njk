@@ -3,23 +3,24 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href={{ page.url | url | absoluteUrl(site.url) }}>
+    <meta name="buildtime" content="{{site.buildtime | readableDateTime}}">
 
+    {% gitinfo %}
+
+    <meta name="date.created" content="{{page.date}}" />
+
+    <link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}"/>
     {% bundledcss %}
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet"/>
 
     <title>
-      {{  title  | escape }}
-      {% if title %}
-         | {{ site.name }}
-      {% else %}
-        {{ site.name }}
-      {% endif %}
+      {{-  title  | escape }}
+      {%- if title %} | {{ site.name }}
+      {%- else -%}
+        {{- site.name -}}
+      {%- endif -%}
     </title>
-
-
 
     <link rel="icon" type= “image/x-icon” href="/images/favicon.ico">
 
@@ -28,11 +29,9 @@
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="{{ site.url + page.url }}"/>
     <meta name="twitter:card" content="summary_large_image">
-
     {% if site.author.twitterHandle %}
       <meta name="twitter:creator" content="@{{ site.author.twitterHandle | replace('@', '') }}"/>
     {% endif %}
-
     {% set desc = description %}
     {% if not desc %}
       {% set desc = content | striptags | truncate(140) %}
@@ -42,7 +41,6 @@
       <meta property="og:description" content="{{ desc | escape }}">
       <meta name="description" content="{{ desc | escape }}"/>
     {% endif %}
-
     {% if not socialImage %}
       {% set socialImage = site.defaultSocialImage %}
     {% endif %}
@@ -53,7 +51,9 @@
 
   </head>
   <body>
-    <div class="layout-wrapper"{% if banner %} style="background-image: url('/images/{{ banner }}')"{% endif %}>
+    {% set banner = images[page.fileSlug] %}
+    <div class="layout-wrapper"{% if banner %} style="background-image: url('/images/{{ banner.src }}')"{% endif %}>
+
 
       <header class="header">
         <div class="header__content">
@@ -96,6 +96,7 @@
 
       <footer class="footer">
         <div class="footer__content">
+          {% if banner %}{{ banner.attribute | safe }}{% endif %}
 
           <ul class="hero__social-links">
             {% if site.socialLinks %}
@@ -138,9 +139,9 @@
           {% endif %}
 
         </div>
-      </div>
 
     </footer>
+  </div>
 
     {% bundledjs %}
     {% clickystats %}

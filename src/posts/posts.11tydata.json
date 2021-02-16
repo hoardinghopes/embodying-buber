@@ -1,9 +1,0 @@
-{
-  "layout": "post",
-  "tags": ["posts"],
-  "epistemic": {
-    "status": "1. not sure of this yet, early rumblings only",
-    "effort": "1. flippant thought, thrown down"
-  },
-  "permalink": "posts/{{title | slug}}/index.html"
-}

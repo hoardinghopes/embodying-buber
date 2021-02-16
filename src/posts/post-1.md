@@ -1,9 +1,7 @@
 ---
 title: I and Thou
 description: The philosophical question behind this blog
-date: "2021-02-15"
 tags: [i and thou, start here]
-banner: mel-R4bsmYIc6FI-unsplash.jpg
 epistemic:
   status: 1. It's hard to speak words to my body, and then translate my body's response back.
   effort: 4. I've been struggling with this for a while, and no matter how I write it, I'm not yet satisfied.
@@ -11,7 +9,7 @@ epistemic:
 
 ### <abbr title="Too long; didn't read">tl;dr</abbr>
 
-There are two modes of engaging with others. The predominant mode places _I_ over the objectified other (_It_). This is the mode that modern man almost exclusively uses.
+Austrian-born philospher Martin Buber^[_I and Thou_, Martin Buber, 1923] wrote that there are two modes of engaging with others. The predominant mode places _I_ over the objectified other (_It_). This is the mode that modern man almost exclusively uses.
 
 The second mode, which creates a unique and transforming relationship with the Other, has been neglected in the modern world to the detriment of us all.
 
