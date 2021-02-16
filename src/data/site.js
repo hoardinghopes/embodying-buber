@@ -11,8 +11,8 @@ module.exports = {
   defaultSocialImage: "/images/default-social-image.png",
   headerLinks: [
     {
-      text: "",
-      url: "",
+      text: "About",
+      url: "/about",
       external: false
     }
   ],

@@ -17,6 +17,11 @@ module.exports = {
     },
     eleventyExcludeFromCollections: data => {
       return process.env.ELEVENTY_ENV !== "production" ? false : data.draft;
+    },
+    numberedTitle: data => {
+      const parts = data.page.fileSlug.split("-");
+      const num = parts[parts.length - 1];
+      return `${num}: ${data.title}`;
     }
   }
 };

@@ -1,5 +1,7 @@
+@import "fonts.css";
 @import "global.css";
 @import "variable.css";
+
 @import "typography.css";
 @import "post-list.css";
 @import "hero.css";

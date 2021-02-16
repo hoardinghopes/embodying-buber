@@ -1,4 +1,9 @@
 module.exports = {
+  about: {
+    src: "v2osk-Chi53DEUJ84-unsplash.jpg",
+    attribute:
+      '<span>Background photo by <a href="https://unsplash.com/@v2osk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">v2osk</a> on <a href="https://unsplash.com/s/visual/0c296cda-2158-4cc9-843d-7b1792091157?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
+  },
   "post-1": {
     src: "mel-R4bsmYIc6FI-unsplash.jpg",
     attribute:
