@@ -1,72 +1,62 @@
 ---
-title: You lift me up
-description: "Step 1: lengthen and release (part 1)"
-tags: [4 directions, lengthen]
+title: "An interlude: walking into walls"
+description: "Stop smoking your bees into stupification"
+tags: [interludes, awareness]
 epistemic:
-  status: 1. It's hard to speak words to my body, and then translate my body's response back.
-  effort: 4. I've been struggling with this for a while, and no matter how I write it, I'm not yet satisfied.
+  status: 5. I'm happy with this – it's an experiential experiment. I've done my bit, so it's time for you to do yours.
+  effort: 2. This writing just flowed out
 draft: true
 ---
 
-### <abbr title="Too long; didn't read">tl;dr</abbr>
+1. Stand in front of a wall, at least two metres away from it.
+1. Close your eyes.
+1. Walk forwards until you touch the wall.
+1. Repeat
 
-1. **Breathe a long, slow inhale up the length of your back, feeling it encourage your head higher**
-2. Allow a long, slow exhale to stroke down your front, releasing your ribcage, and encouraging a soft smile.
+Sometimes the best exercises are those that seem to have absolutely no purpose to them for, without purpose, sensation remains. Of course, you'll want to ask _why walk into walls?_ and complain that this has no parallel in your daily life. I agree. It doesn't in mine.
 
-Once you can feel your verticality being moved by your breath, begin to attend to it while walking, or when changing postures, e.g. sitting down and standing up.
+However, if you do it whole-heartedly, you might just find a point.
 
----
+> My eyes are closed. I'm about to step forward, and I know that first step is safe, but I already feel something akin to anxiety. A light hum gathers on the skin of my front, as if the cells there are trying to open _their_ eyes to compensate for my closed eyes.
 
-## Don't bring me down
+That's the first sensation. Can you feel it? Is it obvious or subtle? Is it constant, or does it come and go? Is your awareness of it constant, or does your awareness fade from time to time? How would you describe it?
 
-Gravity doesn't care. It will drag us down to the earth, and smush us there until we are a pool a single atom deep. What prevents that? Our skeletal structure. How is that held in place? By a balance of uplift and release.
-Align your skeleton, and you'll stay upright. You'll also be immobile.
+> I take a long slow breath up my back, which serves to remind me that I am my own time-keeper, and that this experiment is at my pace. My back lengthens, my shoulders broaden. I step foward. My awareness of my front dissipates.
 
-As soon as we move, we are out of that perfect (impossible) alignment, and have to rely on something else to get us to the next position of alignment. That something else is the tensegrity of our bones demanding length and our sinews contracting around them.
+That happens. For the first while, you might expect your awareness to be more obvious when you are otherwise still, and for movement to scatter the fragments of sensation aside as motion comes to the fore.
 
-## Watch the saplings grow!
+It's possible to pause, re-gather, and then continue if you like. It's also possible to continue as you are. Each choice will lead you to a different experience. It's up to you to find the difference between them and discover the lesson.
 
-Everything has growth spurts in the childhood stage. Saplings start out finger-thick and shoot up, their pliant branches reaching out and up. For the first couple of years, our fruit trees needed wooden supports to help them withstand the strong winds we get. They were intent on gaining height before they strengthened and stabilised their trunks.
+> I almost lean into the shrinking space between me and the wall, as if listening intently to it. Sensations return, but so quietly, so subtly, that I daren't trust myself. Was that a thing, or was it a hint of a shadow of a memory of a thing? Was that a sensation, or was it just a momentary short-circuit in my electrical nervous system?
 
-_First they grow up and then they grow out._
+I have a hunch that our nervous systems have been trying to communicate with us since birth, but some aspects of that communication have been rebuffed for a long time. The nervous system has learned not to offer certain information, because being constantly ignored takes a toll.
 
-Our children were the same. First of all, we notice them eating twice as much as a few days before. Then a few weeks later, we'd find that they hugged differently because they had grown taller. Then a few months later, we'd notice that their clothes had filled out as their body's girth caught up proportionately with their height. Then it all started again!
+Now, in this exercise, I am asking to receive that information. Well, what does my nervous system make of that? Is it a trick? Am I going to slap it down again, or will I really take it seriously?
 
-_First we grow up and then we grow out._
+So, it makes an offer, but it's tentative. It mumbles under its breath. I can barely hear it, and I certainly can't understand it. We have a stand-off.
 
-## Working with gravity
+> Again, I step forwards, yearning for feeling to arise, for information about the wall to be delivered before I walk into it nose first. As I edge closer, sensation re-appears, this time stronger, more urgent and insistent, almost jumpy.
 
-If you can raise your arm, and then allow it to drop like a dead weight, that's gravity. Do it again. Lift your foot a little way off the floor, and then drop it. Do it again.
+With each step, I am re-committing to my nervous system's voice: _I want to hear you_. As I close in on the wall and show no sign of stopping, my nervous system starts to raise its voice in the only way it knows: more sensation.
 
-Gravity is constantly coursing through our bodies, all the time, from the first splitting of the fertilised cell in the womb to the decomposition of the body in the coffin at the end of a lifetime.
+> My eyelids are fluttering as if they're about to rip themselves open. My fingers are twitching and hot as blood flows into them ready for action. My steps become less sure and my head starts to pull back.
 
-Where do we live? In gravity^[[Just like fish don't know they're in water](https://sive.rs/fish).].
+I'm not doing this, but it's happening. I'm just stepping forwards, trying to observe this rising tide of activity. I am feeling very uneasy.
 
-## Finding uplift
+> I step into the wall. The touch of my knee against explodes a billion reactions across my body as if I've been hit. I jerk back and open my eyes.
 
-I should say first: rather than _doing_ the exercise, notice that _it happens_; rather than efforting into a new ideal position, find the ease that moves you along.
+Wow. Let's do it again.
 
-Even when we are sitting absolutely still, our breathing creates a cycle of up and down. Our ribcages lifts and expands, and then drops and subsides. Now the movement of the ribcage and the expansion of the belly at the front of the body are obvious, so let's move on to explore what's less obvious.
+Or, maybe that wasn't your experience. Maybe you felt nothing; you walked into the wall and felt like a fool – what did you think would happen? What was the point?
 
-Can you feel expansion along the back of your body, can you feel an upwards sensation running lightly along your spine? Can you sense it lengthening your spine and raising your skull upwards? Not _much_, not even _a little_, less than _slightly_. Just the faintest whiff of upwards-ness.
+Either way, let's do it again. Repetition might persuade the nervous system that we are listening now, if we weren't before. We're doing our best to reassure it that we want to develop a healthier relationship.
 
-When you notice that, you may find you have an option around the exhale. It is a release of pressure. It's up to you whether it's a collapse back down, or a release _around_ the verticality of the upright.
+Between each round, you might shake off a bit, walk away from the wall to allow the messages to subside. Once your body has quietened down, you can start again.
 
-## Walking uphill
+Like bees protecting their hive as someone walks towards it, sensations buzz louder and louder as we walk closer to the wall. Just like the bees, they take a while to settle down after the intruder has walked away from the hive.
 
-That same cycle that we've uncovered in breathing is available in walking too. There is a point in the gait cycle where the rear foot is released to swing forwards again. At that point, the standing leg is at its straightest with all your weight^[Your mass multiplied by gravity, if I remember my school physics correctly] dropping down through it.
+We are both intruder and beekeeper. Unknowingly, we have put on protective overalls, gloves and netted hats. The bees still sting us – not out of anger or hate, but because we've ignored their previous pleas for safety - but the sting rarely makes it through all the layers to our skin. _Did you get stung?_ We say, no we didn't, but that's not the whole truth. We _did_ get stung, but we didn't notice.
 
-Remember this law of physics? _Every action has an equal and opposite reaction_. Our weight bearing down through the standing leg creates an equal force running in the opposite direction up through the body. You know that already, but can you feel it?
+As beekeepers approach the hive, they use smoke to pacify the bees. Well, we've been smoking ourselves for a lifetime! And today we want our bees to wake up and communicate with us, so you might see it could take time. We're asking to be stung this time round, but the bees are stupified and we're still wearing protective clothing. Each time we choose to repeat the exercise, we are removing a layer, but it may take time for the offerings of the nervous system to get through.
 
-## Ups and downs
-
-Every movement has ups and downs within it. Even a downwards movement (if not a collapse) has to have up and down in equilibrium. That's quite a thought! Our adventure is to find the ups in the downs, and the downs in the ups.
-
-Then we can choose how to respond to these complementary forces. Do I collapse with the down into a chair? Can I retrieve the up within it to guide myself downwards. Do I struggle up out of a chair? Can I find the down that makes the up effortless?
-
-## and round and round
-
-We are three dimensional beings, so our forces don't just travel up and down along a single plane, but they also have the ability to rotate around points (joints) and planes.
-
-Moving up and down is linear. Moving forwards and backwards is linear. Combining up and down with forwards and backwards can generate torque: rotation.
-We start swinging but, unlike a pendulum, we are swinging through multiple planes as we go.
+Be curious. Be sincere.

@@ -10,6 +10,11 @@ module.exports = {
   },
   defaultSocialImage: "/images/default-social-image.png",
   headerLinks: [
+    // {
+    //   text: "How to",
+    //   url: "/how-to",
+    //   external: false
+    // },
     {
       text: "About",
       url: "/about",
