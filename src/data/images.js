@@ -9,6 +9,16 @@ module.exports = {
     attribute:
       '<span>Background photo by <a href="https://unsplash.com/@v2osk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">v2osk</a> on <a href="https://unsplash.com/s/visual/0c296cda-2158-4cc9-843d-7b1792091157?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
   },
+  contact: {
+    src: "camille-orgel-SKcTKYNRvHY-unsplash.jpg",
+    attribute:
+      '<span>Background photo by <a href="https://unsplash.com/@cam_bam?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Camille Orgel</a> on <a href="https://unsplash.com/s/photos/writing-letter?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
+  },
+  thanks: {
+    src: "sandra-grunewald-pL6Z17faozk-unsplash.jpg",
+    attribute:
+      '<span>Background photo by <a href="https://unsplash.com/@elmuff?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Sandra Grünewald</a> on <a href="https://unsplash.com/s/photos/hearts?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
+  },
   "post-1": {
     src: "mel-R4bsmYIc6FI-unsplash.jpg",
     attribute:
