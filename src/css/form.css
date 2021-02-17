@@ -21,6 +21,10 @@
   margin-bottom: 1rem;
 }
 
+.inner-wrap .hidden {
+  display: none;
+}
+
 label {
   display: block;
   color: #888;
