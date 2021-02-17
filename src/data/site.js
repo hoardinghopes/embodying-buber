@@ -15,11 +15,11 @@ module.exports = {
     //   url: "/how-to",
     //   external: false
     // },
-    // {
-    //   text: "Contact",
-    //   url: "/contact",
-    //   external: false
-    // },
+    {
+      text: "Contact",
+      url: "/contact",
+      external: false
+    },
     {
       text: "About",
       url: "/about",
