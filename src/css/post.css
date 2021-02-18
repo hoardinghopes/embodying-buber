@@ -73,3 +73,8 @@
 .footnotes li a {
   text-decoration: none;
 }
+.footnotes img {
+  width: unset;
+  float: right;
+  margin: 0 0 1rem 1rem;
+}
