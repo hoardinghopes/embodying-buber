@@ -7,6 +7,7 @@ const isDev = process.env.APP_ENV === "development";
 const site = require("./src/data/site");
 const markdownIt = require("markdown-it");
 const mdFootnotes = require("markdown-it-footnote");
+const slugify = require("slugify");
 
 const manifestPath = path.resolve(
   __dirname,
@@ -91,6 +92,15 @@ module.exports = function(eleventyConfig) {
       .filter(tag => {
         return !generalTags.includes(tag);
       });
+  });
+
+  eleventyConfig.addFilter("slug", str => {
+    return slugify(str, {
+      replacement: "-",
+      // the default slugify filter doesn't remove these characters
+      remove: /[&,+()$~%.'":*?<>{}]/g,
+      lower: true
+    });
   });
 
   eleventyConfig.addCollection("tagList", function(collection) {

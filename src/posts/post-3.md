@@ -4,7 +4,7 @@ description: "Stop smoking your bees into stupification"
 tags: [interludes, awareness]
 epistemic:
   status: 5. I'm happy with this – it's an experiential experiment. I've done my bit, so it's time for you to do yours.
-  effort: 2. This writing just flowed out
+  effort: 2. This writing just flowed out.
 ---
 
 1. Stand in front of a wall, at least two metres away from it.

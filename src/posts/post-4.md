@@ -3,8 +3,8 @@ title: Lift me up
 description: "Step 1: lengthen and release (part 1)"
 tags: [4 directions, lengthen]
 epistemic:
-status: 1. It's hard to speak words to my body, and then translate my body's response back.
-effort: 4. I've been struggling with this for a while, and no matter how I write it, I'm not yet satisfied.
+  status: 4. Pretty happy with this. Seeking feedback.
+  effort: 3. Feels fairly practised, so wrote quite easily.
 ---
 
 ### <abbr title="Too long; didn't read">tl;dr</abbr>
@@ -36,9 +36,7 @@ _Biotensegrity_ works in a similar fashion in living organisms, which means that
 
 ## Today
 
-Our intention today is to make ourselves aware of the tensegrity within our body. Most of us have had a lifetime of being told to work hard, pay attention, put our backs into it – everything implies effort and strain, and that has likely become our habit. For most of us, our relationship with gravity is: bracing against it or collapsing under it. Today and tomorrow, we get to notice that there's another way already built into our system: rods and elastic ropes working to create an equilibrium of forces.
-
-First the rods!
+Our intention today is to make ourselves aware of the tensegrity within our body. Most of us have had a lifetime of being told to work hard, pay attention, put our backs into it – everything implies effort and strain, and that has likely become our habit. For most of us, our relationship with gravity is: bracing against it or collapsing under it. Today and tomorrow, we get to notice that there's another way already built into our system: rods and elastic ropes working to create an equilibrium of forces. First the rods!
 
 ## Watch the saplings grow!
 
@@ -54,7 +52,7 @@ _First we grow up (and then we grow out)._
 
 I should say first: rather than _doing_ the exercise, notice how _it just happens_; rather than efforting into a new ideal position, find the ease that lengthens you.
 
-Even when we are sitting absolutely still, our breathing creates a cycle of up and down. Our ribcages lifts and expands, and then drops and subsides. Now the movement of the ribcage and the expansion of the belly at the front of the body are clear, so let's move on to explore what's less obvious.
+Even when we are sitting absolutely still, our breathing creates a cycle of up and down. Our ribcage lifts and expands, and then drops and subsides. Now the movement of the ribcage and the expansion of the belly at the front of the body are clear, so let's move on to explore what's less obvious.
 
 Can you feel expansion along the back of your body, can you feel an upwards sensation running lightly along your spine? Can you sense it lengthening your spine and raising your skull upwards? Not _much_, not even _a little_, less than _slightly_. Just the faintest whiff of upwards-ness.
 
@@ -80,7 +78,7 @@ Whenever you think of it, draw a long slow breath up from the ground. Allow it t
 
 ## Back to Buber
 
-What is the relationship between postural lengthening and Martin Buber's _I-and-Thou_? I don't know, honestly, but my hunch is this: by finding our natural supports and efficiencies, we allow ourselves to open to the world. Opening seems to be a clear pre-condition for Buber's _encounter_.
+What is the relationship between postural lengthening and Martin Buber's _I-and-Thou_? I don't know, honestly, but my hunch is this: by finding our natural supports and efficiencies, we can stop holding ourselves up. We allow ourselves to open to the world. Opening seems to be a clear pre-condition for Buber's _encounter_.
 
 Most of us have experienced moments of _encounter_ already. Living in the Scottish Highlands I regularly have my breath taken away by a familiar view revealing itself in a completely different way as the weather momentarily changes. That's a moment when the world grabs me and demands that I pay attention, not with my intellect, but with my whole being. Time pauses, and I am breathed by the landscape.
 

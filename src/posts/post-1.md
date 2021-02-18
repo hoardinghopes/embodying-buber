@@ -3,8 +3,8 @@ title: I and Thou
 description: The philosophical question behind this blog
 tags: [i and thou, start here]
 epistemic:
-  status: 1. It's hard to speak words to my body, and then translate my body's response back.
-  effort: 4. I've been struggling with this for a while, and no matter how I write it, I'm not yet satisfied.
+  status: 3. I've been thinking this through for a while, and would love feedback on its (lack of) clarity.
+  effort: 4. Yep, effort. Buber himself didn't write easily either.
 ---
 
 ### <abbr title="Too long; didn't read">tl;dr</abbr>

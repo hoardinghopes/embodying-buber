@@ -29,7 +29,7 @@
   </head>
   <body>
     {% set banner = images[page.fileSlug] %}
-    <div class="layout-wrapper"{% if banner %} style="background-image: url('/images/{{ banner.src }}')"{% endif %}>
+    <div class="layout-wrapper"{% if banner %} style="background-image: url('{{ banner.src }}')"{% endif %}>
 
 
       <header class="header">
