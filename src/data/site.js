@@ -17,12 +17,12 @@ module.exports = {
     // },
     {
       text: "Contact",
-      url: "/contact",
+      url: "/contact/",
       external: false
     },
     {
       text: "About",
-      url: "/about",
+      url: "/about/",
       external: false
     }
   ],
