@@ -38,7 +38,7 @@
     "build:assets": "webpack --mode production",
     "build:site": "eleventy",
     "clean": "rm -rf ./public",
-    "debug": "DEBUG=Eleventy* eleventy"
+    "debug": "DEBUG=Eleventy* eleventy --serve"
   },
   "dependencies": {
     "remove": "^0.1.5"

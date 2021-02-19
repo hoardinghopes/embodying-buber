@@ -1,11 +1,11 @@
 ---
+date: 2021-02-19
 title: Don't bring me down
 description: "Step 1: lengthen and release (part 2)"
 tags: [4 directions, release]
 epistemic:
-  status: 4. "Awaiting your feedback to finalise it."
-  effort: 3. "It's been heavy (haha!), but seriously it wrote fairly smoothly."
-draft: true
+  status: 4. Awaiting your feedback to finalise it.
+  effort: 3. It's been heavy (haha!), but seriously it wrote fairly smoothly.
 ---
 
 ### <abbr title="Too long; didn't read">tl;dr</abbr>
@@ -25,7 +25,7 @@ To achieve this, we must find and melt current tensions, stiffnesses and flaccid
 
 [Gravity still doesn't care](/posts/lift-me-up/). But we perhaps we return today with a quiet, momentary awareness of the pulse riding up our back. If so, our exploration can move forwards. If not yet, take some time to [review the previous post](/posts/you-lift-me-up/). It's worth doing; let it take time.
 
-Gravity is not something we need to fight – we can allow the _biotensegrity_ of our bones creating length in balance with our tissues tightening around them to create a dynamic equilibrium of moving parts. But to do that, we will need to release our patterns of stiffness and tension. Today we make a start.
+Gravity is not something we need to fight. We can allow the _biotensegrity_ of our bones – creating length in balance with our tissues tightening around them – to create a dynamic equilibrium of moving parts. But to do that, we will need to release our patterns of stiffness and tension. Today we make a start.
 
 ## Be heavy, like a rock
 
@@ -40,7 +40,7 @@ So, now, be as heavy as that imaginary rock _and_ light enough within that to wi
 
 ## Unbuckle your armour
 
-We have all learned to gird ourselves in armour – protective layerings – in order to get through our lives safely. It probably started in infancy, and was certainly being cast more permanently by early childhood. Inside the body armour takes the form of tension, creating stiffness in certain places and slack in others. Growing our own armour demands that we make permanent our tensions and stiffness.
+We have all learned to gird ourselves in armour – protective layerings – in order to get through our lives safely. It probably started in infancy, and was certainly being cast more permanently by early childhood. Inside the body armour takes the form of tension, creating stiffness in certain places and slack in others. Making ourselves safe by growing our own armour demands that we make permanent our tensions and stiffness.
 
 It is put in place to protect us, and because all our childhoods were different, it looks slightly different for each of us. Some might have shoulders pulled back, others shrugged up, others bowed forwards. Some might look at you through their eyebrows, others may seem to lift their head back to peer down at you from a distance; some even like to study you sideways[^fn-youview-chap].
 
@@ -58,7 +58,7 @@ If I just stand and breath slowly (doesn't have to be deeply), I can start to fe
 
 ## Breathing out tension
 
-Again, just standing and breathing also helps. A long inhale tickles up a lighter posture, a long exhale releases tension and holding throughout the body. It seems that where you put your focus releases more, so rove your attention around your body, including neglected nooks and crannies[^fn-crannies].
+Again, just standing and breathing also helps. A long inhale tickles up a lighter posture, a long exhale releases tension and holding throughout the body. It seems that where you put your focus releases more, so guide your attention slowly around your body, including neglected nooks and crannies[^fn-crannies].
 
 [^fn-crannies]: I start with my scalp and work down, spending quite a while noticing my jaw muscles release. Sometimes I hang out inside my nasal cavity (which is surprisingly big when I look), sometimes just under my armpits or behind my knees. But two favourite places I always hang out are my wrists and the arches of my feet.
 
@@ -72,6 +72,6 @@ Start breathing through your feet up the length of your legs and body. Allow the
 
 ## Putting it together
 
-It's worth breaking something really simple like breathing in and out down into parts, so that you can give each part closer attention and notice what's happening throughout your body. But in the long run, we want to put it back together whilst maintaining awareness of the subtleties. Every breath in lengthens us, every exhale releases tightness from us.
+It's worth breaking something really simple like breathing into parts, so that you can give each part closer attention and notice what's happening throughout your body. But in the long run, we want to put it back together whilst maintaining awareness of the subtleties. Every breath in lengthens us, every exhale releases tightness from us.
 
 Bit by bit, we can start to regain the equilibrium that an effective _biotensegral_ body seeks. We hold ourselves up less; we collapse less. If we spend less effort on holding ourselves up, we are less tight; if we are less tight, we are more open. If we are more open, I think we are fulfilling one of the pre-conditions of _encounter_.

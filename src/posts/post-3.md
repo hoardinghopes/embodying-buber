@@ -1,4 +1,5 @@
 ---
+date: 2021-02-17
 title: "An interlude: walking into walls"
 description: "Stop smoking your bees into stupification"
 tags: [interludes, awareness]

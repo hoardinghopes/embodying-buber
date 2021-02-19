@@ -1,4 +1,5 @@
 ---
+date: 2021-02-15
 title: I and Thou
 description: The philosophical question behind this blog
 tags: [i and thou, start here]
