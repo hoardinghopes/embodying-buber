@@ -1,7 +1,7 @@
 ---
 date: 2021-02-19
 title: Don't bring me down
-description: "Step 1: lengthen and release (part 2)"
+description: "Step 2: lengthen and release (part 2)"
 tags: [4 directions, release]
 epistemic:
   status: 4. Awaiting your feedback to finalise it.
@@ -12,8 +12,6 @@ epistemic:
 
 1. Breathe a long, slow inhale up the length of your back, feeling it encourage your head higher.
 2. **Allow a long, slow exhale to stroke down your front, releasing your ribcage, and encouraging a soft smile.**
-   <!--3. Reach out to the corners of the room in front of you, as if welcoming friends to your party.-->
-   <!--3. Allow your arms and body to settle whilst that expansive state continues.-->
 
 The exhale softens us around the vertical axis (unless we allow collapse). This balances the body between up and down forces. As much as we are lengthened upwards, so we are released downwards.
 

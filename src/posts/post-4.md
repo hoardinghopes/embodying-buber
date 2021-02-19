@@ -11,7 +11,6 @@ epistemic:
 ### <abbr title="Too long; didn't read">tl;dr</abbr>
 
 1. **Breathe a long, slow inhale up the length of your back, feeling it encourage your head higher**
-2. Allow a long, slow exhale to stroke down your front, releasing your ribcage, and encouraging a soft smile.
 
 Once you can feel your verticality being moved by your breath, begin to attend to it while walking, or when changing postures, e.g. sitting down and standing up.
 

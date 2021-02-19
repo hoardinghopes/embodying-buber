@@ -17,7 +17,7 @@ This fascinating exercise comes my study at Frankie Briers' _Wise Fool School_[^
 >
 > But you can also turn it around: the word also teaches you _how_ to love even when it's hard: keep saying hello and goodbye to whatever arises in the moment.
 
-On the in-breath, say hello to whatever arises, whatever feeling or thought or sensation. Just say hello without worrying about it or geting attached to it. On the out-breath, say goodbye to whatever is there, even though it may linger.
+On the in-breath, say hello to whatever arises, whatever feeling or thought or sensation. Just say hello without worrying about it or getting attached to it. On the out-breath, say goodbye to whatever is there, even though it may linger.
 
 Inhale, _hello_; exhale, _goodbye_.
 
