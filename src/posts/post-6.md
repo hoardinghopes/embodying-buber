@@ -4,8 +4,8 @@ date: 2021-02-20
 description: Hello:goodbye
 tags: [foolish, interludes]
 epistemic:
-  status: "1. not sure of this, likely to change over time"
-  effort: "3. did some editing"
+  status: "5. done"
+  effort: "4. trying to do justice to Frankie"
 ---
 
 This fascinating exercise comes my study at Frankie Briers' _Wise Fool School_[^fn-frankie]. Each week of the course, he invited us to take on a practice and see what emerged from it. This particular week's exercise was _Aloha_.
