@@ -146,6 +146,13 @@ module.exports = function(eleventyConfig) {
     }
   });
 
+  if (!isDev) {
+    eleventyConfig.addTransform(
+      "htmlmin",
+      require("./src/utils/minify-html.js")
+    );
+  }
+
   return {
     dir: {
       input: "src",
