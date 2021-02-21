@@ -28,12 +28,17 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.setDataDeepMerge(true);
-  eleventyConfig.addPassthroughCopy({ "src/images": "images" });
-  eleventyConfig.setBrowserSyncConfig({ files: [manifestPath] });
+  eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 
   eleventyConfig.addShortcode("bundledcss", function() {
     return manifest["main.css"]
       ? `<link href="${manifest["main.css"]}" rel="stylesheet" />`
+      : "";
+  });
+
+  eleventyConfig.addShortcode("bundledjs", function() {
+    return manifest["main.js"]
+      ? `<script src="${manifest["main.js"]}"></script>`
       : "";
   });
 
@@ -44,12 +49,6 @@ module.exports = function(eleventyConfig) {
       }
     }
     return "";
-  });
-
-  eleventyConfig.addShortcode("bundledjs", function() {
-    return manifest["main.js"]
-      ? `<script src="${manifest["main.js"]}"></script>`
-      : "";
   });
 
   eleventyConfig.addFilter("excerpt", post => {
@@ -132,6 +131,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLib);
 
   eleventyConfig.setBrowserSyncConfig({
+    files: [manifestPath],
     callbacks: {
       ready: function(err, bs) {
         bs.addMiddleware("*", (req, res) => {
