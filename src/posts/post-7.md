@@ -6,7 +6,6 @@ tags: [foolish, interludes]
 epistemic:
   status: "1. not sure of this, likely to change over time"
   effort: "3. did some editing"
-draft: true
 ---
 
 > Enter the room, _aloha_. Leave the room, _aloha_.
