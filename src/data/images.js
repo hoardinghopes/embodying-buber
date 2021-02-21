@@ -52,8 +52,20 @@ module.exports = {
       '<span>Photo by <a href="https://unsplash.com/@davidclode?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Clode</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
   },
   "post-7": {
-    src: "/images/backgrounds/natalia-y-DIewyzpUbRc-unsplash.jpg",
+    src: "/images/backgrounds/susan-yin-Ctaj_HCqW84-unsplash.jpg",
     attribute:
-      '<span>Background photo by <a href="https://unsplash.com/@foxfox?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Natalia Y</a> on <a href="https://unsplash.com/s/photos/doorway?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
+      '<span>Background photo by <a href="https://unsplash.com/@syinq?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Susan Yin</a> on <a href="https://unsplash.com/s/photos/maze?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
+  },
+  "post-8": {
+    src: "/images/backgrounds/sistine-chapel-hand-of-god.jpg",
+    attribute: ""
+  },
+  "post-9": {
+    src: "",
+    attribute: ""
+  },
+  "post-10": {
+    src: "/images/backgrounds/blue-yoga-block.jpg",
+    attribute: ""
   }
 };
