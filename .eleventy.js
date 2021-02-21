@@ -8,6 +8,7 @@ const site = require("./src/data/site");
 const markdownIt = require("markdown-it");
 const mdFootnotes = require("markdown-it-footnote");
 const slugify = require("slugify");
+const criticalCss = require("eleventy-critical-css");
 
 const manifestPath = path.resolve(
   __dirname,
@@ -19,30 +20,31 @@ const manifestPath = path.resolve(
 const manifest = isDev
   ? {
       "main.js": "/assets/main.js",
-      "main.css": "/assets/main.css"
+      "main.css": "/assets/main.css",
     }
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(criticalCss, { minify: true });
 
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 
-  eleventyConfig.addShortcode("bundledcss", function() {
+  eleventyConfig.addShortcode("bundledcss", function () {
     return manifest["main.css"]
       ? `<link href="${manifest["main.css"]}" rel="stylesheet" />`
       : "";
   });
 
-  eleventyConfig.addShortcode("bundledjs", function() {
+  eleventyConfig.addShortcode("bundledjs", function () {
     return manifest["main.js"]
       ? `<script src="${manifest["main.js"]}"></script>`
       : "";
   });
 
-  eleventyConfig.addShortcode("clickystats", function() {
+  eleventyConfig.addShortcode("clickystats", function () {
     if (!isDev) {
       if (site.clickystats.install) {
         return site.clickystats.script;
@@ -51,7 +53,7 @@ module.exports = function(eleventyConfig) {
     return "";
   });
 
-  eleventyConfig.addFilter("excerpt", post => {
+  eleventyConfig.addFilter("excerpt", (post) => {
     // this is filtering the HTML, not the markdown
     let content = post.replace(/(<([^>]+)>)/gi, ""); //remove tags
     content = content.replace("tl;dr", ""); // remove tl;dr
@@ -59,19 +61,19 @@ module.exports = function(eleventyConfig) {
     return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
   });
 
-  eleventyConfig.addFilter("readableDate", dateObj => {
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
       "dd LLL yyyy"
     );
   });
 
-  eleventyConfig.addFilter("readableDateTime", dateObj => {
+  eleventyConfig.addFilter("readableDateTime", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
       "dd LLL yyyy, HH:mm"
     );
   });
 
-  eleventyConfig.addFilter("htmlDateString", dateObj => {
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
   });
 
@@ -82,33 +84,33 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
-  eleventyConfig.addFilter("pageTags", tags => {
+  eleventyConfig.addFilter("pageTags", (tags) => {
     const generalTags = ["all", "nav", "post", "posts"];
 
     return tags
       .toString()
       .split(",")
-      .filter(tag => {
+      .filter((tag) => {
         return !generalTags.includes(tag);
       });
   });
 
-  eleventyConfig.addFilter("slug", str => {
+  eleventyConfig.addFilter("slug", (str) => {
     return slugify(str, {
       replacement: "-",
       // the default slugify filter doesn't remove these characters
       remove: /[&,+()$~%.'":*?<>{}]/g,
-      lower: true
+      lower: true,
     });
   });
 
-  eleventyConfig.addCollection("tagList", function(collection) {
+  eleventyConfig.addCollection("tagList", function (collection) {
     let tagSet = new Set();
-    collection.getAll().forEach(function(item) {
+    collection.getAll().forEach(function (item) {
       if ("tags" in item.data) {
         let tags = item.data.tags;
 
-        tags = tags.filter(function(item) {
+        tags = tags.filter(function (item) {
           switch (item) {
             case "all":
             case "nav":
@@ -133,7 +135,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
     files: [manifestPath],
     callbacks: {
-      ready: function(err, bs) {
+      ready: function (err, bs) {
         bs.addMiddleware("*", (req, res) => {
           const content_404 = fs.readFileSync("public/404.html");
           // Add 404 http status code in request header.
@@ -142,8 +144,8 @@ module.exports = function(eleventyConfig) {
           res.write(content_404);
           res.end();
         });
-      }
-    }
+      },
+    },
   });
 
   if (!isDev) {
@@ -163,7 +165,7 @@ module.exports = function(eleventyConfig) {
       passthroughFileCopy: true,
       templateFormats: ["html", "njk", "md"],
       htmlTemplateEngine: "njk",
-      markdownTemplateEngine: "njk"
-    }
+      markdownTemplateEngine: "njk",
+    },
   };
 };

@@ -26,6 +26,7 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^5.0.1",
     "cssnano": "^4.1.10",
+    "eleventy-critical-css": "^0.2.2",
     "eleventy-plugin-reading-time": "^0.0.1",
     "file-loader": "^6.2.0",
     "gitlog": "^4.0.4",

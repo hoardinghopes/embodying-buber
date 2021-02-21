@@ -74,6 +74,7 @@
   text-decoration: none;
 }
 .footnotes img {
+  /* purgecss ignore current */
   width: unset;
   float: right;
   margin: 0 0 1rem 1rem;
