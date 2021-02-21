@@ -1,3 +1,5 @@
+const isDev = process.env.APP_ENV === "development";
+
 module.exports = {
   layout: "post",
   tags: ["posts"],
@@ -9,14 +11,14 @@ module.exports = {
   draft: false,
   eleventyComputed: {
     permalink: data => {
-      if (process.env.ELEVENTY_ENV !== "production") {
+      if (isDev) {
         return data.permalink;
       } else {
-        return data.draft ? false : data.permalink;
+        return data.draft ? "" : data.permalink;
       }
     },
     eleventyExcludeFromCollections: data => {
-      return process.env.ELEVENTY_ENV !== "production" ? false : data.draft;
+      return isDev ? false : data.draft;
     },
     numberedTitle: data => {
       const parts = data.page.fileSlug.split("-");
