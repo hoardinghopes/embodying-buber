@@ -1,7 +1,6 @@
 @import "fonts.css";
 @import "global.css";
-@import "variable.css";
-
+@import "variables.css";
 @import "typography.css";
 @import "post-list.css";
 @import "hero.css";
@@ -29,4 +28,9 @@
   max-width: 48.75rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.this-is-completely-not-used {
+  /* dummy class to check that purgecss is running correctly */
+  padding: 73px;
 }

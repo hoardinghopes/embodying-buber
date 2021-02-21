@@ -79,6 +79,7 @@ a:hover {
 }
 
 ol {
+  /* purgecss ignore current */
   list-style-position: inside;
 }
 
