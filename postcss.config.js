@@ -1,7 +1,6 @@
-const autoprefixer = require('autoprefixer');
-const postcssColorMod = require('postcss-color-mod-function');
-const postcssPresetEnv = require('postcss-preset-env');
-const atImport = require('postcss-import');
+const autoprefixer = require("autoprefixer");
+const postcssPresetEnv = require("postcss-preset-env");
+const atImport = require("postcss-import");
 
 const plugins = [
   atImport,
@@ -10,21 +9,25 @@ const plugins = [
     stage: 1,
     preserve: true,
     features: {
-      'custom-properties': true,
-    },
-  }),
-  postcssColorMod,
+      "custom-properties": true
+    }
+  })
 ];
 
-const isDev = process.env.APP_ENV === 'development';
+const isDev = process.env.APP_ENV === "development";
 
 if (!isDev) {
-  const cssnano = require('cssnano');
+  const cssnano = require("cssnano");
+  const purgecss = require("@fullhuman/postcss-purgecss");
 
   [].push.apply(plugins, [
-    cssnano({
-      preset: 'default',
+    purgecss({
+      content: ["src/**/*.njk", "src/**/*.md", "src/**/*.js"],
+      defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
     }),
+    cssnano({
+      preset: "default"
+    })
   ]);
 }
 
