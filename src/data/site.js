@@ -6,39 +6,33 @@ module.exports = {
   author: {
     name: "James Knight",
     email: "james@hoardinghopes.com",
-    twitterHandle: "hoardinghopes"
+    twitterHandle: "hoardinghopes",
   },
   defaultSocialImage: "/images/default-social-image.png",
   headerLinks: [
-    // {
-    //   text: "How to",
-    //   url: "/how-to",
-    //   external: false
-    // },
     {
       text: "Contact",
       url: "/contact/",
-      external: false
+      external: false,
     },
     {
       text: "About",
       url: "/about/",
-      external: false
-    }
+      external: false,
+    },
   ],
-
   footerLinks: [
     {
       text: "RSS",
       url: "/feed.xml",
-      external: true
-    }
+      external: true,
+    },
   ],
   showFooterAttribution: false,
   clickystats: {
     install: true,
     script: `<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101301338);</script>
       <script async src='//static.getclicky.com/js'></script>
-      <noscript><img alt='Clicky' width='1' height='1' src='//in.getclicky.com/101301338ns.gif' style='position:absolute; left: -1000, top: -1000'/></noscript>`
-  }
+      <noscript><img alt='Clicky' width='1' height='1' src='//in.getclicky.com/101301338ns.gif' style='position:absolute; left: -1000, top: -1000'/></noscript>`,
+  },
 };

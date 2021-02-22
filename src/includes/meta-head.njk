@@ -17,10 +17,10 @@
   <meta property="og:description" content="{{ desc | escape }}">
 {% endif -%}
 
-{%- if not socialImage %}
+{# {%- if not socialImage %}
   {%- set socialImage = site.defaultSocialImage -%}
 {% endif -%}
 {%- if socialImage %}
   <meta property="og:image" content="{{ socialImage | url | absoluteUrl(site.url) }}"/>
   <meta name="twitter:image" content="{{ socialImage | url | absoluteUrl(site.url) }}"/>
-{% endif -%}
+{% endif -%} #}

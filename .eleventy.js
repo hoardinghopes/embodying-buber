@@ -27,7 +27,6 @@ const manifest = isDev
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(criticalCss, { minify: true });
 
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
@@ -153,6 +152,7 @@ module.exports = function (eleventyConfig) {
       "htmlmin",
       require("./src/utils/minify-html.js")
     );
+    eleventyConfig.addPlugin(criticalCss, { minify: true });
   }
 
   return {
