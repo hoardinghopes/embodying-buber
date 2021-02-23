@@ -69,4 +69,10 @@ module.exports = {
     src: "/images/backgrounds/blue-yoga-block.jpg",
     attribute: "",
   },
+
+  "post-11": {
+    src: "/images/backgrounds/julia-sullivan-zwCfvu1kRgI-unsplash.jpg",
+    attribute:
+      '<span>Background photo by <a href="https://unsplash.com/@juliasssullivan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Julia Sullivan</a> on <a href="https://unsplash.com/s/photos/beach-seaweed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
+  },
 };
