@@ -2,7 +2,7 @@
 date: 2021-02-16
 title: The Body of I and Thou
 description: From philosophy to physicality
-tags: [i and thou, start here]
+tags: [i and thou, start here, body]
 epistemic:
   status: 3. I'm pretty sure of what I'm writing, and would love feedback on its (lack of) clarity.
   effort: 4. I've been working on this for some time. It needs feedback now.
