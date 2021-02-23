@@ -1,50 +1,42 @@
 ---
 date: 2021-02-24
-title: Of wanting and not-wanting
-description: "As Treebeard said: come back to me! Come back to me!"
-tags: [4 directions, inwards]
+title: Standing in the polarity of Yes and No
+description: The community of trees
+tags: [foolish, standing, walking]
 epistemic:
-  status: 4. Awaiting your feedback to finalise it.
-  effort: 3. It's been heavy (haha!), but seriously it wrote fairly smoothly.
+  status: 3. Done, but I know it wants improvement.
+  effort: 3. A bunch of editing.
 draft: true
 ---
 
-One exercise during an Alexander Technique weekend: we sat looking at a blue yoga block on the floor. We related to it in these four different ways, and felt the shift in our bodies in response.
+This is another [Wise Fool School](https://www.francisbriers.com/wise-fool-school) production by _Frankie Briers_. He invited us to stand in the polarity of Yes and No. This has a very particular practice as a standing meditation. He explains:
 
-I felt so moved by it that I wrote this letter to the workshop leader afterwards.
+> The polarity of Yes and No is present in us at any moment: bone structure is saying no to gravity; soft tissue is saying yes to gravity. So how relaxed can you get without going floppy? Can you create _tone_ without _tension_?.
+>
+> _Relaxation_ and _tone_ is one healthy polarity; _collapsed_ and _tense_ is an unhealthy polarity.
+
+The yes and no create each other: soft tissue can only say yes to gravity because bones are providing structure by saying no. The less effective your _no_, the less effective your _yes_ too.
+
+If you can really mean no when you say no, then you can really mean yes when you say yes. But when you say yes when you really mean no ... then your yeses will only be partial (as you have to be cautious about what you commit to) and you can't completely trust yourself or your judgement.
 
 ---
 
-Dear Celia,
+After bringing tea to my wife this morning, I sat on the floor working my knuckles into the soles of my feet. These feet that have carried me quite uncomplainingly for a lifetime. Yes, I thought I’d give back for 5 minutes. _Per foot_, no less.
 
-Thank you so much for coming over to London last weekend to share your insights and delights with us.
+Late morning – our surrounding hills hidden by clouds, rain pouring down, lochans forming in the garden – seemed an ideal time to take Scally for a walk. This is Scotland. I am covered head to foot in the best waterproof materials money can buy. I point that out because I was soaked (through four layers) down to my skin when I got home.
 
-I often find that, after leaving a while to process events like yours, I don’t have the words to describe my learnings.
+> Anyhoo, walking is standing, isn’t it? Sort of? When I got onto the path, I thought I would _yes-no-yes-no_ my way along.
 
-Today I wanted to think deliberately about the weekend, starting with the blue yoga block game we played: wanting, not-wanting, neither-wanting-nor-not-wanting, wanting-and-allowing.
+For a long time, I have walked as an action. More recently, I have been trying to walk as a non-action - each step created by the release of stretched tendons; a bit more boing, boing than stomp, stomp. When it works, I have a clearer sense of ease, less effort, and more contact with Mother Earth. The trees change imperceptibly but definitely. Instead of striding forwards into the landscape, I remain still and the landscape approaches me.
 
-That gave me such a shock of delight: how luscious it was to be able to want the block and wait for it to (re-)turn to me. It immediately reminded me of our youngest daughter.
+So, how about letting the ground come up to support me, rather than treading down onto it? Today, this experiment was made particularly challenging by the weather conditions and the walking boots I was wearing. My newly-tenderised feet were yearning to _feel_, but the boots had them muffled in thick walls.
 
-She’s always been very tactile, but most often backs herself into my embrace, so that her back is pressing against my front and she can watch the world whilst being supported by me. It is even more special than a normal hug.
+Nonetheless, I found up and downs all around me. The river, which was extremely full and fast-flowing, was sliding downwards at gravity’s behest. The trees high on the bank were constantly pushing upwards and outwards.
 
-She does this time and time again - at the end of the school day, she runs out into the playground with her friends, a screamed greeting to me as she whizzes by, and plays until she tires, needs refreshment or contact. Then she comes to me and nestles in, immediately turning to watch the world from her point of safety.
+I started looking out for the mother trees, those that have spawned and support the offspring around them. They weren’t particularly obvious this morning. Possibly all the trees have been around long enough that their sizes have evened out; possibly the mother was actually hidden on the other bank and these trees came from her seeds blown across the river. Even so, the trees took on fascinating shapes as they grew around each other.
 
-I have learned to know that she will come in her own good time, and that she is always mine to love and hold. I have learned to enjoy even more her busy-ness with the other children and parents, knowing that she will return home when the timing’s right.
+Standing among them, I look up and see the branches of different trees match like perfect jigsaw pieces, leaving a few inches of space for sunlight to shine through to the ground. Together they create a shady canopy that offers some incomplete respite from the rain.
 
-And so, the blue block.
+It strikes me that I am walking through a quiet, peaceful community; that none of these trees are alone; there is ongoing communication and support between them.
 
-> ## Wanting
->
-> Wanting it transformed into loving it, into a parental delight at its wish to stay out in the world a while longer before returning home to me.
-
-> ## Wanting and not-wanting
->
-> I learned that I thwart wanting - it’s not allowed because it’s dangerous, it divides me. I learned that I am safer when not-wanting, that is a more coherent body. In the first state, my heart aches at its imprisonment in my chest; in the second state, my heart quietens, and the gaoler is now my protector.
-
-> ## Neither-wanting-nor-not-wanting
->
-> Neither-wanting-nor-not-wanting allowed the block its own personality - no longer the object of my desires or repulsion, it could be itself and I could be respectfully curious. Ah, that’s full of ease. I could be with it, without being pulled into its orbit or repulsed away from it. I could be in its space; it could be in mine.
-
-> ## Wanting and allowing
->
-> And the final, wondrous state. Peace. Delight. Relationships of love without attachment (though I am very attached to my daughters!). Enjoying without needing affirmation. And knowing, deeply knowing, that the right thing will happen when the time is appropriate. What a relief!
+> I think of my standing. No, I will not yield to gravity’s pull; yes, I will soften and release. And I think of those precious moments when the up is offered up by the ground through me. I am not saying no to gravity; I am saying yes to the earth. I am receiving support. Even standing here alone in the rain and the mist, I am supported. I am held.
