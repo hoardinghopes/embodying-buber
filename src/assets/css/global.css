@@ -155,13 +155,13 @@ img {
   margin-top: 1rem;
 }
 
+/* purgecss start ignore */
 blockquote {
   font-family: "Lora", serif;
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 1rem;
   border-left: 3px solid var(--accent);
-  /* font-style: italic; */
   background-color: #eae6e6;
 }
 
@@ -169,7 +169,7 @@ blockquote p {
   font-size: var(--text-xl);
   color: #666;
 }
-
+/* purgecss end ignore */
 pre {
   white-space: pre-wrap;
   tab-size: 2;
