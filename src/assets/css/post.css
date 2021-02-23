@@ -54,7 +54,7 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-
+/* purgecss start ignore */
 .footnotes {
   margin-top: 4rem;
 }
@@ -74,8 +74,8 @@
   text-decoration: none;
 }
 .footnotes img {
-  /* purgecss ignore current */
   width: unset;
   float: right;
   margin: 0 0 1rem 1rem;
 }
+/* purgecss end ignore */
