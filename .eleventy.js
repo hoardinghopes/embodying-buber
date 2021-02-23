@@ -105,7 +105,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("tagList", function (collection) {
     let tagSet = new Set();
-    collection.getAll().forEach(function (item) {
+    collection.getAllSorted().forEach(function (item) {
       if ("tags" in item.data) {
         let tags = item.data.tags;
 
@@ -125,7 +125,7 @@ module.exports = function (eleventyConfig) {
         }
       }
     });
-    return [...tagSet];
+    return [...tagSet].sort();
   });
 
   const markdownLib = markdownIt({ html: true }).use(mdFootnotes);
