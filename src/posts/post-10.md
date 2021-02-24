@@ -6,7 +6,6 @@ tags: [foolish, standing, walking]
 epistemic:
   status: 3. Done, but I know it wants improvement.
   effort: 3. A bunch of editing.
-draft: true
 ---
 
 This is another [Wise Fool School](https://www.francisbriers.com/wise-fool-school) production by _Frankie Briers_. He invited us to stand in the polarity of Yes and No. This has a very particular practice as a standing meditation. He explains:

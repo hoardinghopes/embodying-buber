@@ -4,15 +4,15 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf ./public",
+    "debug": "DEBUG=Eleventy* eleventy --serve",
     "dev": "run-p dev:*",
-    "start": "eleventy --serve",
-    "build": "run-s clean build:assets build:site",
     "dev:assets": "APP_ENV=development webpack --mode production --watch",
     "dev:site": "APP_ENV=development eleventy --serve",
+    "build": "run-s clean build:assets build:site",
     "build:assets": "webpack --mode production",
     "build:site": "eleventy",
-    "clean": "rm -rf ./public",
-    "debug": "DEBUG=Eleventy* eleventy --serve"
+    "start": "eleventy --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
