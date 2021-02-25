@@ -1,6 +1,6 @@
 ---
 date: 2021-02-25
-title: Dear Body
+title: Thank you
 description: "As Treebeard said: come back to me! Come back to me!"
 tags: [body, gratitude]
 epistemic:
@@ -8,7 +8,7 @@ epistemic:
   effort: 1. A straight write – the event dictated the words.
 ---
 
-# Thank you
+# Dear body
 
 I have so much to be grateful for that this letter is unlikely to capture all the years.
 
