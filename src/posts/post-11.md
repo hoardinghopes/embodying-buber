@@ -6,7 +6,6 @@ tags: [body, gratitude]
 epistemic:
   status: 5. Done.
   effort: 1. A straight write – the event dictated the words.
-draft: true
 ---
 
 # Thank you
