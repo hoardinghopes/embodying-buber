@@ -12,6 +12,7 @@
     "build": "run-s clean build:assets build:site",
     "build:assets": "webpack --mode production",
     "build:site": "eleventy",
+    "cb": "run-s clean build:assets start",
     "start": "eleventy --serve"
   },
   "devDependencies": {

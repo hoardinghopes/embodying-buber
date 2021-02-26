@@ -2,7 +2,7 @@
 date: 2021-02-26
 title: Encountering real magic
 description: "Person completed by place, hole made whole"
-tags: [gratitude]
+tags: [magic, encounter, gratitude]
 epistemic:
   status: 5. I'm done here.
   effort: 4. It's challenging to write of magic in a mundane, linear fashion.
