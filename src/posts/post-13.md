@@ -4,9 +4,8 @@ title: It's all in the anticipation
 description: "What would it be like to have a bit more ease?"
 tags: [4 directions, awareness, body, standing]
 epistemic:
-  status: 4. Awaiting your feedback to finalise it.
-  effort: 3. It's been heavy (haha!), but seriously it wrote fairly smoothly.
-draft: true
+  status: 4. Happy enough with this.
+  effort: 3. Editing not to ramble so much.
 ---
 
 ### tl;dr
@@ -37,6 +36,8 @@ Where does that level of sensation show up in your daily life? When it does, is 
 
 The secret to the centering process is not to end it (_steps 1, 2, 3, 4, and done_) but to take an open-ended fifth step to encourage the changes to continue. Ask the question and then just hang out in _not-knowing_. That gives the body time to explore and formulate a response. It's all in the anticipation.
 
+_What would it be like to have a bit more ease?_
+
 Be humble, assume that there is always a response and that you might not be awake enough to recognise it or understand it. Remember that the body doesn't speak in words. Be patient – if not today, maybe tomorrow, or next week, or next month – the body _will answer_. Just keep asking the question with real curiosity and anticipation.
 
 ## A little bit more _ease_?
@@ -51,9 +52,9 @@ For example, part of this writing is to get myself used to greater _visibility_,
 
 Why have I chosen visibility? Because I know I have something of value, but I feel uncomfortable standing up to announce it or offer it. Why? Because others will look at me, will assess and judge me, and my previous experiences of that haven't felt safe. Fair enough.
 
-With a bit of digging, it seems that being more visible is the context that I wish to hang out in, but it's not the quality. Perhaps it's being more _at ease_ with people looking at me. Perhaps, it's learning to be more _comfortable_ with discomfort. Perhaps it's developing greater _resilience_ in the face of judging eyes. Perhaps it's _endurance_, or _courage_, or _invisibility_[^fn-invisibility].
+With a bit of digging, it seems that being more visible is the context that I wish to hang out in, but it's not the quality. Perhaps it's being more _at ease_ with people looking at me. Perhaps, it's learning to be more _comfortable_ with discomfort. Perhaps it's developing greater _resilience_ in the face of judging eyes. Perhaps it's _steadfastness_, or _courage_, or _invisibility_[^fn-invisibility].
 
-[^fn-invisibility]: What? I didn't expect to write _invisibility_, that seems somewhat counter-intuitive. What could I mean by that? I have something of value to offer. Yet when I offer it, I feel as if they are looking at me. Well, of course they are, but they are looking at me to see the thing of value. Perhaps invisibility means allowing their eyes to land on the good, rather than on me. (How one becomes more invisible is not something you need to work out logically. It's precisely the question that the body will answer for you).
+[^fn-invisibility]: I didn't expect to write _invisibility_ – it seems somewhat counter-intuitive. What could I mean by that? I have something of value to offer. Yet when I offer it, I feel as if they are looking at me. Well, of course they are, but they are looking at me to see the thing of value. Perhaps invisibility means allowing their eyes to land on the good, rather than on me. (How one becomes more invisible is not something you need to work out logically. It's precisely the question that the body will answer for you).
 
 ## Should haves, would haves, and ought-tos
 
