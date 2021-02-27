@@ -59,6 +59,7 @@ img {
 }
 
 hr {
+  /* purgecss ignore current */
   width: 100%;
   border: none;
   background: color-mod(var(--color) a(20%));
