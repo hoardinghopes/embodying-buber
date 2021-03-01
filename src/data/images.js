@@ -91,4 +91,9 @@ module.exports = {
     attribute:
       '<span>Background photo by <a href="https://unsplash.com/@siora18?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Siora Photography</a> on <a href="https://unsplash.com/s/photos/handwriting?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
   },
+  "post-15": {
+    src: "/images/backgrounds/clay-banks-ZlaF6thdCgI-unsplash.jpg",
+    attribute:
+      '<span>Background photo by <a href="https://unsplash.com/@claybanks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Clay Banks</a> on <a href="https://unsplash.com/s/photos/i-love-you?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
+  },
 };
