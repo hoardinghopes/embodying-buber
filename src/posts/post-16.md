@@ -4,8 +4,8 @@ title: Fancy a cuppa?
 description: "From tea to splitting atoms and beyond"
 tags: [awareness, outwards]
 epistemic:
-  status: 1. Just starting.
-  effort: 1. It's been short-lived.
+  status: 1. Done.
+  effort: 1. Fairly quick, this one.
 ---
 
 Before you read this, make yourself a cup of tea (or coffee). Seriously.
