@@ -96,4 +96,9 @@ module.exports = {
     attribute:
       '<span>Background photo by <a href="https://unsplash.com/@claybanks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Clay Banks</a> on <a href="https://unsplash.com/s/photos/i-love-you?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
   },
+  "post-16": {
+    src: "/images/backgrounds/seb-cumberbirch-ktG-0sCXc34-unsplash.jpg",
+    attribute:
+      '<span>Background photo by <a href="https://unsplash.com/@sebcumberbirch?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Seb Cumberbirch</a> on <a href="https://unsplash.com/s/photos/tea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
+  },
 };
