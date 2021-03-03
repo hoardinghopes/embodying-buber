@@ -3,9 +3,9 @@
   --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-lg: 1.125rem;
-  --text-xl: 1.25rem;
-  --text-2xl: 1.5rem;
-  --text-3xl: 1.875rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.875rem;
+  --text-3xl: 2rem;
   --text-4xl: 2.25rem;
   --text-5xl: 3rem;
   --text-6xl: 5rem;
@@ -17,11 +17,11 @@ body {
   color: var(--color);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  font-feature-settings: 'liga', 'tnum', 'case', 'calt', 'zero', 'ss01', 'locl';
+  font-feature-settings: "liga", "tnum", "case", "calt", "zero", "ss01", "locl";
   font-variant-ligatures: contextual;
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 h1,
@@ -51,9 +51,9 @@ h4 {
   font-size: var(--text-xl);
 }
 
-h4 {
+/* h4 {
   font-size: var(--text-lg);
-}
+} */
 
 p {
   font-size: var(--text-lg);
