@@ -23,7 +23,7 @@ body {
   -webkit-text-size-adjust: 100%;
   font-family: "IBM Plex Sans", sans-serif;
 }
-
+/* purgecss start ignore */
 h1,
 h2,
 h3,
@@ -51,10 +51,7 @@ h4 {
   font-size: var(--text-xl);
 }
 
-/* h4 {
-  font-size: var(--text-lg);
-} */
-
 p {
   font-size: var(--text-lg);
 }
+/* purgecss end ignore */

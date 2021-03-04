@@ -125,7 +125,7 @@ th {
 td:only-child {
   text-align: center;
 }
-
+/* purgecss start ignore */
 * + h1,
 * + h2 {
   margin-top: 5rem;
@@ -146,7 +146,7 @@ h3 + p,
 h4 + p {
   margin-top: 1rem;
 }
-
+/* purgecss end ignore */
 iframe,
 audio,
 video,

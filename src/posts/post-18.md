@@ -4,7 +4,7 @@ title: The quality of your desire
 description: "obviously."
 tags: [awareness, body, encounter, interludes]
 epistemic:
-  status: 1. Grrr.
+  status: 1. Grrr. Not happy with this. Can't find a way in to improve it.
   effort: 5. Today has been extremely bitty - lots of distractions from family, and struggling to think when I do get time alone.
 ---
 
