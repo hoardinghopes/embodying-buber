@@ -50,7 +50,7 @@ _Wanting_ activates my chest – I want from my heart, you might say. But I fin
 
 _Not wanting_ feels safer to me. I'm more accustomed to not allowing myself to want. I still want from my heart, but it is held in my chest, and that slight tightness feels familiar. This is a more coherent body - the push forwards is balanced by the pull backwards. My desirous heart quietens, and the gaoler is now my protector.
 
-_Neither want nor not-wanting_ transforms the box. No longer the object of my desires or repulsion, it can be itself and I can be respectfully curious. That is a relationship of ease. I can be with the box, without being pulled into its orbit or repulsed away from it. I can be in its space; it can be in mine.
+_Neither wanting nor not-wanting_ transforms the box. No longer the object of my desires or repulsion, it can be itself and I can be respectfully curious. That is a relationship of ease. I can be with the box, without being pulled into its orbit or repulsed away from it. I can be in its space; it can be in mine.
 
 _Wanting and allowing_: peace, delight. A relationship of love without attachment. Enjoying without needing affirmation. And knowing, knowing in a deeper place, that the right thing will happen when the time is right. What a relief!
 
