@@ -4,9 +4,8 @@ title: Different voices of head, heart & hara
 description: "It's dark in here."
 tags: [awareness, inwards, writing, encounter, interludes]
 epistemic:
-  status: 5. Done. After all, it's a momentary snapshot. No explication required.
-  effort: 3. Inadvertent writing is sometimes fun, but I did sit in my room. Alone. For quite some time.
-draft: true
+  status: 2. Done. Introductory.
+  effort: 4. Grr, not enough.
 ---
 
 ### <abbr title="Too long; didn't read">tl;dr</abbr>
@@ -25,11 +24,11 @@ You are a (wo-)man of many parts, no doubt. Meet three parts of you that offer t
 
 ### Head
 
-At least in Western European culture (and its offshoots in American and Australasia), thinking occurs in the head, the location of the _mind_. This is the locus of our logical, rational, intellectual wisdom. Any activity that requires thinking (dealing with spreadsheets, problem-solving, etc.) will take place in the head.
+At least in Western European culture (and its offshoots), thinking occurs in the head, the location of the _mind_. This is the locus of our logical, rational, intellectual wisdom. Any activity that requires thinking (dealing with spreadsheets, problem-solving, etc.) will take place in the head.
 
 ### Heart
 
-Ah, the centre of our feelings – love, compassion – our heart comes alive when we're inspired, when we get connected. When we do something _whole-heartedly_, we're all in. When we _wear our heart on our sleeve_ we let our feelings show. Similarly so when we _pour our heart out_ to a friend.
+Ah, the centre of our feelings – love, compassion – our heart comes alive when we're inspired, when we get connected. When we do something _whole-heartedly_, we're all in. When we _wear our heart on our sleeve_ we let our feelings show.
 
 ### Hara[^fn-hara]
 
@@ -51,4 +50,4 @@ Why is our _whole_ being any different?
 
 -->
 
-Seeking input from all three centres improves our chances of acting from a deeper wisdom.
+Seeking input from all three centres improves our chances of acting from a deeper wisdom. So tomorrow I'll look at one way to do that.
