@@ -4,14 +4,13 @@ title: In the beginning was the Word ...
 description: "Hello?"
 tags: [awareness, inwards, writing, encounter, interludes]
 epistemic:
-  status: 5. Done. After all, it's a momentary snapshot. No explication required.
-  effort: 3. Inadvertent writing is sometimes fun, but I did sit in my room. Alone. For quite some time.
-draft: true
+  status: 5. Done.
+  effort: 3. The exercise writes itself.
 ---
 
 ### <abbr title="Too long; didn't read">tl;dr</abbr>
 
-Learn to speak from the whole of you by listening to each part in turn.
+Learn to speak from the whole of you by talking to each part in turn.
 
 ---
 
