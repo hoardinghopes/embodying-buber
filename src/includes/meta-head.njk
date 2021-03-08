@@ -6,8 +6,6 @@
   <meta name="description" content="{{ desc | escape  }}">
 {% endif -%}
 
-
-
 <meta property="og:title" content="{{  title or site.name | escape }}">
 <meta property="og:site_name" content="{{ site.name }}"/>
 <meta property="og:type" content="website"/>
@@ -29,10 +27,14 @@
 {% endif -%}
 
 
-{# {%- if not socialImage %}
-  {%- set socialImage = site.defaultSocialImage -%}
-{% endif -%}
-{%- if socialImage %}
-  <meta property="og:image" content="{{ socialImage | url | absoluteUrl(site.url) }}"/>
-  <meta name="twitter:image" content="{{ socialImage | url | absoluteUrl(site.url) }}"/>
-{% endif -%} #}
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{ title }}",
+      "image": ["{{ site.url + banner.src}}"],
+      "datePublished": "{{page.date}}",
+      "dateModified" : "{{lastModified}}"
+    }
+</script>
+

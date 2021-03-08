@@ -1,3 +1,5 @@
+const gitinfo = require("../data/gitinfo");
+
 const isDev = process.env.APP_ENV === "development";
 
 module.exports = {
@@ -24,6 +26,9 @@ module.exports = {
       const parts = data.page.fileSlug.split("-");
       const num = parts[parts.length - 1];
       return `${num}: ${data.title}`;
+    },
+    lastModified: data => {
+      return gitinfo.lastModified(data.page.inputPath);
     }
   }
 };

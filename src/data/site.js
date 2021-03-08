@@ -8,7 +8,6 @@ module.exports = {
     email: "james@hoardinghopes.com",
     twitterHandle: "hoardinghopes",
   },
-  defaultSocialImage: "/images/default-social-image.png",
   headerLinks: [
     {
       text: "Contact",
