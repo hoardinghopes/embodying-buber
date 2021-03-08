@@ -126,4 +126,9 @@ module.exports = {
     attribute:
       '<span>Photo by <a href="https://unsplash.com/@travelsourced?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Travel Sourced</a> on <a href="https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
   },
+  "post-22": {
+    src: "/images/backgrounds/cecile-hournau-GDyJRbm6Msg-unsplash.jpg",
+    attribute:
+      '<span>Background photo by <a href="https://unsplash.com/@cecile_hournau?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Cecile Hournau</a> on <a href="https://unsplash.com/s/photos/french?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
+  },
 };
