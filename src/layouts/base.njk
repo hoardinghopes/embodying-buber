@@ -1,28 +1,9 @@
-{% set banner = images[page.fileSlug] %}
-
+{% set banner = images[page.fileSlug] -%}
 
 <!DOCTYPE html>
-<!-- this is base.njk -->
 <!-- {{page.fileSlug}} -->
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="buildtime" content="{{site.buildtime | readableDateTime}}">
-
-    {%- include "gitinfo.njk" -%}
-
-    <meta name="date.created" content="{{page.date}}" />
-    <meta name="date.updated" content="{{lastModified}}" />
-
-    <link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-
-    {% bundledcss %}
-
-    <link rel="icon" type= “image/x-icon” href="/images/favicon.ico">
-
     <title>
       {{-  title  | escape }}
       {%- if title %} | {{ site.name }}
@@ -31,8 +12,21 @@
       {%- endif -%}
     </title>
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% include "meta-head.njk" %}
+    {% if not draft -%}
+    <meta name="buildtime" content="{{site.buildtime | readableDateTime}}">
+    {%- include "gitinfo.njk" %}
+    <meta name="date.created" content="{{page.date}}" />
+    <meta name="date.updated" content="{{lastModified}}" />
+      {% include "meta-head.njk" -%}
+    {%- endif %}
+
+    <link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="icon" type= “image/x-icon” href="/images/favicon.ico">
+    {% bundledcss %}
 
   </head>
   <body>
@@ -46,9 +40,7 @@
               {{site.name}}
             </a>
           </h1>
-
-        {% include "header-links.njk" %}
-
+        {% include "header-links.njk" -%}
         </div>
       </header>
 
