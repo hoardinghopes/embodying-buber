@@ -17,7 +17,7 @@ const getInfo = function(infoType) {
 };
 
 const getLastModified = function(filePath) {
-  console.log(`getLastModified( ${filePath} )`);
+  // console.log(`getLastModified( ${filePath} )`);
 
   const options = {
       repo: __dirname + "/../../.git", // we're in /src/data/

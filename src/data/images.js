@@ -131,4 +131,9 @@ module.exports = {
     attribute:
       '<span>Background photo by <a href="https://unsplash.com/@cecile_hournau?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Cecile Hournau</a> on <a href="https://unsplash.com/s/photos/french?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
   },
+  "post-23": {
+    src: "/images/backgrounds/clem-onojeghuo-DoA2duXyzRM-unsplash.jpg",
+    attribute:
+      '<span>Background photo by <a href="https://unsplash.com/@clemono?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clem Onojeghuo</a> on <a href="/s/photos/loudspeaker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>',
+  },
 };
