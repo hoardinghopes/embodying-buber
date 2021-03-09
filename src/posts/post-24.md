@@ -15,7 +15,9 @@ It's about the thickness of my thumb, with a couple of knots I've tied at the en
 
 This morning, I've been trying to write an article about the nervous system, about presence, and about training to develop both. It's currently over a thousand words, and I've barely introduced the idea. So I stropped off out into the garden.
 
-That's why I play with the rope most days – it's my tool for de-stropping myself, for getting out of my head. And most days I need that at one point or another.
+That's why I play with the rope most days – it's a tool for de-stropping myself, for getting out of my head. And most days I need that at one point or another.
+
+---
 
 A climbing friend wrote about developing cross-body coordination (linking to [this jazz arms exercise](https://www.youtube.com/watch?v=3AGjVvlP3u0) which I found impossible to copy). Although I study aikido, play a guitar, climb, eat with knife and fork, type and operate a mouse quite happily, this set of movements was beyond me.
 

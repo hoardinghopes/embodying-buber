@@ -10,6 +10,11 @@ module.exports = {
   },
   headerLinks: [
     {
+      text: "All",
+      url: "/blog/",
+      external: false
+    },
+    {
       text: "Contact",
       url: "/contact/",
       external: false,
