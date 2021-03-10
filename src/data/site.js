@@ -24,6 +24,11 @@ module.exports = {
       url: "/about/",
       external: false,
     },
+    {
+      text: "Stats",
+      url: "/stats/",
+      external: false,
+    },
   ],
   footerLinks: [
     {

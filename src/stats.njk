@@ -1,0 +1,59 @@
+---
+layout: base.njk
+title: Site statistics
+description: How many words?
+permalink: /stats/
+eleventyExcludeFromCollections: true
+---
+
+{% set totalPosts = collections.posts.length %}
+{% set totalWords = 0 %}
+{% set i = 0 %}
+{% set firstPost = false %}
+{% set lastPost = false %}
+{%- for post in collections.posts -%}
+
+	{# we need to strip tags from the content, and then count it #}
+	{%- set newWords = post.templateContent | striptags | wordcount -%}
+	{# then add these newWords to the ongoing total #}
+	{%- set totalWords = totalWords + newWords -%}
+
+	{# if it's the first post, save it as firstPost #}
+	{%- if i == 0 -%}
+		{%- set firstPost = post -%}
+	{%- endif -%}
+
+	{# increment i #}
+	{%- set i = i + 1 -%}
+
+	{# save the most recent post #}
+	{%- if i == totalPosts -%}
+		{%- set lastPost = post -%}
+	{%- endif -%}
+{%- endfor -%}
+
+{%- from "macros/post-card.njk" import card -%}
+
+<h2>General Stats</h2>
+<ul>
+	<li>Total number of words: {{totalWords}}</li>
+	<li>Total number of posts: {{totalPosts}}</li>
+	<li>First article: <a href="{{firstPost.url}}">{{firstPost.data.title}}</a> ({{firstPost.data.date | readableDate}})
+	{% set thumb = images[firstPost.fileSlug] -%}
+		{{ card(firstPost, thumb) | safe }}
+	</li>
+	<li>Most recent article: <a href="{{lastPost.url}}">{{lastPost.data.title}}</a> ({{lastPost.data.date | readableDate}})
+	{% set thumb = images[lastPost.fileSlug] -%}
+		{{ card(lastPost, thumb) | safe }}
+	</li>
+</ul>
+
+<h2>Posts per tag</h2>
+<ul>
+	{% for tag in collections.tagList %}
+		{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+		<li>
+			<a href="{{ tagUrl | url }}" class="post-tag">#{{ tag | nbsp | safe }}&nbsp;({{collections[tag].length}})</a>
+		</li>
+	{% endfor %}
+</ul>

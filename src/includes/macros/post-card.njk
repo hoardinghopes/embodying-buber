@@ -1,0 +1,76 @@
+{% macro card(post, thumb) %}
+
+    {% set url = post.url if post.url else 
+        "/" %}
+    {% set title = post.data.title if post.data.title else 
+        "" %}
+    {% set date = post.data.date %}
+
+    <div class="post-card alt">
+        <div class="meta">
+            <div class="photo" style="background-image: url({{thumb.src}})"></div>
+            <ul class="details">
+                {%if date %}
+                    <li class="date">{{ date | readableDate }}</li>
+                {% endif %}
+                {%if post.tags %}
+                    <li class="tags">
+                        <ul>
+                            {% for tag in post.tags %}
+                                <li>
+                                    <a href="#">{{ tag }}
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                {% endif %}
+                <li>{{post.templateContent | striptags | wordcount }} words</li>
+            </ul>
+        </div>
+        <div class="description">
+            <h1>{{ post.data.title }}</h1>
+            <p>{{ date | readableDate }} - {{post.templateContent | striptags | wordcount }} words</p>
+            <p>{{ post.templateContent | excerpt }}</p>
+            <p class="read-more">
+                <a href="{{url }}">Read more</a>
+            </p>
+        </div>
+    </div>
+
+    {#
+    <div class="card card--featured">
+        <div class="card__side-by-side--m">
+            <div class="card__image">
+                <img src="{{thumb.src}}"/>
+            </div>
+            <div class="card__content padding-large--l">
+                <h2>{{title}}</h2>
+                <p>{{ date | readableDate }}</p>
+                <p>{{post.templateContent | striptags | wordcount }} words</p>
+                {%if post.tags %}
+                    <p>
+                        {% for tag in post.tags %}
+                            {{ tag }}
+                        {% endfor %}
+                    </p>
+                {% endif %}
+                <p>{{ post.templateContent | excerpt }}</p>
+                <button>Read more</button>
+            </div>
+        </div>
+    </div>
+#}
+{% endmacro %}
+
+{#
+.card.card--featured
+      .card__side-by-side--m
+        .card__image
+          %img(src="https://images.pexels.com/photos/1125278/pexels-photo-1125278.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260")
+        .card__content.padding-large--l
+          %h2 Quisque volutpat.
+          %p Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit.
+          %p Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+          .card__button More...
+ #}

@@ -10,6 +10,7 @@ const mdFootnotes = require("markdown-it-footnote");
 const slugify = require("slugify");
 const criticalCss = require("eleventy-critical-css");
 
+
 const manifestPath = path.resolve(
   __dirname,
   "public",
@@ -25,6 +26,7 @@ const manifest = isDev
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
 module.exports = function (eleventyConfig) {
+
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
 
@@ -71,8 +73,6 @@ module.exports = function (eleventyConfig) {
       "dd LLL yyyy, HH:mm"
     );
   });
-
-
 
   eleventyConfig.addFilter("nbsp", (data) => {
     return data.split(" ").join("&nbsp;")
