@@ -24,17 +24,18 @@ module.exports = {
       url: "/about/",
       external: false,
     },
-    {
-      text: "Stats",
-      url: "/stats/",
-      external: false,
-    },
   ],
   footerLinks: [
     {
       text: "RSS",
       url: "/feed.xml",
       external: true,
+    },
+
+    {
+      text: "Stats",
+      url: "/stats/",
+      external: false,
     },
   ],
   showFooterAttribution: false,

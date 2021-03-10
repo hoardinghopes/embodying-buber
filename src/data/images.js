@@ -1,9 +1,9 @@
 module.exports = {
-  stats: {
+  /*stats: {
     src: "/images/backgrounds/chris-liverani-dBI_My696Rk-unsplash.jpg",
     attribute:
       '<span>Background photo by <a href="https://unsplash.com/@chrisliverani?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chris Liverani</a> on <a href="/s/photos/statistics?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>',
-  },
+  },*/
   about: {
     src: "/images/backgrounds/v2osk-Chi53DEUJ84-unsplash.jpg",
     attribute:
