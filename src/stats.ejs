@@ -1,0 +1,43 @@
+---
+permalink: /stats.json
+---
+<%
+
+function wordCount(s) {
+	return s.split(/\s+/).length; 
+}
+
+totalPosts=collections.posts.length; 
+totalWords=0; 
+let	tags={}; 
+
+collections.posts.forEach((p,i)=> {
+	if(i === 0) firstPost = p;
+	if(i === collections.posts.length-1) lastPost = p;
+	
+	p.data.tags.forEach(t => {
+		if(!tags[t]) tags[t] = 0;
+		tags[t]++;
+	});
+
+	totalWords += wordCount(p.templateContent);
+});
+
+let avgWords = totalWords / totalPosts;
+
+%>
+
+{
+	"totalPosts": <%= totalPosts %>,
+	"totalWords": <%= totalWords %>,
+	"avgWords": <%= avgWords %>,
+	"firstPost": {
+		"title": "<%= firstPost.data.title %>",
+		"date": "<%= firstPost.date %>"
+	},
+	"lastPost": {
+		"title": "<%= lastPost.data.title %>",
+		"date": "<%= lastPost.date %>"
+	},
+	"tags": <%- JSON.stringify(tags) %>
+}

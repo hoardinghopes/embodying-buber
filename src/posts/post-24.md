@@ -5,13 +5,12 @@ description: "Cross-body learning"
 tags: [awareness, body, 4 directions, interludes]
 epistemic:
   status: 5. Done.
-  effort: 3. This came out prettily easily after yesterday.
-draft: true
+  effort: 3. This came out prettily quickly, after I shelved the other writing.
 ---
 
 I've a new hobby, though it's strange to call it that. It's just something I do most days. I spin a rope.
 
-It's about the thickness of my thumb, with a couple of knots I've tied at the ends as handles. It's the length of a skipping rope. But I don't skip, I spin.
+It's about the thickness of my thumb, with a couple of knots I've tied at the ends as handles, and the length of a skipping rope. But I don't skip, I spin.
 
 This morning, I've been trying to write an article about the nervous system, about presence, and about training to develop both. It's currently over a thousand words, and I've barely introduced the idea. So I stropped off out into the garden.
 

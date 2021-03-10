@@ -13,11 +13,11 @@ layout: base.njk
       <span> | </span>
       <span>{{ content | readingTime }} read</span>
       {% if epistemic.status %}
-      <br><br>
+        <br><br>
       Epistemic Status (1-5): {{ epistemic.status }}
       {% endif %}
       {% if epistemic.effort %}
-      <br>
+        <br>
       Epistemic Effort (1-5): {{ epistemic.effort}}
       {% endif %}
     </div>

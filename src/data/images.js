@@ -1,8 +1,8 @@
 module.exports = {
-  test: {
-    src: "/images/backgrounds/v2osk-Chi53DEUJ84-unsplash.jpg",
+  stats: {
+    src: "/images/backgrounds/chris-liverani-dBI_My696Rk-unsplash.jpg",
     attribute:
-      '<span>Background photo by <a href="https://unsplash.com/@v2osk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">v2osk</a> on <a href="https://unsplash.com/s/visual/0c296cda-2158-4cc9-843d-7b1792091157?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
+      '<span>Background photo by <a href="https://unsplash.com/@chrisliverani?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chris Liverani</a> on <a href="/s/photos/statistics?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>',
   },
   about: {
     src: "/images/backgrounds/v2osk-Chi53DEUJ84-unsplash.jpg",
