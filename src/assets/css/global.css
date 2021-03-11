@@ -81,7 +81,8 @@ a:hover {
 
 ol {
   /* purgecss ignore current */
-  list-style-position: inside;
+  list-style-position: outside;
+  padding-left: 1.2rem;
 }
 
 ol ol {
@@ -89,8 +90,10 @@ ol ol {
 }
 
 ul {
-  list-style-type: square;
-  list-style-position: inside;
+  margin-top: 1.2rem;
+  list-style-type: circle;
+  list-style-position: outside;
+  padding-left: 1.2rem;
 }
 
 b,
@@ -166,8 +169,12 @@ blockquote {
   background-color: #eae6e6;
 }
 
-blockquote p {
+blockquote h2 {
   font-size: var(--text-xl);
+}
+
+blockquote p {
+  font-size: var(--text-lg);
   color: #666;
 }
 /* purgecss end ignore */

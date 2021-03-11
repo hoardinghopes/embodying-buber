@@ -141,4 +141,9 @@ module.exports = {
     attribute:
       '<span>Background photo by <a href="https://unsplash.com/@milada_vigerova?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Milada Vigerova</a> on <a href="https://unsplash.com/s/photos/heavy-ropes?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>',
   },
+  "post-25": {
+    src: "/images/backgrounds/raychan-vHf8wYS2aeY-unsplash.jpg",
+    attribute:
+      '<span>Photo by <a href="https://unsplash.com/@wx1993?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Raychan</a> on <a href="/s/photos/handwriting?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>',
+  },
 };

@@ -1,48 +1,76 @@
 ---
-date: 2021-03-12
-title: The sum of parts ...
-description: "Hello?"
-tags: [awareness, inwards, writing, encounter, interludes]
+date: 2021-03-11
+title: Writing as transmission
+description: "Mind the gap"
+tags: [awareness, body, writing, interludes]
 epistemic:
-  status: 5. Done. After all, it's a momentary snapshot. No explication required.
-  effort: 3. Inadvertent writing is sometimes fun, but I did sit in my room. Alone. For quite some time.
-draft: true
+  status: 5. Done.
+  effort: 3. This came out prettily quickly, after I shelved the other writing.
 ---
 
-### <abbr title="Too long; didn't read">tl;dr</abbr>
 
-> The whole is greater than the sum of the parts.
 
-Even so, it helps to locate and listen to the different voices within. Our different parts are intelligent in different ways and, by listening to them all, we receive a richer understanding of our wants and needs.
 
----
 
-The first step in speaking your truth is just showing up. And that - when dealing with swirling thoughts in your head - can be a whole challenge of its own.
+If you stop to think about it, writing is a torturous path for passing on knowledge. 
 
-I’ve lost count of the number of times that I’ve had something really important to say, but have failed to ensure it was heard in the way I meant. I’ve been under more pressure than I could bear in all those situations - whether arguing with my spouse, trying to get the children (not) to do something, or wanting to tell my boss that he was wrong.
 
-And I’ve had situations where my voice has been heard, where I’ve been promoted as a result of being the only person prepared to speak up, yay me. So what’s the difference?
 
-It starts with how I show up. If - especially under pressure - I can pay some attention to my posture, my breathing and relax a bit more, then I am automatically more fully present - less caught up by the thoughts and emotions, and more physically aware of the situation. That puts me in an ideal place for vocalising my truth, and makes it easier for people to hear me as I intend.
+- I have an experience.
 
-I’ve also come a cropper when the words have tumbled out of my mouth onto the floor in front of me, or I’ve got tongue-tied.
+- I reduce it down to a few distinct thoughts about that experience.
 
-I suspect that I start tripping myself up when my head wants to say one thing and my heart or belly wants to say something else. With conflict buried deep inside me, it’s no surprise that the message stumbles on the way out.
+- I write it down, editing it as I go to make it sound more _professional_ or _authoritative_. My writing is no longer just the experience, it is also assuring the reader that I am worth reading.
 
-So ‘speaking your truth’ comprises two steps: being centred and aligned, and bringing all your different opinions together.
+- I publish it somewhere (and, yes, that does matter – arguably scientific journals are among the most authoritative writings, yet how many of us read them?).
 
-Any skill worth its weight requires practice, and speaking out is no exception - especially because the head is so much better at speaking (and editing) than the other two centres. Before you bring them all together, it’s worth spending some time learning how they sound.
+- You read it. Or do you? You glance through it? You are drawn in by the headline or the choice of images. You read it straight away, whilst doing something else? Or waiting for something else? Or you bookmark it in order to come back at a better time.  
 
-If you try speaking out from your head, it’s likely to sound fluent and logical. Your heart seems to speak a different language, which you struggle to hear - the head often tries to edit the words on the way out. Your belly may be determined, impatient, and seem to grunt a response.
+- Anyway, you read it.
 
-One way to practise is to speak your truth out three times to the bathroom mirror every day, once per centre. Listen out for changes of emphasis, your voice settling, different language appearing, and embrace it all - all of these offer information to you.
+- Is your language my language? How does that affect your reading of it?
 
-If speaking from the three centres is a challenge, then try this. Every day, write a couple of lines (no more!) on your subject from each centre. Do that for a week or two before reviewing. As the responses accumulate you should see a pattern or style of communication that is particular to each centre.
+- Are my authority markers familiar to you? Or does my language feel overly stiff and awkward?
 
-So, homework.
+- Nevermind, you make the effort. You read the words. You understand the words. 
 
-You may know very well what truth you want to express, but don’t know how to get it heard; or you may not be so sure of the message. Either way, every day for the next week, talk to yourself in the bathroom. And notice what you notice.
+  
 
-You could also write a line from each centre every day, to learn their different voices.
+  
 
-And, of course, all this rests upon the foundation of a regular centring practice, so how’s that going?
+_But do you get the experience that I'm sharing?_
+
+
+
+
+
+I have compressed a thousand subtle conscious and unconscious sensations into 500 words. Should I have any hope that you'll get the thousand sensations back out again?
+
+
+
+I was struggling to write [this piece](/posts/encountering-real-magic/) a while ago, and told a friend. _Write it as a poem_, he suggested. Well, I can assure you that I didn't – _I am not a poet_, as my school teachers liked to point out – so we're all safe there.
+
+Poetry is something I studied at school[^fn-poets] with more or less engagement. The black words on white paper, arrayed in uneven lines with deliberate spacings that spoke silently to the author's intent, were parsed lesson after lesson. 
+
+They were interrrogated again on my bed or at my desk in the evenings. Somewhere between the smell of the books, the glyphs on the page, the darkness and chill out beyond the window, the poet's meaning was offered up to me. If only I had the eyes, the heart, and the patience to find it!
+
+[^fn-poets]:  I remember Metaphysical Poet [Andrew Marvel](https://poetryarchive.org/poem/to-his-coy-mistress/) for his _vegetable love_ and the incomparable [Philip Larkin](https://poetryarchive.org/poem/whitsun-weddings/) for his morose and exquisitely disappointed view of the world. I was lucky enough to study at Hull University, where Larkin had been the university librarian, and to take the same journey as he describes in _The Whitsun Weddings_. Reading – or even better, hearing – Larkin is visceral.
+
+And thus poetry was a foreign country. 
+
+We had guides, of course. For too short a while, Miss Maxwell whose youthful ease and smile wooed all the adolescent boys; a now-anonymous man financing his PhD study of early Persian poetry by sitting uncomfortably in front of a room of teenagers who knew he didn't want to be there; and Mrs. Eatough, whose late-middle-aged body languished across her desk and oozed sensuous life into every word she uttered.
+
+But they required us to interrogate the poems, to scan the lines, to identify the metre, to highlight instances of onomatopoeia, alliteration, assonance, enjambment. We were apprentice mechanics taking a car apart to isolate, identify, and appraise the value of each component. 
+
+We were never shown how to put the car together again. Nor encouraged to build a car of our own, even a go-kart. We never even knew of the magic that the master mechanics had in their fingers, nor their reasons for doing their work. 
+
+The poet was never invited to reach out from the book into my classroom and touch my heart with his.
+
+Poems are taught as objects to be studied and deciphered.
+
+_Poems are written as encounters with the divine_.
+
+
+
+
+
