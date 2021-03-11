@@ -54,7 +54,7 @@ I am using yesterday's speaking exercise, with a couple of small twists. Firstly
 
 #### Head
 
-Tilly's grades, certificates.
+Prompt: Tilly's grades, certificates.
 
 > I want Tilly to take Advanced Higher French.
 
@@ -62,7 +62,7 @@ It sounds real and right, but doesn't carry weight with it. It can be ignored. I
 
 #### Heart
 
-My sadness; Tilly's joy.
+Prompt: My sadness; Tilly's joy.
 
 > Let her take her French.
 
@@ -70,7 +70,7 @@ I walked over without words in mind, and this is what came out of my mouth. I sp
 
 #### Hara
 
-Solidity, stability
+Prompt: Solidity, stability
 
 > Tilly's taking French.
 
