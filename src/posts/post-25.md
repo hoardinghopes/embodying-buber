@@ -2,7 +2,7 @@
 date: 2021-03-11
 title: Writing as transmission
 description: "Mind the gap"
-tags: [encounter, body, writing]
+tags: [encounter, body, writing, magic]
 epistemic:
   status: 5. Done. A bit random.
   effort: 3. Not entirely sure where this came from.
