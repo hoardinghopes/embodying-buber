@@ -146,4 +146,9 @@ module.exports = {
     attribute:
       '<span>Photo by <a href="https://unsplash.com/@wx1993?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Raychan</a> on <a href="/s/photos/handwriting?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>',
   },
+  "post-26": {
+    src: "/images/backgrounds/joshua-woroniecki-fjJmi9Edn4E-unsplash.jpg",
+    attribute:
+      '<span>Photo by <a href="https://unsplash.com/@joshua_j_woroniecki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Woroniecki</a> on <a href="/s/photos/stars-at-night?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>',
+  },
 };
