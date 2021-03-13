@@ -34,7 +34,7 @@ Where does that level of sensation show up in your daily life? When it does, is 
 
 ## Listen, carefully
 
-The secret to the centering process is not to end it (_steps 1, 2, 3, 4, and done_) but to take an open-ended fifth step to encourage the changes to continue. Ask the question and then just hang out in _not-knowing_. That gives the body time to explore and formulate a response. It's all in the anticipation.
+The secret to the centering process is not to end it (_steps 1, 2, 3, 4, and done_) but to take an open-ended fifth step to encourage the adaptation to continue. Ask the question and then just hang out in _not-knowing_. That gives the body time to explore and formulate a response. It's all in the anticipation.
 
 _What would it be like to have a bit more ease?_
 

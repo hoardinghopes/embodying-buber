@@ -19,14 +19,14 @@ Having found the up and down directions of the vertical axis and the outward rea
 
 ---
 
-> Centering, I say, is the discipline of bringing in (i.e. of sympathy or empathy) rather than leaving out. Of saying “Yes, Yes” to what we behold. To what is holy and what is unbearable.  
+> Centering, I say, is the discipline of bringing in (i.e. of sympathy or empathy) rather than leaving out. Of saying “Yes, Yes” to what we behold. To what is holy and what is unbearable.
 > ~ Centering in Pottery, Poetry, and the Person, M.C. Richards[^fn-mcr]
 
 [^fn-mcr]: _Centering in Pottery, Poetry, and the Person_, M. C. Richards, 2nd ed. 1989, Wesleyan University Press.
 
 ### Everything's spinning
 
-We are such small dots on this planet that we lose sight of this fact: _everything is spinning_. Our world is spinning on its axis. Our solar system is spinning around the sun. Time is cycles of days and seasons. Our focus is so myopic, and our interest in ourselves is so engaging, that we miss all the spinning.
+We are such small dots on this planet that we lose sight of this fact: _everything is spinning_. Our world is spinning on its axis. Our solar system is spinning around the sun. Time is cycles of days and seasons. Our focus is so myopic, and our interest in ourselves is so all-engaging, that we miss all the spinning.
 
 Each one of us is standing right in the middle of all the spinning.
 
@@ -62,7 +62,7 @@ She also wrote of the work required of us; centering is not just for feeling goo
 
 [^fn-self]: [I wrote these two lines](/posts/welcome-the-world/) a couple of days ago, and think they're worth repeating here. I can be friendly to the world because I have a space of my own. At its most pared down, my Centre is my home in my body. Legs are busy driving us from A to B, arms are either pulling in or pushing away. My mind is calculating and cogitating. We can miss the quiet fact that there is a space within that is always peaceful and welcoming to us.
 
-In a world that is engaging and distracting, that is demanding our attention all the time, returning to our Centre offers us stability. It actually offers the world stability too. _Hello world, welcome home_ becomes our embodied statement because we can find home wherever we are. That is clearly a gift to ourselves and others at the same time.
+In a world that is engaging and distracting, that is demanding our attention all the time, returning to our Centre offers us stability. It actually offers the world stability too. _Hello world; welcome home_ becomes our embodied statement because we can find home wherever we are. That is clearly a gift to ourselves and others at the same time.
 
 When we have a clear sense of Centre within us, we can allow the world to reach us there with all its excitements and troubles. The world is just offering us information. We can learn to receive it from a centred and balanced place, rather than recoil from it or push forwards to meet it.
 

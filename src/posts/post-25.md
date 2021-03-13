@@ -38,7 +38,7 @@ Poetry is something I studied at school[^fn-poets] with more or less engagement.
 
 They were interrrogated again on my bed or at my desk in the evenings. Somewhere between the smell of the books, the glyphs on the page, the darkness and chill out beyond the window, the poet's meaning was offered up to me. If only I had the eyes, the heart, and the patience to find it!
 
-[^fn-poets]: I remember Metaphysical Poet [Andrew Marvel](https://poetryarchive.org/poem/to-his-coy-mistress/) for his _vegetable love_ and the incomparable [Philip Larkin](https://poetryarchive.org/poem/whitsun-weddings/) for his morose and exquisitely disappointed view of the world. I was lucky enough to study at Hull University, where Larkin had been the university librarian, and to take the same journey as he describes in _The Whitsun Weddings_. Reading – or even better, hearing – Larkin is visceral.
+[^fn-poets]: I remember Metaphysical Poet [Andrew Marvel](https://poetryarchive.org/poet/andrew-marvell/) for his [_vegetable love_](https://poetryarchive.org/poem/to-his-coy-mistress/) and the incomparable [Philip Larkin](https://poetryarchive.org/poet/philip-larkin/) for his morose and exquisitely disappointed view of the world. I was lucky enough to study at Hull University, where Larkin had been the university librarian, and to take the same journey as he describes in [_The Whitsun Weddings_](https://poetryarchive.org/poem/whitsun-weddings/). Reading – or even better, hearing – Larkin is visceral.
 
 And thus poetry was a foreign country.
 

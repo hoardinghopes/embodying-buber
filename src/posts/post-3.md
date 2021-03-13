@@ -43,7 +43,7 @@ With each step, I am re-committing to my nervous system's voice: _I want to hear
 
 I'm not doing this, but it's happening. I'm just stepping forwards, trying to observe this rising tide of activity. I am feeling very uneasy.
 
-> I step into the wall. The touch of my knee against explodes a billion reactions across my body as if I've been hit. I jerk back and open my eyes.
+> I step into the wall. The touch of my knee against it explodes a billion reactions across my body as if I've been hit. I jerk back and open my eyes.
 
 Wow. Let's do it again.
 

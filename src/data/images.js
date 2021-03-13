@@ -151,4 +151,9 @@ module.exports = {
     attribute:
       '<span>Photo by <a href="https://unsplash.com/@joshua_j_woroniecki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joshua Woroniecki</a> on <a href="/s/photos/stars-at-night?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>',
   },
+  "post-27": {
+    src: "/images/backgrounds/michael-dziedzic-aQYgUYwnCsM-unsplash.jpg",
+    attribute:
+      '<span>Photo by <a href="https://unsplash.com/@lazycreekimages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Dziedzic</a> on <a href="/s/photos/artificial-intelligence?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>',
+  },
 };

@@ -12,14 +12,14 @@ There's a universe between what you can see and you can't see; there's a multitu
 
 Nothing? Or _everything_?
 
-> Be not afeard. This isle is full of noises,
-> Sounds and sweet airs that give delight and hurt not.
-> Sometimes a thousand twangling instruments
-> Will hum about mine ears, and sometime voices
-> That, if I then had waked after long sleep,
-> Will make me sleep again; and then, in dreaming,
-> The clouds methought would open and show riches
-> Ready to drop upon me, that when I waked
+> Be not afeard. This isle is full of noises,   
+> Sounds and sweet airs that give delight and hurt not.  
+> Sometimes a thousand twangling instruments  
+> Will hum about mine ears, and sometime voices   
+> That, if I then had waked after long sleep,  
+> Will make me sleep again; and then, in dreaming,  
+> The clouds methought would open and show riches  
+> Ready to drop upon me, that when I waked  
 > I cried to dream again. (Shakespeare's _The Tempest_, III.ii.)
 
 When _Caliban_ spoke these words, his dream world sounded so much richer than our diurnal existence. There's mystery, there's music; the clouds play with him. Above all, he glimpses a world he desperately he wants to return to.
@@ -44,10 +44,10 @@ So far, so good. But the Wiki entry goes further. I paraphrase:
 
 To a psychiatrist every human experience is a symptom of abnormality, perhaps. But then where does his normality lie – doesn't our very humanity demand that we make meaning by seeing connections where there are, ostensibly, none?
 
-> Lovers and madmen have such seething brains,
-> Such shaping fantasies, that apprehend
-> More than cool reason ever comprehends.
-> The lunatic, the lover and the poet
+> Lovers and madmen have such seething brains,  
+> Such shaping fantasies, that apprehend  
+> More than cool reason ever comprehends.  
+> The lunatic, the lover and the poet  
 > Are of imagination all compact. (_A Midummer Night's Dream_, V.i.)
 
 ---
