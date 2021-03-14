@@ -156,4 +156,9 @@ module.exports = {
     attribute:
       '<span>Photo by <a href="https://unsplash.com/@lazycreekimages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michael Dziedzic</a> on <a href="/s/photos/artificial-intelligence?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>',
   },
+  "post-28": {
+    src: "/images/backgrounds/madhuvan-yadav-M-Tlne2HXmc-unsplash.jpg",
+    attribute:
+      '<span>Photo by <a href="https://unsplash.com/@madhuvan_yadav?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Madhuvan Yadav</a> on <a href="/s/photos/meteor?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>',
+  },
 };
