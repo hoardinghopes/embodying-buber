@@ -16,10 +16,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% if not draft -%}
-    <meta name="buildtime" content="{{site.buildtime | readableDateTime}}">
-    {% include "gitinfo.njk" %}
-    <meta name="date.created" content="{{page.date}}" />
-    <meta name="date.updated" content="{{lastModified}}" />
+      <meta name="buildtime" content="{{site.buildtime | readableDateTime}}">
+      {% include "gitinfo.njk" %}
+      <meta name="date.created" content="{{page.date}}"/>
+      <meta name="date.updated" content="{{lastModified}}"/>
       {% include "meta-head.njk" -%}
     {%- endif %}
 
@@ -27,11 +27,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link rel="icon" type= “image/x-icon” href="/images/favicon.ico">
     {% bundledcss %}
-
   </head>
   <body>
     <div class="layout-wrapper"{% if banner %} style="background-image: url('{{ banner.src }}')"{% endif %}>
-
 
       <header class="header">
         <div class="header__content">
@@ -40,9 +38,10 @@
               {{site.name}}
             </a>
           </h1>
-        {% include "header-links.njk" -%}
+          {% include "header-links.njk" -%}
         </div>
       </header>
+
 
       <main class="main">
         {{ content | safe }}
@@ -50,13 +49,14 @@
 
       <footer class="footer">
         <div class="footer__content">
-          {% if banner %}{{ banner.attribute | safe }}{% endif %}
+          {% if banner %}{{ banner.attribute | safe }}
+          {% endif %}
 
           {% include "footer-links.njk" %}
         </div>
 
-    </footer>
-  </div>
+      </footer>
+    </div>
 
     {# {% bundledjs %} #}
     {% clickystats %}
