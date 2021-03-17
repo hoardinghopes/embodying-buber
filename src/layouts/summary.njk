@@ -1,7 +1,5 @@
 
 
-
-
 {% extends "./base.njk" %}
 
 {% block content %}
@@ -17,6 +15,8 @@
       </time>
       <span> | </span>
       <span>{{ content | readingTime }} read</span>
+      <span> | </span>
+      <span>{{ content | wordCount }} words</span>
       {% if epistemic.status %}
         <br><br>
       Epistemic Status (1-5): {{ epistemic.status }}
@@ -65,4 +65,4 @@
   </aside>
 
 </article>
-{% endblock content %}
+ {% endblock content %}

@@ -1,5 +1,6 @@
 ---
 title: Thanks for your feedback
+permalink: "/thanks/"
 layout: about.njk
 ---
 

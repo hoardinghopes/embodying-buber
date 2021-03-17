@@ -1,0 +1,16 @@
+---
+permalink: /summaries/
+title: All Summaries
+description: A list of all summaries on the site
+---
+
+<h1>All Summaries</h1>
+
+{% extends "../layouts/base.njk" %}
+
+{% block content %}
+{% set postslist = collections.summaries %}
+{% set writingType = "summary" %}
+{% include "posts-list.njk" %}
+
+{% endblock content %}

@@ -7,7 +7,11 @@
             {{ post.date | readableDate }}
           </time>
           <span> | </span>
+          {% if post.data.type == "post" -%}
           <span>{{ post | readingTime }} read</span>
+          {% else  %}
+          <span>{{ post.templateContent | wordCount }} words</span>
+          {% endif  -%}
         </div>
         <div class="post-list__tags">
           {% for tag in post.data.tags %}
@@ -25,7 +29,12 @@
 
       <p class="post-list__excerpt">{{ post.templateContent | excerpt | safe  }}</p>
 
-      <a class="post-list__read-more" href="{{ post.url }}">read article</a>
+      <a class="post-list__read-more" href="{{ post.url }}">read
+        {% if post.data.type == "post" -%}
+        article
+        {% else -%}
+        summary
+        {% endif %}</a>
     </li>
   {% endfor %}
 </ul>

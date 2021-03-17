@@ -1,10 +1,13 @@
 ---
 title: Oops! Not Found
-layout: base.njk
 permalink: /404.html
 eleventyExcludeFromCollections: true
 
 ---
+
+{% extends "../layouts/base.njk" %}
+
+{% block content %}
 
 <div class="not-found">
   <h1>404 Page not found</h1>
@@ -20,3 +23,6 @@ el.innerHTML = location.href;
 
 // post this location.href to IFTT so that I can track what people are asking for.
 </script>
+
+
+{% endblock content %}

@@ -1,7 +1,7 @@
-{% set banner = images[page.fileSlug] -%}
+
 
 <!DOCTYPE html>
-<!-- {{page.fileSlug}} -->
+<!-- {{page.inputPath}} -->
 <html lang="en">
   <head>
     <title>
@@ -44,7 +44,7 @@
 
 
       <main class="main">
-        {{ content | safe }}
+        {% block content %}{% endblock content %}
       </main>
 
       <footer class="footer">

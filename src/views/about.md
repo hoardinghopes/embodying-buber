@@ -1,8 +1,7 @@
 ---
 title: About 28 days
-layout: about.njk
-name: James Knight
-image: "v2osk-Chi53DEUJ84-unsplash.jpg"
+permalink: "/about/"
+layout: "../layouts/about.njk"
 ---
 
 # Hello

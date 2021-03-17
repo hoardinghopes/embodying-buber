@@ -1,10 +1,10 @@
 ---
-layout: base.njk
 title: Site statistics
 description: How many words?
 permalink: /stats/
 eleventyExcludeFromCollections: true
 ---
+
 
 {% set totalPosts = collections.posts.length %}
 {% set totalWords = 0 %}
@@ -34,6 +34,11 @@ eleventyExcludeFromCollections: true
 
 {%- from "macros/post-card.njk" import card -%}
 
+
+{% extends "../layouts/base.njk" %}
+
+{% block content %}
+
 <h2>General Stats</h2>
 <ul>
 	<li>Total number of words: {{totalWords}}</li>
@@ -51,6 +56,7 @@ eleventyExcludeFromCollections: true
 <h2>Writing calendar</h2>
 
 {% include "word-count-calendar.njk" %}
+{# {% include "word-cloud.njk" %} #}
 
 <h2>Posts per tag</h2>
 <ul>
@@ -61,3 +67,9 @@ eleventyExcludeFromCollections: true
 		</li>
 	{% endfor %}
 </ul>
+
+
+
+
+
+{% endblock content %}

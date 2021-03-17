@@ -10,7 +10,6 @@ const mdFootnotes = require("markdown-it-footnote");
 const slugify = require("slugify");
 const criticalCss = require("eleventy-critical-css");
 
-
 const manifestPath = path.resolve(
   __dirname,
   "public",
@@ -26,17 +25,23 @@ const manifest = isDev
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
 module.exports = function (eleventyConfig) {
-
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
+  // eleventyConfig.addPassthroughCopy({
+  //   "./node_modules/alpinejs/dist/alpine.js": "/assets/alpine.js",
+  // });
 
   eleventyConfig.addShortcode("bundledcss", function () {
     return manifest["main.css"]
       ? `<link href="${manifest["main.css"]}" rel="stylesheet" />`
       : "";
+  });
+
+  eleventyConfig.addShortcode("version", function () {
+    return String(Date.now());
   });
 
   eleventyConfig.addShortcode("bundledjs", function () {
@@ -55,11 +60,14 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("excerpt", (post) => {
-    // this is filtering the HTML, not the markdown
-    let content = post.replace(/(<([^>]+)>)/gi, ""); //remove tags
-    content = content.replace("tl;dr", ""); // remove tl;dr
-    content = content.replace(/([\[\d\]]*)/g, ""); // remove any footnote remnants
+    const content = clean(post);
     return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
+  });
+
+  eleventyConfig.addFilter("wordCount", (post) => {
+    // this is filtering the HTML, not the markdown
+    const content = clean(post);
+    return content.split(" ").length;
   });
 
   eleventyConfig.addFilter("readableDate", (dateObj) => {
@@ -75,7 +83,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("nbsp", (data) => {
-    return data.split(" ").join("&nbsp;")
+    return data.split(" ").join("&nbsp;");
   });
 
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
@@ -174,4 +182,12 @@ module.exports = function (eleventyConfig) {
       markdownTemplateEngine: "njk",
     },
   };
+};
+
+const clean = function (post) {
+  // this is filtering the HTML, not the markdown
+  let content = post.replace(/(<([^>]+)>)/gi, ""); //remove tags
+  content = content.replace("tl;dr", ""); // remove tl;dr
+  content = content.replace(/([\[\d\]]*)/g, ""); // remove any footnote remnants
+  return content;
 };

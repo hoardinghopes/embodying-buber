@@ -1,7 +1,8 @@
----
-layout: base
----
+<!-- home -->
+{% extends "./base.njk" %}
 
+{% block content %}
+<!-- home -->
 <header class="hero">
   <div class="hero-content">
     <div class="intro">
@@ -36,3 +37,4 @@ layout: base
 </section>
 
 <a class="all-posts-link" href="{{ '/blog/' | url }}">View All Posts</a>
+{% endblock content %}

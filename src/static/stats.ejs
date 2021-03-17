@@ -4,18 +4,24 @@ permalink: /stats.json
 <%
 
 function wordCount(s) {
-	return s.split(/\s+/).length; 
+  if (s === undefined) return  0;
+  
+  let bits = s.split(/\s+/);
+  if (bits) {
+	   return bits.length;
+   }
+   return 0;
 }
 
-totalPosts=collections.posts.length; 
-totalWords=0; 
-let	tags={}; 
+totalPosts=collections.posts.length;
+totalWords=0;
+let	tags={};
 let posts = [];
 
 collections.posts.forEach((p,i)=> {
 	if(i === 0) firstPost = p;
 	if(i === collections.posts.length-1) lastPost = p;
-	
+
 	p.data.tags.forEach(t => {
 		if(!tags[t]) tags[t] = 0;
 		tags[t]++;

@@ -1,21 +1,16 @@
 const gitinfo = require("../data/gitinfo");
-const images = require("../data/images");
 
 const isDev = process.env.APP_ENV === "development";
 
 module.exports = {
-  layout: "post",
-  tags: ["posts"],
-  epistemic: {
-    status: "1. not sure of this yet, early rumblings only",
-    effort: "1. flippant thought, thrown down",
-  },
-  permalink: "posts/{{title | slug}}/index.html",
+  layout: "summary",
+  tags: ["summaries"],
+  permalink: "/250words/{{title | slug}}/index.html",
   draft: false,
-  type: "post",
+  type: "summary",
   eleventyComputed: {
     banner: (data) => {
-      return images[data.page.fileSlug];
+      return false;
     },
     permalink: (data) => {
       if (isDev) {
@@ -34,6 +29,9 @@ module.exports = {
     },
     lastModified: (data) => {
       return gitinfo.lastModified(data.page.inputPath);
+    },
+    relatedPost: (data) => {
+      return data.page.fileSlug;
     },
   },
 };

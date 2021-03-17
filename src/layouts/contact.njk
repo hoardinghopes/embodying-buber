@@ -1,6 +1,6 @@
----
-layout: base.njk
----
+{% extends "./base.njk" %}
+
+{% block content %}
 
 <div class="contact">
   <h1>{{ title }}</h1>
@@ -25,3 +25,6 @@ layout: base.njk
   <h2>Thanks for sending your feedback</h2>
 </div>
 </div>
+
+
+{% endblock content %}

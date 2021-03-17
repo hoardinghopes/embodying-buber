@@ -2,7 +2,7 @@
 date: 2021-02-17
 title: "An interlude: walking into walls"
 description: "Stop smoking your bees into stupification"
-tags: [interludes, awareness]
+tags: [interludes, awareness, walking]
 epistemic:
   status: 5. I'm happy with this – it's an experiential experiment. I've done my bit, so it's time for you to do yours.
   effort: 2. This writing just flowed out.
