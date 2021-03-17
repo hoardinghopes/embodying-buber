@@ -1,9 +1,12 @@
 ---
-layout: base.njk
 permalink: /blog/
 title: All Posts
 description: A list of all posts on the site
 ---
+
+{% extends "./layouts/base.njk" %}
+
+{% block content %}
 
 <h1>All Posts</h1>
 
@@ -12,4 +15,9 @@ description: A list of all posts on the site
 </div>
 
 {% set postslist = collections.posts %}
+{% set writingType = "article" %}
 {% include "posts-list.njk" %}
+
+
+
+{% endblock content %}
