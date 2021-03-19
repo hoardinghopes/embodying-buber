@@ -4,9 +4,9 @@ const isDev = process.env.APP_ENV === "development";
 
 module.exports = {
   layout: "summary",
-  tags: ["summaries"],
-  permalink: "/250words/{{title | slug}}/index.html",
-  draft: false,
+  tags: ["summary"],
+  permalink: "/summaries/{{title | slug}}/index.html",
+  draft: true,
   type: "summary",
   eleventyComputed: {
     banner: (data) => {
@@ -29,9 +29,6 @@ module.exports = {
     },
     lastModified: (data) => {
       return gitinfo.lastModified(data.page.inputPath);
-    },
-    relatedPost: (data) => {
-      return data.page.fileSlug;
     },
   },
 };

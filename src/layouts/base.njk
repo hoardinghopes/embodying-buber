@@ -26,10 +26,61 @@
     <link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}"/>
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link rel="icon" type= “image/x-icon” href="/images/favicon.ico">
+
+
+
+      {% bundledjs%}
+
+
+
+<script type="text/javascript">
+
+
+
+      function setUp() {
+        let links = document.querySelectorAll("a");
+
+        let link = null;
+        for (let i = 0; i < links.length; i++) {
+          link = links[i];
+
+          // footnote links live within <sup> elements
+          if (link.parentNode.nodeName == "SUP") {
+            continue;
+          }
+          // footnotes (which have a return link) have "footnote-backref" class
+          if (link.classList.contains("footnote-backref")) {
+            continue;
+          }
+
+          // <a href="xxx"><em>link text</em></a> means we have to give the href to the <em> as it will be the event target
+          link.setAttribute(
+            "x-on:click.prevent",
+            `$dispatch('flash','${link.href}')`
+          );
+        }
+        return {
+          show: false,
+        };
+      }
+
+      function changePage(e) {
+        setTimeout(() => (location.href = e.detail), 450);
+      }
+</script>
+
     {% bundledcss %}
   </head>
-  <body>
-    <div class="layout-wrapper"{% if banner %} style="background-image: url('{{ banner.src }}')"{% endif %}>
+  <body
+    x-cloak
+    x-data="setUp();"
+    @load.window="setTimeout(function(){ show = true}, 500)"
+    @flash.window="show = false;changePage($event)"
+    x-show.transition.opacity.duration.450ms="show"
+  >
+    <div
+    class="layout-wrapper"
+    {% if banner %} style="background-image: url('{{ banner.src }}')"{% endif %}>
 
       <header class="header">
         <div class="header__content">
@@ -58,7 +109,9 @@
       </footer>
     </div>
 
-    {# {% bundledjs %} #}
+
     {% clickystats %}
+
+
   </body>
 </html>

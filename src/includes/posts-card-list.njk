@@ -1,0 +1,11 @@
+{%- from "macros/home-post-card.njk" import card -%}
+
+<ul class="post-list">
+  {% for post in postslist | reverse %}
+
+<li>
+  {% set thumb = images[post.fileSlug] -%}
+		{{ card(post, thumb) | safe }}
+</li>
+  {% endfor %}
+</ul>

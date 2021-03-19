@@ -9,11 +9,11 @@ const baseFilename = isDev ? "main" : "main.[contenthash]";
 module.exports = {
   entry: [
     path.resolve(__dirname, "src", "assets", "js", "main.js"),
-    path.resolve(__dirname, "src", "assets", "css", "main.css")
+    path.resolve(__dirname, "src", "assets", "css", "main.css"),
   ],
   output: {
     path: path.resolve(__dirname, "public", "assets"),
-    filename: `${baseFilename}.js`
+    filename: `${baseFilename}.js`,
   },
 
   module: {
@@ -25,10 +25,10 @@ module.exports = {
           {
             loader: "babel-loader",
             options: {
-              presets: ["@babel/preset-env"]
-            }
-          }
-        ]
+              presets: ["@babel/preset-env"],
+            },
+          },
+        ],
       },
       {
         test: /\.css$/,
@@ -37,17 +37,17 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
-              importLoaders: 1
-            }
+              importLoaders: 1,
+            },
           },
-          "postcss-loader"
-        ]
-      }
-    ]
+          "postcss-loader",
+        ],
+      },
+    ],
   },
 
   plugins: [
     new WebpackManifestPlugin({ publicPath: "/assets/" }),
-    new MiniCssExtractPlugin({ filename: `${baseFilename}.css` })
-  ]
+    new MiniCssExtractPlugin({ filename: `${baseFilename}.css` }),
+  ],
 };

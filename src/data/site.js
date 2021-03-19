@@ -14,6 +14,11 @@ module.exports = {
       url: "/blog/",
       external: false,
     },
+    // {
+    //   text: "Summaries",
+    //   url: "/summaries/",
+    //   external: false,
+    // },
     {
       text: "Contact",
       url: "/contact/",
@@ -35,11 +40,6 @@ module.exports = {
     {
       text: "Stats",
       url: "/stats/",
-      external: false,
-    },
-    {
-      text: "Summaries",
-      url: "/summaries/",
       external: false,
     },
   ],

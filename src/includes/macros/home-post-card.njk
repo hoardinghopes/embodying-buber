@@ -7,6 +7,7 @@
     {% set date = post.data.date %}
 
     <div class="post-card alt">
+      {% if thumb.src %}
         <div class="meta">
             <div class="photo" style="background-image: url({{thumb.src}})"></div>
             <ul class="details">
@@ -25,10 +26,11 @@
                         </ul>
                     </li>
                 {% endif %}
-                <li>{{post.templateContent | striptags | wordcount }} words</li>
+                <li>{{ post | readingTime }} read</li>
             </ul>
         </div>
-        <div class="description">
+        {% endif %}
+        <div class="description {% if not thumb.src %}full{% endif %}">
             <h1><a href="{{url}}">{{ title }}</a></h1>
             <p>{{ date | readableDate }} - {{post.templateContent | striptags | wordcount }} words</p>
             <p>{{ post.templateContent | excerpt }}</p>
