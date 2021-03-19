@@ -4,8 +4,8 @@
   {% for post in postslist | reverse %}
 
 <li>
-  {% set thumb = images[post.fileSlug] -%}
-		{{ card(post, thumb) | safe }}
+  {% set image = images[post.fileSlug] -%}
+		{{ card(post, image) | safe }}
 </li>
   {% endfor %}
 </ul>

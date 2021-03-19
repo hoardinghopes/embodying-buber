@@ -1,4 +1,4 @@
-{% macro card(post, thumb) %}
+{% macro card(post, image) %}
 
     {% set url = post.url if post.url else
         "/" %}
@@ -7,9 +7,11 @@
     {% set date = post.data.date %}
 
     <div class="post-card alt">
-      {% if thumb.src %}
+      {% if image.src %}
         <div class="meta">
-            <div class="photo" style="background-image: url({{thumb.src}})"></div>
+            <div class="photo" style="background-image: url({{image.thumb}})">
+              <!--<img src="{{image.thumb}}" class="square-image"/>-->
+            </div>
             <ul class="details">
                 {%if date %}
                     <li class="date">{{ date | readableDate }}</li>
@@ -30,7 +32,7 @@
             </ul>
         </div>
         {% endif %}
-        <div class="description {% if not thumb.src %}full{% endif %}">
+        <div class="description {% if not image.src %}full{% endif %}">
             <h1><a href="{{url}}">{{ title }}</a></h1>
             <p>{{ date | readableDate }} - {{post.templateContent | striptags | wordcount }} words</p>
             <p>{{ post.templateContent | excerpt }}</p>

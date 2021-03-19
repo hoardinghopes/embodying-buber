@@ -42,6 +42,14 @@
   background-position: center;
   /* transition: transform 0.2s; */
 }
+
+.post-card img.square-image {
+  display: block;
+  width: 245px;
+  max-width: 245px;
+  height: 245px;
+  max-height: 245px;
+}
 .post-card .details,
 .post-card .details ul {
   margin: auto;
