@@ -9,6 +9,7 @@ const markdownIt = require("markdown-it");
 const mdFootnotes = require("markdown-it-footnote");
 const slugify = require("slugify");
 const criticalCss = require("eleventy-critical-css");
+const { minify } = require("terser");
 
 const manifestPath = path.resolve(
   __dirname,
@@ -30,14 +31,17 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
-  // eleventyConfig.addPassthroughCopy({
-  //   "./node_modules/alpinejs/dist/alpine.js": "/assets/alpine.js",
-  // });
 
-  eleventyConfig.addShortcode("bundledcss", function () {
-    return manifest["main.css"]
-      ? `<link href="${manifest["main.css"]}" rel="stylesheet" />`
-      : "";
+  eleventyConfig.addShortcode("bundledcss", function (headOrFoot) {
+    if (headOrFoot == "head") {
+      return manifest["main.css"]
+        ? `<link rel="preload" href="${manifest["main.css"]}" as="style">`
+        : "";
+    } else {
+      return manifest["main.css"]
+        ? `<link href="${manifest["main.css"]}" rel="stylesheet" defer>`
+        : "";
+    }
   });
 
   eleventyConfig.addShortcode("version", function () {
@@ -116,6 +120,24 @@ module.exports = function (eleventyConfig) {
       lower: true,
     });
   });
+
+  eleventyConfig.addNunjucksAsyncFilter(
+    "jsmin",
+    async function (code, callback) {
+      if (!isDev) {
+        try {
+          const minified = await minify(code);
+          callback(null, minified.code);
+        } catch (err) {
+          console.error("Terser error: ", err);
+          // Fail gracefully.
+          callback(null, code);
+        }
+      } else {
+        callback(null, code);
+      }
+    }
+  );
 
   eleventyConfig.addCollection("tagList", function (collection) {
     let tagSet = new Set();
