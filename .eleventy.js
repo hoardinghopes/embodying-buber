@@ -7,6 +7,7 @@ const isDev = process.env.APP_ENV === "development";
 const site = require("./src/data/site");
 const markdownIt = require("markdown-it");
 const mdFootnotes = require("markdown-it-footnote");
+const mdExternalLinks = require("markdown-it-external-links");
 const slugify = require("slugify");
 const criticalCss = require("eleventy-critical-css");
 const { minify } = require("terser");
@@ -170,7 +171,15 @@ module.exports = function (eleventyConfig) {
     return [...tagSet].sort();
   });
 
-  const markdownLib = markdownIt({ html: true }).use(mdFootnotes);
+  const markdownLib = markdownIt({
+    html: true,
+  })
+    .use(mdFootnotes)
+    .use(mdExternalLinks, {
+      externalClassName: "external",
+      externalRel: "noopener noreferrer external",
+      externalTarget: "_blank",
+    });
   eleventyConfig.setLibrary("md", markdownLib);
 
   eleventyConfig.setBrowserSyncConfig({
