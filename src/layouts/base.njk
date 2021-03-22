@@ -16,10 +16,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% if not draft -%}
-      <meta name="buildtime" content="{{site.buildtime | readableDateTime}}">
-      {% include "gitinfo.njk" %}
-      <meta name="date.created" content="{{page.date}}"/>
-      <meta name="date.updated" content="{{lastModified}}"/>
       {% include "meta-head.njk" -%}
     {%- endif %}
 

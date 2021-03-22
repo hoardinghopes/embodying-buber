@@ -1,3 +1,8 @@
+<meta name="buildtime" content="{{site.buildtime | readableDateTime}}">
+{% include "gitinfo.njk" %}
+    <meta name="date.created" content="{{page.date}}"/>
+    <meta name="date.updated" content="{{lastModified}}"/>
+
 {% set desc = description %}
 {%- if not desc %}
   {%- set desc = content | striptags | truncate(140) -%}
@@ -32,8 +37,14 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
-      "author": "{{site.author.name}}",
-      "publisher": "{{site.author.name}}",
+      "author": {
+        "@type": "Person",
+        "name": "{{site.author.name}}"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "{{site.author.name}}"
+      },
       "mainEntityOfPage": {
         "@type": "WebPage"
       },
