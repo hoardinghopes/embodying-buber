@@ -28,48 +28,45 @@
     <link rel="icon" type= “image/x-icon” href="/images/favicon.ico">
 
 
+      {# this pulls in the alpine.js #}
+      {% bundledjs %}
 
-      {% bundledjs%}
-
-
-
-<script type="text/javascript">
-
-
-
+      {# capture the JS content as a Nunjucks variable  #}
+      {% set js %}
       function setUp() {
         let links = document.querySelectorAll("a");
-
         let link = null;
         for (let i = 0; i < links.length; i++) {
           link = links[i];
-
-          // footnote links live within <sup> elements
-          if (link.parentNode.nodeName == "SUP") {
+          /*footnote links live within <sup> elements*/ if (
+            link.parentNode.nodeName == "SUP"
+          ) {
             continue;
           }
-          // footnotes (which have a return link) have "footnote-backref" class
-          if (link.classList.contains("footnote-backref")) {
+          /*footnotes (which have a return link) have "footnote-backref" class*/ if (
+            link.classList.contains("footnote-backref")
+          ) {
             continue;
           }
-
-          // <a href="xxx"><em>link text</em></a> means we have to give the href to the <em> as it will be the event target
-          link.setAttribute(
+          /*<a href="xxx"><em>link text</em></a> means we have to give the href to the <em> as it will be the event target*/ link.setAttribute(
             "x-on:click.prevent",
             `$dispatch('flash','${link.href}')`
           );
         }
-        return {
-          show: false,
-        };
+        return { show: false };
       }
-
       function changePage(e) {
         setTimeout(() => (location.href = e.detail), 450);
       }
-</script>
+      {% endset %}
+       {# feed it through our jsmin filter to minify  #}
+       <script>{{ js | jsmin | safe }}</script>
 
-    {% bundledcss %}
+
+
+
+
+    {% bundledcss "head" %}
   </head>
   <body
     x-cloak
@@ -112,6 +109,6 @@
 
     {% clickystats %}
 
-
+    {% bundledcss "foot" %}
   </body>
 </html>
