@@ -33,7 +33,7 @@
     <meta property="twitter:description" content="{{ desc | escape }}">
 {%- endif %}
 
-    <script type="application/ld+json">
+    {%- set structuredData %}
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
@@ -55,4 +55,5 @@
       "datePublished": "{{page.date}}",
       "dateModified" : "{{lastModified}}"
     }
-    </script>
+    {% endset -%}
+    <script type="application/ld+json">{{ structuredData | jsonmin | safe }}</script>

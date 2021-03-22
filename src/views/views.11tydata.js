@@ -10,9 +10,7 @@ module.exports = {
     },
 
     lastModified: (data) => {
-      const lm = gitinfo.lastModified(data.page.inputPath);
-      console.log(`${data.page.inputPath}: ${lm}`);
-      return lm;
+      return gitinfo.lastModified(data.page.inputPath);
     },
   },
 };

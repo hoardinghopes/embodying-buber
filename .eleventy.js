@@ -68,6 +68,10 @@ module.exports = function (eleventyConfig) {
     return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
   });
 
+  eleventyConfig.addFilter("jsonmin", (input) => {
+    return JSON.stringify(JSON.parse(input));
+  });
+
   eleventyConfig.addFilter("wordCount", (post) => {
     // this is filtering the HTML, not the markdown
     const content = clean(post);
