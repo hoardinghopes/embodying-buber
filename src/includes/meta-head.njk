@@ -13,13 +13,13 @@
 {%- if desc %}
     <meta property="og:description" content="{{ desc | escape }}">
 {%- endif %}
+{#- banner variable set in base.njk -#}
+{%- if banner.src %}
     <meta name="og:image" content="{{ site.url + banner.src}}">
 
-    <meta name="twitter:card" content="summary_large_image">
-{#- banner variable set in base.njk -#}
-{%- if banner %}
     <meta name="twitter:image" content="{{ site.url + banner.src}}">
 {%- endif -%}
+    <meta name="twitter:card" content="summary_large_image">
 {%- if site.author.twitterHandle %}
     <meta name="twitter:creator" content="@{{ site.author.twitterHandle | replace('@', '') }}"/>
 {%- endif %}
@@ -32,8 +32,15 @@
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
+      "author": "{{site.author.name}}",
+      "publisher": "{{site.author.name}}",
+      "mainEntityOfPage": {
+        "@type": "WebPage"
+      }
       "headline": "{{ title }}",
+      {%- if banner.src %}
       "image": ["{{ site.url + banner.src}}"],
+      {% endif %}
       "datePublished": "{{page.date}}",
       "dateModified" : "{{lastModified}}"
     }
