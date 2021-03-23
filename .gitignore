@@ -4,4 +4,3 @@ npm-debug.*
 .DS_Store
 public
 bak
-**/*test*

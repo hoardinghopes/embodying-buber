@@ -1,8 +1,9 @@
 @import "fonts.css";
-@import "global.css";
-/* @import "tufte.css"; */
 @import "variables.css";
+
+@import "global.css";
 @import "typography.css";
+
 @import "post-list.css";
 @import "hero.css";
 @import "header.css";
@@ -11,6 +12,7 @@
 @import "about.css";
 @import "post-card.css";
 @import "form.css";
+@import "theme-switcher.css";
 
 .layout-wrapper {
   display: grid;
@@ -34,4 +36,12 @@
 .this-is-completely-not-used {
   /* dummy class to check that purgecss is running correctly */
   padding: 73px;
+}
+
+html.color-theme-in-transition,
+html.color-theme-in-transition *,
+html.color-theme-in-transition *:before,
+html.color-theme-in-transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
 }

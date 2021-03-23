@@ -6,7 +6,7 @@
   width: 100%;
   padding: 2rem;
   margin: 4rem auto;
-  background: #fff;
+  background: var(--secondary-dark);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -16,7 +16,7 @@
 }
 .inner-wrap {
   padding: 2rem;
-  background: #eae6e6;
+  background: var(--secondary);
   border-radius: 10px;
   margin-bottom: 1rem;
 }
@@ -27,7 +27,7 @@
 
 label {
   display: block;
-  color: #888;
+  color: var(--primary-light);
   margin-bottom: 1rem;
 }
 
@@ -57,10 +57,12 @@ textarea {
 button {
   min-width: 100%;
   font-size: var(--text-lg);
-  color: #5c6168;
+
   padding: 0.5rem 1rem;
-  background: #ced1d5;
-  border: 1px solid #5c6168;
+
+  color: var(--primary-light);
+  background: var(--secondary-dark);
+
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -70,9 +72,9 @@ button {
   box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
 }
 button:hover {
-  border: 1px solid #5c6168;
-  color: #fff;
-  background: #5c6168;
+  background: var(--primary-light);
+  color: var(--secondary-dark);
+
   -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
   -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
   box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);

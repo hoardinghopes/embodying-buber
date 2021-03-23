@@ -2,29 +2,30 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   height: 100%;
+  background-color: var(--background);
 }
 
 body {
   background-color: var(--background);
 }
-
+/*
 body::-webkit-scrollbar {
   width: 6px;
-}
+} */
 
 body {
-  scrollbar-width: thin;
-  scrollbar-color: color-mod(var(--color) alpha(90%)) var(--background);
+  /* scrollbar-width: thin;
+  scrollbar-color: color-mod(var(--color) alpha(90%)) var(--background); */
   height: 100%;
 }
-
+/*
 body::-webkit-scrollbar-track {
   background: var(--background);
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: color-mod(var(--color) alpha(90%));
-}
+} */
 
 *,
 *:before,
@@ -62,7 +63,8 @@ hr {
   /* purgecss ignore current */
   width: 100%;
   border: none;
-  background: color-mod(var(--color) a(20%));
+  background: var(--text);
+  opacity: 0.2;
   height: 1px;
   margin-top: 2rem;
 }
@@ -76,7 +78,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent);
+  color: var(--highlight);
 }
 
 ol {
@@ -106,7 +108,7 @@ table {
   caption-side: bottom;
   overflow-x: auto;
   min-width: 100%;
-  border: 1px solid color-mod(var(--color) alpha(30%));
+  /* border: 1px solid color-mod(var(--color) alpha(30%)); */
   margin-top: 1rem;
 }
 
@@ -116,7 +118,7 @@ table caption {
 
 td,
 th {
-  border: 1px solid color-mod(var(--color) alpha(30%));
+  /* border: 1px solid color-mod(var(--color) alpha(30%)); */
   padding: 0.5rem;
   text-align: left;
 }
@@ -161,12 +163,12 @@ img {
 
 /* purgecss start ignore */
 blockquote {
-  font-family: "Lora", serif;
+  font-family: var(--serif);
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 1rem;
-  border-left: 3px solid var(--accent);
-  background-color: #eae6e6;
+  border-left: 3px solid var(--secondary-light);
+  background-color: var(--secondary-dark);
 }
 
 blockquote h2 {
@@ -175,14 +177,14 @@ blockquote h2 {
 
 blockquote p {
   font-size: var(--text-lg);
-  color: #666;
+  color: var(--primary-light);
 }
 /* purgecss end ignore */
 pre {
   white-space: pre-wrap;
   tab-size: 2;
   font-size: 0.95rem;
-  border: 1px solid color-mod(var(--color) a(10%));
+  /* border: 1px solid color-mod(var(--color) a(10%)); */
   padding: 1rem;
   margin-top: 1rem;
 }
@@ -191,7 +193,7 @@ code,
 kbd {
   color: var(--accent);
   font-feature-settings: normal;
-  background: color-mod(var(--accent) a(20%));
+  /* background: color-mod(var(--accent) a(20%)); */
   color: var(--accent);
   padding: 1px 6px;
   margin: 0 2px;
