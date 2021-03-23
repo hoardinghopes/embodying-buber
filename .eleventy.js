@@ -1,3 +1,4 @@
+const CleanCSS = require("clean-css");
 const { DateTime } = require("luxon");
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -27,6 +28,8 @@ const manifest = isDev
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.setUseGitIgnore(false);
+
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
 
@@ -62,6 +65,10 @@ module.exports = function (eleventyConfig) {
       }
     }
     return "";
+  });
+
+  eleventyConfig.addFilter("cssmin", function (code) {
+    return new CleanCSS({}).minify(code).styles;
   });
 
   eleventyConfig.addFilter("excerpt", (post) => {
@@ -125,24 +132,6 @@ module.exports = function (eleventyConfig) {
       lower: true,
     });
   });
-
-  eleventyConfig.addNunjucksAsyncFilter(
-    "jsmin",
-    async function (code, callback) {
-      if (!isDev) {
-        try {
-          const minified = await minify(code);
-          callback(null, minified.code);
-        } catch (err) {
-          console.error("Terser error: ", err);
-          // Fail gracefully.
-          callback(null, code);
-        }
-      } else {
-        callback(null, code);
-      }
-    }
-  );
 
   eleventyConfig.addCollection("tagList", function (collection) {
     let tagSet = new Set();

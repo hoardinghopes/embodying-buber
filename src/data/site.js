@@ -47,7 +47,7 @@ module.exports = {
   clickystats: {
     install: true,
     script: `<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101301338);</script>
-      <script async src='//static.getclicky.com/js'></script>
-      <noscript><img alt='Clicky' width='1' height='1' src='//in.getclicky.com/101301338ns.gif' style='position:absolute; left: -1000, top: -1000'/></noscript>`,
+      <script async src='https://static.getclicky.com/js'></script>
+      <noscript><img alt='Clicky' width='1' height='1' src='https://in.getclicky.com/101301338ns.gif' style='position:absolute; left: -1000, top: -1000'/></noscript>`,
   },
 };

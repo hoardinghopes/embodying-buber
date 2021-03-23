@@ -32,7 +32,8 @@
   <h2 class="post-list__heading"></h2>
 
   {% set postslist = collections.posts | head(-10) %}
-  {% include "posts-card-list.njk" %}
+  {# {% include "posts-card-list.njk" %} #}
+  {% include "posts-list.njk" %}
 
 </section>
 
