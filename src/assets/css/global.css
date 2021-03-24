@@ -225,3 +225,9 @@ mark {
   white-space: nowrap;
   width: 1px;
 }
+
+/* stats page */
+#chart-holder {
+  background-color: var(--secondary);
+  margin-top: 2rem;
+}

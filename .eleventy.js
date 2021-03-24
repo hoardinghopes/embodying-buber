@@ -23,7 +23,8 @@ const manifestPath = path.resolve(
 const manifest = isDev
   ? {
       "main.js": "/assets/main.js",
-      "main.css": "/assets/main.css",
+      "stats.js": "/assets/stats.js",
+      "styles.css": "/assets/main.css",
     }
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
@@ -38,12 +39,12 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("bundledcss", function (headOrFoot) {
     if (headOrFoot == "head") {
-      return manifest["main.css"]
-        ? `<link rel="preload" href="${manifest["main.css"]}" as="style">`
+      return manifest["styles.css"]
+        ? `<link rel="preload" href="${manifest["styles.css"]}" as="style">`
         : "";
     } else {
-      return manifest["main.css"]
-        ? `<link href="${manifest["main.css"]}" rel="stylesheet" defer>`
+      return manifest["styles.css"]
+        ? `<link href="${manifest["styles.css"]}" rel="stylesheet" defer>`
         : "";
     }
   });
@@ -52,10 +53,13 @@ module.exports = function (eleventyConfig) {
     return String(Date.now());
   });
 
-  eleventyConfig.addShortcode("bundledjs", function () {
-    return manifest["main.js"]
-      ? `<script src="${manifest["main.js"]}"></script>`
-      : "";
+  eleventyConfig.addShortcode("bundledjs", function (which) {
+    let script = manifest[`${which}.js`];
+    if (script) {
+      return `<script src="${script}"></script>`;
+    } else {
+      return "";
+    }
   });
 
   eleventyConfig.addShortcode("clickystats", function () {

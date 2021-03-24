@@ -55,8 +55,7 @@ eleventyExcludeFromCollections: true
 
 <h2>Writing calendar</h2>
 
-{% include "word-count-calendar.njk" %}
-{# {% include "word-cloud.njk" %} #}
+<div id="chart-holder" style="height: 300px;"></div>
 
 <h2>Posts per tag</h2>
 <ul>
@@ -69,7 +68,6 @@ eleventyExcludeFromCollections: true
 </ul>
 
 
-
-
+{% bundledjs "stats" %}
 
 {% endblock content %}
