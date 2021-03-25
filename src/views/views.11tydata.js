@@ -8,7 +8,9 @@ module.exports = {
     banner: (data) => {
       return images[data.page.fileSlug];
     },
-
+    isDev: (data) => {
+      return isDev;
+    },
     lastModified: (data) => {
       return gitinfo.lastModified(data.page.inputPath);
     },

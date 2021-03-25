@@ -67,12 +67,18 @@ eleventyExcludeFromCollections: true
   The best way to do this is in plain javascript, so as an .ejs file.
   Of course, I can't include that .ejs format in this .njk file, so I am writing /src/views/statistics.ejs out to /statistics/, and then pulling that in here via an iframe.
 #}
+{% if isDev %}
+{% set iframeURL = "/statistics/" %}
+{% else %}
+  {% set iframeURL = site.url + "/statistics/"%}
+{% endif %}
+
 <style media="screen">
   .stats-iframe {
     overflow: hidden;
   }
 </style>
-<iframe src="/statistics" class="stats-iframe" width="400" height="500" scrolling="no"></iframe>
+<iframe src="{{ iframeURL }}" class="stats-iframe" width="400" height="500" scrolling="no"></iframe>
 
 
 <h2>Posts per tag</h2>
