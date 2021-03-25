@@ -24,7 +24,7 @@ if (!isDev) {
 
   [].push.apply(plugins, [
     purgecss({
-      content: ["src/**/*.njk", "src/**/*.md", "src/**/*.js"],
+      content: ["src/**/*.njk", "src/**/*.md", "src/**/*.js", "src/**/*.ejs"],
       defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
     }),
     cssnano({

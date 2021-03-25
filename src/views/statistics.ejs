@@ -1,0 +1,209 @@
+---
+title: Site statistics
+description: How many words?
+permalink: /statistics/
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<link href="<%= manifest.getStyles() %>" rel="stylesheet">
+
+<style media="screen">
+  .pane {
+    max-width: 700px;
+    height: 352px;
+  }
+  .floatleft {
+    float:left;
+  }
+  .floatright {
+    float:right;
+  }
+  .pane ul {
+    margin-top: 0;
+    padding-right: 1.2rem;
+  }
+  .pane li {
+    font-size: var(--text-base);
+  }
+  .mt-1-2 {
+    margin-top: 1.2rem;
+  }
+</style>
+</head>
+<body>
+<%_
+
+const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+let totals = [
+  // [totalWordCount, numberofDaysMakingThatCount]
+  [0, 0],
+  [0, 0],
+  [0, 0],
+  [0, 0],
+  [0, 0],
+  [0, 0],
+  [0, 0],
+];
+
+
+
+function readableDate(dateStr) {
+  // I don't know how to get any useful libraries in here, as `require` isn't recognised >:-(
+  // therefore, time to extract the date manually
+
+  let parts = dateStr.toString().split(" ");
+  let day = parts[0];
+  let month = parts[1];
+  let date = parts[2];
+  let year = parts[3];
+
+  return `${date} ${month} ${year}`;
+}
+
+function wordCount(s) {
+  if (s === undefined) return  0;
+
+  let bits = s.split(/\s+/);
+  if (bits) {
+	   return bits.length;
+   }
+   return 0;
+}
+
+let posts = [];
+let totalWords = 0;
+let totalPosts = collections.posts.length;
+let firstPost, lastPost;
+
+collections.posts.forEach((p,i)=> {
+
+  let wc = wordCount(p.templateContent);
+  totalWords += wc;
+
+	let post = {
+		title: p.data.title,
+		date: p.data.date,
+		wordCount: wc
+	};
+	posts.push(post)
+
+  let date = new Date(post.date);
+  totals[date.getDay()][0] += wc;
+  totals[date.getDay()][1] += 1;
+
+  if(i == 0) {
+    firstPost = p;
+  } else if (i == totalPosts - 1) {
+    lastPost = p;
+  }
+});
+
+let data = [
+  {
+    "day": "Sun",
+    "total": 0,
+    "average": 0
+  },
+  {
+    "day": "Mon",
+    "total": 0,
+    "average": 0
+  },
+  {
+    "day": "Tue",
+    "total": 0,
+    "average": 0
+  },
+  {
+    "day": "Wed",
+    "total": 0,
+    "average": 0
+  },
+  {
+    "day": "Thu",
+    "total": 0,
+    "average": 0
+  },
+  {
+    "day": "Fri",
+    "total": 0,
+    "average": 0
+  },
+  {
+    "day": "Sat",
+    "total": 0,
+    "average": 0
+  },
+];
+
+
+for (let i = 0; i < totals.length; i++) {
+  let wc = totals[i][0];
+  let days = totals[i][1];
+  let av = Math.round(wc / days);
+  let dow = weekdays[i];
+  // console.log(`${dow}: ${wc} : ${days} : ${av}`);
+  data[i]["total"] = wc;
+  data[i]["average"] = av;
+}
+
+
+_%>
+
+
+<h2>Writing calendar</h2>
+<div class="pane post-card">
+<div class="floatright mt-1-2">
+  <ul>
+    <%_ data.forEach(row => { _%>
+      <li><%= row.day %>: <%= row.total %> words total, av. <%= row.average %> per day.</li>
+    <%_}); _%>
+    </ul>
+</div>
+<div class="floatleft mt-1-2">
+<pre><code class="language-vegalite">
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Words written per day",
+  "background": "#E9EFE6",
+  "view": {
+    "fill": "#B6BCB3"
+  },
+  "data": {
+    "values": <%- JSON.stringify(data) %>
+  },
+  "repeat": {
+    "layer": ["total", "average"]
+  },
+  "spec": {
+    "mark": "bar",
+    "encoding": {
+      "x": {
+        "field": "day",
+        "title": "Days"
+      },
+      "y": {
+        "field": {"repeat": "layer"},
+        "aggregate": "sum",
+        "type": "quantitative",
+        "title": "Word count"
+      },
+      "color": {
+        "datum": {"repeat": "layer"},
+        "type": "nominal",
+        "scale": {"range": ["#FFFFFF", "#493C3F"]}
+      }
+    }
+  }
+}
+</code></pre>
+</div>
+</div>
+
+</body>
+</html>

@@ -59,18 +59,21 @@
 
       <footer class="footer">
         <div class="footer__content">
-          {% if banner %}{{ banner.attribute | safe }}
-          {% endif %}
-
+          {# {% if banner %}{{ banner.attribute | safe }}{% endif %} #}
           {% include "footer-links.njk" %}
         </div>
-
       </footer>
     </div>
 
 
-    {% clickystats %}
 
     {% bundledcss "foot" %}
+
+    {# if we need page specific scripts, they should be called here, after the styles have been brought in #}
+    {# {% if permalink == "/stats/" %}
+      {% bundledjs "stats" %}
+    {% endif %} #}
+
+    {% clickystats %}
   </body>
 </html>

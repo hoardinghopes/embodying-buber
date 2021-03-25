@@ -6,47 +6,28 @@ const fs = require("fs");
 const path = require("path");
 const isDev = process.env.APP_ENV === "development";
 const site = require("./src/data/site");
+const manifest = require("./src/data/manifest");
 const markdownIt = require("markdown-it");
 const mdFootnotes = require("markdown-it-footnote");
 const mdExternalLinks = require("markdown-it-external-links");
 const slugify = require("slugify");
 const criticalCss = require("eleventy-critical-css");
 const { minify } = require("terser");
-
-const manifestPath = path.resolve(
-  __dirname,
-  "public",
-  "assets",
-  "manifest.json"
-);
-
-const manifest = isDev
-  ? {
-      "main.js": "/assets/main.js",
-      "stats.js": "/assets/stats.js",
-      "styles.css": "/assets/main.css",
-    }
-  : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
+const charts = require("eleventy-charts");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
 
+  eleventyConfig.addPlugin(charts);
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
 
   eleventyConfig.setDataDeepMerge(true);
-  eleventyConfig.addPassthroughCopy({ "src/static": "/" });
+  eleventyConfig.addPassthroughCopy({ "src/static/": "/" });
 
   eleventyConfig.addShortcode("bundledcss", function (headOrFoot) {
-    if (headOrFoot == "head") {
-      return manifest["styles.css"]
-        ? `<link rel="preload" href="${manifest["styles.css"]}" as="style">`
-        : "";
-    } else {
-      return manifest["styles.css"]
-        ? `<link href="${manifest["styles.css"]}" rel="stylesheet" defer>`
-        : "";
-    }
+    let styles = manifest.getStyles();
+    return `<link href="${styles}" ${headOrFoot == "head" ? 'rel="preload" as="style"' : 'rel="stylesheet"'}>`;
   });
 
   eleventyConfig.addShortcode("version", function () {
@@ -54,9 +35,11 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addShortcode("bundledjs", function (which) {
-    let script = manifest[`${which}.js`];
+    let script = manifest.getScripts(which);
     if (script) {
-      return `<script src="${script}"></script>`;
+      return `<script src="${script}" ${
+        which !== "main" ? "defer" : ""
+      }></script>`;
     } else {
       return "";
     }
@@ -176,7 +159,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLib);
 
   eleventyConfig.setBrowserSyncConfig({
-    files: [manifestPath],
+    files: [manifest.path],
     callbacks: {
       ready: function (err, bs) {
         bs.addMiddleware("*", (req, res) => {

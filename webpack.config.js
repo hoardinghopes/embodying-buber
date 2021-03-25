@@ -7,14 +7,13 @@ const isDev = process.env.APP_ENV === "development";
 const baseFilename = isDev ? "main" : "main.[contenthash]";
 
 module.exports = {
-  entry: {
-    main: path.resolve(__dirname, "src", "assets", "js", "main.js"),
-    stats: path.resolve(__dirname, "src", "assets", "js", "stats.js"),
-    styles: path.resolve(__dirname, "src", "assets", "css", "main.css"),
-  },
+  entry: [
+    path.resolve(__dirname, "src", "assets", "js", "main.js"),
+    path.resolve(__dirname, "src", "assets", "css", "main.css"),
+  ],
   output: {
     path: path.resolve(__dirname, "public", "assets"),
-    filename: isDev ? "[name].js" : "[name].[contenthash].js",
+    filename: `${baseFilename}.js`,
   },
 
   module: {

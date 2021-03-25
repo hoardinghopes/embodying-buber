@@ -29,6 +29,7 @@
     "clean-css": "^5.1.2",
     "css-loader": "^5.0.1",
     "cssnano": "^4.1.10",
+    "eleventy-charts": "^1.0.3",
     "eleventy-critical-css": "^0.2.2",
     "eleventy-plugin-reading-time": "^0.0.1",
     "file-loader": "^6.2.0",
@@ -46,8 +47,6 @@
     "webpack-manifest-plugin": "^3.0.0"
   },
   "dependencies": {
-    "chart.js": "^2.9.4",
-    "chartkick": "^3.2.1",
     "ejs": "^3.1.6",
     "html-minifier": "^4.0.0",
     "postcss": "^8.2.6",
