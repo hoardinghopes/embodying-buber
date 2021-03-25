@@ -19,15 +19,9 @@ const manifest = isDev
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
 function getDetails(data) {
-  console.log(`isDev: ${isDev}`);
-  console.log(`retrieving ${data}`);
-  console.log(manifest);
-
   if (data === "style") {
-    console.log(manifest["main.css"]);
     return manifest["main.css"];
   } else {
-    console.log(manifest["main.js"]);
     return manifest["main.js"];
   }
 }

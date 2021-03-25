@@ -30,10 +30,6 @@ module.exports = function (eleventyConfig) {
     return `<link href="${styles}" ${headOrFoot == "head" ? 'rel="preload" as="style"' : 'rel="stylesheet"'}>`;
   });
 
-  eleventyConfig.addShortcode("version", function () {
-    return String(Date.now());
-  });
-
   eleventyConfig.addShortcode("bundledjs", function (which) {
     let script = manifest.getScripts(which);
     if (script) {
@@ -41,6 +37,9 @@ module.exports = function (eleventyConfig) {
         which !== "main" ? "defer" : ""
       }></script>`;
     } else {
+      console.error(
+        `ERROR: no '${which}' script found (.eleventy.js 'bundledjs' shortcode)`
+      );
       return "";
     }
   });

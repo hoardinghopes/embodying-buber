@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <!-- {{page.inputPath}} -->
 <html lang="en">
@@ -36,10 +34,7 @@
     @flash.window="show = false;changePage($event)"
     x-show.transition.opacity.duration.450ms="show"
   >
-    <div
-    class="layout-wrapper"
-    {# {% if banner %} style="background-image: url('{{ banner.src }}')"{% endif %} #}
-    >
+    <div class="layout-wrapper">
 
       <header class="header">
         <div class="header__content">
@@ -59,7 +54,6 @@
 
       <footer class="footer">
         <div class="footer__content">
-          {# {% if banner %}{{ banner.attribute | safe }}{% endif %} #}
           {% include "footer-links.njk" %}
         </div>
       </footer>
@@ -69,10 +63,12 @@
 
     {% bundledcss "foot" %}
 
-    {# if we need page specific scripts, they should be called here, after the styles have been brought in #}
-    {# {% if permalink == "/stats/" %}
+    {# if we need page specific scripts, they should be called here, after the styles have been brought in e.g.
+
+    {% if permalink == "/stats/" %}
       {% bundledjs "stats" %}
-    {% endif %} #}
+    {% endif %}
+    #}
 
     {% clickystats %}
   </body>

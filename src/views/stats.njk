@@ -11,8 +11,7 @@ eleventyExcludeFromCollections: true
 {% set i = 0 %}
 {% set firstPost = false %}
 {% set lastPost = false %}
-{% set posts  = [] %}
-{% set postsJson = '{[' %}
+
 {%- for post in collections.posts -%}
 
 	{# we need to strip tags from the content, and then count it #}
@@ -37,26 +36,9 @@ eleventyExcludeFromCollections: true
   {% set d = post.data.date %}
   {% set wc %}{{ post.templateContent | wordCount }}{% endset %}
 
-
-  {%- set posts = (posts.push({
-    title: t,
-    date: d,
-    wordCount: wc
-  }), posts) -%}
-
-  {%- set jsonObj %}
-  {
-    "title": "{{ t | safe }}"",
-    "date": "{{ d }}",
-    "wordCount": {{ wc }}
-  },
-  {% endset %}
-  {% set safeObj %}{{ jsonObj | safe }}{% endset %}
-  {% set postsJson = (postsJson + safeObj) %}
-
 {%- endfor -%}
 
-{% set postsJson  = (postsJson + "]}") %}
+
 
 {%- from "macros/post-card.njk" import card -%}
 
@@ -83,7 +65,7 @@ eleventyExcludeFromCollections: true
 {#
   The hackiest hack: I want to create the graph once as a page.
   The best way to do this is in plain javascript, so as an .ejs file.
-  Of course, I can't include that .ejs format in this .njk file, so I am writing the .ejs file out to /statistics/, and then pulling that in here vai an iframe.
+  Of course, I can't include that .ejs format in this .njk file, so I am writing /src/views/statistics.ejs out to /statistics/, and then pulling that in here via an iframe.
 #}
 <style media="screen">
   .stats-iframe {
