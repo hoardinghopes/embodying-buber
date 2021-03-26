@@ -8,7 +8,7 @@
 
     <div class="post-card alt">
         <div class="meta">
-            <div class="photo" style="background-image: url({{thumb.src}})"></div>
+            <div class="photo"{% if thumb.src %} style="background-image: url({{thumb.src}})"{% endif %}></div>
             <ul class="details">
                 {%if date %}
                     <li class="date">{{ date | readableDate }}</li>
