@@ -25,7 +25,15 @@ function getDetails(data) {
     return manifest["main.js"];
   }
 }
+
+function getAll() {
+  return Object.values(manifest);
+}
+
 module.exports = {
+  getAll: function () {
+    return getAll();
+  },
   getStyles: function () {
     return getDetails("style");
   },

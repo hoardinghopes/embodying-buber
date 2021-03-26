@@ -1,9 +1,16 @@
-const version = "v0.0.24";
-const staticCacheName = version + "staticfiles";
+---
+permalink: /serviceworker.js
+---
+/*
+Build date: {{site.buildtime | readableDateTime}}
+*/
+
+const staticCacheName = "v.{{gitinfo.abbrevHash}}-staticfiles";
 const imagesCacheName = "images";
 const pagesCacheName = "pages";
-
 const cacheList = [staticCacheName, imagesCacheName, pagesCacheName];
+
+{% set manifestList = manifest.getAll() %}
 
 addEventListener("install", (installEvent) => {
   skipWaiting();
@@ -15,22 +22,23 @@ addEventListener("install", (installEvent) => {
         "/stats/",
         "/statistics/",
         "/about/",
-        "/images/favicon.ico",
+        "/favicon.ico",
         "/images/fallback.svg",
       ]);
       return staticCache.addAll([
         // must haves
-        "/assets/main.css",
-        "/assets/main.js",
+        {%- for item in manifestList %}
+        "{{ item }}",
+        {%- endfor %}
         "/offline/",
       ]);
     })
   );
 });
 
-addEventListener("activate", function (activateEent) {
+addEventListener("activate", function (activateEvent) {
   console.log("The service worker is activated.");
-  activateEent.waitUntil(
+  activateEvent.waitUntil(
     caches
       .keys()
       .then((cacheNames) => {
