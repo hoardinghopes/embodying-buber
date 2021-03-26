@@ -10,11 +10,19 @@ const imagesCacheName = "images";
 const pagesCacheName = "pages";
 const cacheList = [staticCacheName, imagesCacheName, pagesCacheName];
 
+{# retrieve all bundled scripts/styles that should be cached on installation #}
 {% set manifestList = manifest.getAll() %}
+
+{# if isDev, logging is on #}
+function log(params) {
+  if({{ isDev }}){
+    console.log(params);
+  }
+}
 
 addEventListener("install", (installEvent) => {
   skipWaiting();
-  console.log("The service worker is installing...");
+  log("The service worker is installing...");
   installEvent.waitUntil(
     caches.open(staticCacheName).then((staticCache) => {
       staticCache.addAll([
@@ -37,7 +45,7 @@ addEventListener("install", (installEvent) => {
 });
 
 addEventListener("activate", function (activateEvent) {
-  console.log("The service worker is activated.");
+  log("The service worker is activated.");
   activateEvent.waitUntil(
     caches
       .keys()
@@ -45,7 +53,7 @@ addEventListener("activate", function (activateEvent) {
         return Promise.all(
           cacheNames.map((cacheName) => {
             if (!cacheList.includes(cacheName)) {
-              console.log(`deleting cache: ${cacheName}`);
+              log(`deleting cache: ${cacheName}`);
               return caches.delete(cacheName);
             }
           })
@@ -59,13 +67,13 @@ addEventListener("activate", function (activateEvent) {
 
 addEventListener("fetch", (fetchEvent) => {
   const request = fetchEvent.request;
-  console.log(`starting fetch(${request.url})`);
+  log(`starting fetch(${request.url})`);
 
   // if URL is HTML
   if (request.headers.get("Accept").includes("text/html")) {
     // if URL is a post type
     if (/\/posts\/.+/.test(request.url)) {
-      console.log(`requesting post type: ${request.url}`);
+      log(`requesting post type: ${request.url}`);
       fetchEvent.respondWith(
         caches.match(request).then((responseFromCache) => {
           if (responseFromCache) {
@@ -91,11 +99,11 @@ addEventListener("fetch", (fetchEvent) => {
     }
 
     // if URL is a different HTML page (e.g. /contact/ or homepage)
-    console.log(`requesting non-post HTML: ${request.url}`);
+    log(`requesting non-post HTML: ${request.url}`);
     fetchEvent.respondWith(
       fetch(request)
         .then((responseFromFetch) => {
-          console.log(
+          log(
             `remote request for ${request.url} returned ${responseFromFetch.status}`
           );
           const copy = responseFromFetch.clone();
@@ -104,18 +112,18 @@ addEventListener("fetch", (fetchEvent) => {
               return pagesCache.put(request, copy);
             })
           );
-          console.log(`returning responseFromFetch for ${request.url}`);
+          log(`returning responseFromFetch for ${request.url}`);
           return responseFromFetch;
         })
         .catch((error) => {
-          console.log(`fetch(${request.url}) returned error`);
+          log(`fetch(${request.url}) returned error`);
           return caches.match(request).then((responseFromCache) => {
-            console.log(`look for ${request.url} in caches`);
+            log(`look for ${request.url} in caches`);
             if (responseFromCache) {
-              console.log(`found ${request.url} in cache`);
+              log(`found ${request.url} in cache`);
               return responseFromCache;
             }
-            console.log(
+            log(
               `couldn't get ${request.url} from caches or server, returning offline.html`
             );
             return caches.match("/offline/");
@@ -126,12 +134,12 @@ addEventListener("fetch", (fetchEvent) => {
   }
 
   if (request.headers.get("Accept").includes("image")) {
-    console.log(`requesting IMG: ${request.url}`);
+    log(`requesting IMG: ${request.url}`);
     fetchEvent.respondWith(
       caches.match(request).then((responseFromCache) => {
         if (responseFromCache) {
           fetchEvent.waitUntil(stashInCache(request, imagesCacheName));
-          console.log(
+          log(
             `response from local cache via serviceworker: ${request.url}`
           );
           return responseFromCache;
@@ -148,7 +156,7 @@ addEventListener("fetch", (fetchEvent) => {
             return responseFromFetch;
           })
           .catch((error) => {
-            console.log(`replacing ${request.url} with fallback.svg`);
+            log(`replacing ${request.url} with fallback.svg`);
             return caches.match("/images/fallback.svg");
           });
       })
@@ -159,20 +167,20 @@ addEventListener("fetch", (fetchEvent) => {
   // for all other types of files - JS, CSS ...
   fetchEvent.respondWith(
     caches.match(request).then((responseFromCache) => {
-      console.log(
+      log(
         `pulling non-image/non-HTML from cache first: ${request.url}`
       );
       if (responseFromCache) {
         return responseFromCache;
       }
-      console.log(`couldn't find it; fetching from server: ${request.url}`);
+      log(`couldn't find it; fetching from server: ${request.url}`);
       return fetch(request);
     })
   );
 });
 
 addEventListener("message", (messageEvent) => {
-  // console.log(`MESSAGE: ${messageEvent.data}`);
+  // log(`MESSAGE: ${messageEvent.data}`);
   if (messageEvent.data === "clean up caches") {
     trimCache(pagesCacheName, 20);
     trimCache(imagesCacheName, 20);
@@ -180,10 +188,10 @@ addEventListener("message", (messageEvent) => {
 });
 
 function trimCache(cacheName, maxItems) {
-  // console.log(`clearing cache: ${cacheName}`);
+  // log(`clearing cache: ${cacheName}`);
   caches.open(cacheName).then((cache) => {
     cache.keys().then((items) => {
-      // console.log(`${items.length} items found in cache ${cacheName}`);
+      // log(`${items.length} items found in cache ${cacheName}`);
       if (items.length > maxItems) {
         cache.delete(items[0]).then(trimCache(cacheName, maxItems));
       }
