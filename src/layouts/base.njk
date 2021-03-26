@@ -22,6 +22,8 @@
     <link rel="preconnect" href="https://in.getclicky.com"/>
     <link rel="icon" type= “image/x-icon” href="/images/favicon.ico">
 
+    <link rel="serviceworker" href="/serviceworker.js">
+
     {% bundledjs "main" %}
 
     {% bundledcss "head" %}
@@ -70,6 +72,28 @@
     {% endif %}
     #}
 
+
     {% clickystats %}
+
+    <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('/serviceworker.js')
+      .then(
+        function (registration) {
+          console.log('Success!', registration.scope);
+        }
+      )
+      .catch(
+        function (error) {
+          console.error('Failure!', error);
+        }
+      );
+      if(navigator.serviceWorker.controller) {
+        window.addEventListener("load", function() {
+          navigator.serviceWorker.controller.postMessage("clean up caches");
+        });
+      }
+    }
+    </script>
   </body>
 </html>
