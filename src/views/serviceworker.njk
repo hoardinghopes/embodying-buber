@@ -11,11 +11,11 @@ const pagesCacheName = "pages";
 const cacheList = [staticCacheName, imagesCacheName, pagesCacheName];
 
 {# retrieve all bundled scripts/styles that should be cached on installation #}
-{% set manifestList = manifest.getAll() %}
+{%- set manifestList = manifest.getAll() %}
+{%- set showLogging =  false %}
 
-{# if isDev, logging is on #}
 function log(params) {
-  if({{ isDev }}){
+  if({{ showLogging }}){
     console.log(params);
   }
 }
