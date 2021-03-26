@@ -3,9 +3,17 @@ permalink: /serviceworker.js
 ---
 /*
 Build date: {{site.buildtime | readableDateTime}}
+{{ site.buildtime }}
 */
 
-const staticCacheName = "v.{{gitinfo.abbrevHash}}-staticfiles";
+{% if isDev %}
+{% set version %}{{ site.buildtime | ms }}{%- endset %}
+{% else %}
+{% set version %}{{ gitinfo.abbrevHash }}{%- endset %}
+{% endif %}
+
+const version = "v.{{ version }}-";
+const staticCacheName = version + "-staticfiles";
 const imagesCacheName = "images";
 const pagesCacheName = "pages";
 const cacheList = [staticCacheName, imagesCacheName, pagesCacheName];

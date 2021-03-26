@@ -1,7 +1,9 @@
+const isDev = process.env.APP_ENV === "development";
+
 module.exports = {
   name: "28 days",
   description: "Part of the 28-day challenge",
-  url: "https://28-days.netlify.app",
+  url: isDev ? "http://localhost:8080" : "https://28-days.netlify.app",
   buildtime: new Date(),
   author: {
     name: "James Knight",

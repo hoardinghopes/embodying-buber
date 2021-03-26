@@ -10,6 +10,25 @@ eleventyExcludeFromCollections: true
 
 <h1>{{ title }}</h1>
 
-<p>It looks like you’re not connected to the Internet, so we can’t reach 28-days.netlify.app at the moment, and the page you requested has not yet been saved for offline reading.</p>
+<p>It looks like you’re not connected to the Internet, so we can’t reach {{ site.url }} at the moment, and the page you requested has not yet been saved for offline reading.</p>
+
+<p>However, you can still read these pages:</p>
+<ul id="history">
+<script type="application/javascript">
+  caches.open("pages")
+  .then( pagesCache => {
+    pagesCache.keys()
+    .then(keys => {
+      let markup = "";
+
+      keys.forEach((request) => {
+        markup += `<li><a href="${request.url}">${request.url}</a></li>`;
+      });
+
+      document.querySelector("#history").innerHTML = markup;
+    })
+  })
+</script>
+</ul>
 
 {% endblock content %}

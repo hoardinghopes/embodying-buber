@@ -73,7 +73,7 @@
 
     {% clickystats %}
 
-    <script>
+    {% set script %}
     if (navigator.serviceWorker) {
       navigator.serviceWorker.register('/serviceworker.js')
       .then(
@@ -92,6 +92,7 @@
         });
       }
     }
-    </script>
+    {% endset %}
+  <script>{{ script | jsmin | safe }}</script>
   </body>
 </html>
