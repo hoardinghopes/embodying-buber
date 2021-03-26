@@ -8,6 +8,7 @@ The project started life as a clone of [Elventy Duo](https://eleventyduo.netlify
 
 
 ## To-dos
+- create /offline/ page from what's in the cache?
 - ~~implement offline site via serviceworker~~
 - ~~update serviceworker via build pipe so that it references the bundled css and js files (i.e. /assets/main.css doesn't exist on live site)~~
 - ~~create stats graph as part of site build, to deliver statically~~
