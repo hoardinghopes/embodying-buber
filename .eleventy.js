@@ -1,3 +1,4 @@
+const htmlmin = require("./src/utils/minify-html.js");
 const CleanCSS = require("clean-css");
 const { DateTime } = require("luxon");
 const readingTime = require("eleventy-plugin-reading-time");
@@ -55,6 +56,16 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
+  });
+
+  eleventyConfig.addFilter("jsonpath", function (url) {
+    const parts = url.split("/");
+    const filename = parts[parts.length - 2];
+    return `/json/${filename}.json`;
+  });
+
+  eleventyConfig.addFilter("htmlmin", function (code) {
+    return htmlmin.minify(code);
   });
 
   eleventyConfig.addFilter("excerpt", (post) => {
@@ -118,7 +129,7 @@ module.exports = function (eleventyConfig) {
     return slugify(str, {
       replacement: "-",
       // the default slugify filter doesn't remove these characters
-      remove: /[&,+()$~%.'":*?<>{}]/g,
+      remove: /[&,+()$~%.'":*?<>{}!]/g,
       lower: true,
     });
   });
@@ -192,10 +203,7 @@ module.exports = function (eleventyConfig) {
   });
 
   if (!isDev) {
-    eleventyConfig.addTransform(
-      "htmlmin",
-      require("./src/utils/minify-html.js")
-    );
+    eleventyConfig.addTransform("htmlmin", htmlmin.minifyHTML);
     eleventyConfig.addPlugin(criticalCss, { minify: true });
   }
 
