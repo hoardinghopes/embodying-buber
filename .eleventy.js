@@ -1,22 +1,29 @@
-const htmlmin = require("./src/utils/minify-html.js");
-const CleanCSS = require("clean-css");
-const { DateTime } = require("luxon");
+const htmlmin = require("./src/_11ty/minify-html.js");
 const readingTime = require("eleventy-plugin-reading-time");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fs = require("fs");
-const path = require("path");
 const isDev = process.env.APP_ENV === "development";
-const site = require("./src/data/site");
 const manifest = require("./src/data/manifest");
 const markdownIt = require("markdown-it");
 const mdFootnotes = require("markdown-it-footnote");
 const mdExternalLinks = require("markdown-it-external-links");
-const slugify = require("slugify");
-const criticalCss = require("eleventy-critical-css");
 const { minify } = require("terser");
 const charts = require("eleventy-charts");
+const criticalCss = require("eleventy-critical-css");
+const filters = require("./src/_11ty/filters");
+const shortcodes = require("./src/_11ty/shortcodes");
 
 module.exports = function (eleventyConfig) {
+  // Filters
+  Object.keys(filters).forEach((filterName) => {
+    eleventyConfig.addFilter(filterName, filters[filterName]);
+  });
+
+  // Shortcodes
+  Object.keys(shortcodes).forEach((shortcodeName) => {
+    eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
+  });
+
   eleventyConfig.setUseGitIgnore(false);
 
   eleventyConfig.addPlugin(charts);
@@ -25,114 +32,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addPassthroughCopy({ "src/static/": "/" });
-
-  eleventyConfig.addShortcode("bundledcss", function (headOrFoot) {
-    let styles = manifest.getStyles();
-    return `<link href="${styles}" ${headOrFoot == "head" ? 'rel="preload" as="style"' : 'rel="stylesheet"'}>`;
-  });
-
-  eleventyConfig.addShortcode("bundledjs", function (which) {
-    let script = manifest.getScripts(which);
-    if (script) {
-      return `<script src="${script}" ${
-        which !== "main.js" ? "defer" : ""
-      }></script>`;
-    } else {
-      console.error(
-        `ERROR: no '${which}' script found (.eleventy.js 'bundledjs' shortcode)`
-      );
-      return "";
-    }
-  });
-
-  eleventyConfig.addShortcode("clickystats", function () {
-    if (!isDev) {
-      if (site.clickystats.install) {
-        return site.clickystats.script;
-      }
-    }
-    return "";
-  });
-
-  eleventyConfig.addFilter("cssmin", function (code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
-
-  eleventyConfig.addFilter("jsonpath", function (url) {
-    const parts = url.split("/");
-    const filename = parts[parts.length - 2];
-    return `/json/${filename}.json`;
-  });
-
-  eleventyConfig.addFilter("htmlmin", function (code) {
-    return htmlmin.minify(code);
-  });
-
-  eleventyConfig.addFilter("excerpt", (post) => {
-    const content = clean(post);
-    return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
-  });
-
-  eleventyConfig.addFilter("jsonmin", (input) => {
-    return JSON.stringify(JSON.parse(input));
-  });
-
-  eleventyConfig.addFilter("wordCount", (post) => {
-    // this is filtering the HTML, not the markdown
-    const content = clean(post);
-    return content.split(" ").length;
-  });
-
-  eleventyConfig.addFilter("readableDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy"
-    );
-  });
-
-  eleventyConfig.addFilter("readableDateTime", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
-      "dd LLL yyyy, HH:mm"
-    );
-  });
-
-  eleventyConfig.addFilter("ms", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toMillis();
-  });
-
-  eleventyConfig.addFilter("nbsp", (data) => {
-    return data.split(" ").join("&nbsp;");
-  });
-
-  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("yyyy-LL-dd");
-  });
-
-  eleventyConfig.addFilter("head", (array, n) => {
-    if (n < 0) {
-      return array.slice(n);
-    }
-    return array.slice(0, n);
-  });
-
-  eleventyConfig.addFilter("pageTags", (tags) => {
-    const generalTags = ["all", "nav", "post", "posts"];
-
-    return tags
-      .toString()
-      .split(",")
-      .filter((tag) => {
-        return !generalTags.includes(tag);
-      });
-  });
-
-  eleventyConfig.addFilter("slug", (str) => {
-    return slugify(str, {
-      replacement: "-",
-      // the default slugify filter doesn't remove these characters
-      remove: /[&,+()$~%.'":*?<>{}!]/g,
-      lower: true,
-    });
-  });
 
   eleventyConfig.addNunjucksAsyncFilter(
     "jsmin",
@@ -220,12 +119,4 @@ module.exports = function (eleventyConfig) {
       markdownTemplateEngine: "njk",
     },
   };
-};
-
-const clean = function (post) {
-  // this is filtering the HTML, not the markdown
-  let content = post.replace(/(<([^>]+)>)/gi, ""); //remove tags
-  content = content.replace("tl;dr", ""); // remove tl;dr
-  content = content.replace(/([\[\d\]]*)/g, ""); // remove any footnote remnants
-  return content;
 };

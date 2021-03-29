@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "yarn build"
+  command = "node ./netlify-scripts/create-env.js && yarn build"
 [[headers]]
   for = "/*"
   [headers.values]

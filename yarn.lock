@@ -3152,6 +3152,11 @@ dot-prop@^5.2.0:
   dependencies:
     is-obj "^2.0.0"
 
+dotenv@^8.2.0:
+  version "8.2.0"
+  resolved "https://registry.npm.taobao.org/dotenv/download/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+  integrity sha1-l+YZJZradQ7qPk6j4mvO6lQksWo=
+
 easy-extender@^2.3.4:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/easy-extender/-/easy-extender-2.3.4.tgz#298789b64f9aaba62169c77a2b3b64b4c9589b8f"
@@ -5135,7 +5140,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.npm.taobao.org/lodash.uniq/download/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.11.1, lodash@^4.17.20:
+lodash@^4.11.1, lodash@^4.17.20, lodash@^4.17.21:
   version "4.17.21"
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha1-Z5WRxWTDv/quhFTPCz3zcMPWkRw=

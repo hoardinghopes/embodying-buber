@@ -59,5 +59,11 @@
       </nav>
     </aside>
 
+    <section>
+      <h2>Webmentions</h2>
+      {% set webmentionsURL %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
+      {% include "webmentions.njk" %}
+    </section>
+
   </article>
 {% endblock content %}

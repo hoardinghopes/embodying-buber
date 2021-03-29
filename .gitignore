@@ -4,3 +4,5 @@ npm-debug.*
 .DS_Store
 public
 bak
+.env
+_cache
