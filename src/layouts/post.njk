@@ -1,68 +1,63 @@
-
-
-
-
 {% extends "./base.njk" %}
 
 {% block content %}
 
+  <article class="post">
+    <header class="post__header">
+      <h1>{{ title }}</h1>
 
-<article class="post">
-  <header class="post__header">
-    <h1>{{ title }}</h1>
+      <div class="post__details">
+        <time datetime="{{ page.date | htmlDateString }}">
+          {{ page.date | readableDate }}
+        </time>
+        <span> | </span>
+        <span>{{ content | readingTime }} read</span>
+        {%- if epistemic.status %}
+          <br><br>
+      Epistemic Status (1-5): {{- epistemic.status }}
+        {%- endif %}
+        {%- if epistemic.effort %}
+          <br>
+      Epistemic Effort (1-5): {{- epistemic.effort}}
+        {%- endif %}
+      </div>
 
-    <div class="post__details">
-      <time datetime="{{ page.date | htmlDateString }}">
-        {{ page.date | readableDate }}
-      </time>
-      <span> | </span>
-      <span>{{ content | readingTime }} read</span>
-      {% if epistemic.status %}
-        <br><br>
-      Epistemic Status (1-5): {{ epistemic.status }}
-      {% endif %}
-      {% if epistemic.effort %}
-        <br>
-      Epistemic Effort (1-5): {{ epistemic.effort}}
-      {% endif %}
-    </div>
+    </header>
 
-  </header>
+    <main class="post__content">
+      {{ content | safe }}
+    </main>
 
-  <main class="post__content">
-    {{ content | safe }}
-  </main>
+    <aside class="post__aside">
+      <div class="post__tags">
+        {% for tag in tags | pageTags %}
+          {% set tagUrl %}/tags/{{ tag | slug}}/{% endset %}
+          <a href="{{ tagUrl | url }}">#{{ tag }}</a>
+        {% endfor %}
+      </div>
 
-  <aside class="post__aside">
-    <div class="post__tags">
-      {% for tag in tags | pageTags %}
-        {% set tagUrl %}/tags/{{ tag | slug}}/{% endset %}
-        <a href="{{ tagUrl | url }}">#{{ tag }}</a>
-      {% endfor %}
-    </div>
+      <nav class="post__pagination">
+        {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+        {%- if nextPost %}
 
-    <nav class="post__pagination">
-      {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-      {%- if nextPost %}
+          <a href="{{ nextPost.url | url }}">
+            <span>←</span>
+            <span>{{ nextPost.data.title }}</span>
+          </a>
 
-        <a href="{{ nextPost.url | url }}">
-          <span>←</span>
-          <span>{{ nextPost.data.title }}</span>
-        </a>
+        {% endif %}
 
-      {% endif %}
+        {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+        {%- if previousPost %}
 
-      {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
-      {%- if previousPost %}
+          <a href="{{ previousPost.url | url }}">
+            <span>{{ previousPost.data.title }}</span>
+            <span>→</span>
+          </a>
 
-        <a href="{{ previousPost.url | url }}">
-          <span>{{ previousPost.data.title }}</span>
-          <span>→</span>
-        </a>
+        {% endif %}
+      </nav>
+    </aside>
 
-      {% endif %}
-    </nav>
-  </aside>
-
-</article>
+  </article>
 {% endblock content %}

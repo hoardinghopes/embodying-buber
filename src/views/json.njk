@@ -1,0 +1,42 @@
+---
+pagination:
+  data: collections.posts
+  size: 1
+  alias: post
+permalink: "/json/{{post.data.title | slug }}.json"
+---
+{%- set tagList = "[" -%}
+
+{%- for tag in post.data.tags -%}
+  {% set newTag %}"{{tag}}"{% if not loop.last %}, {% endif %}{% endset -%}
+  {% set tagList = (tagList + newTag) -%}
+{%- endfor -%}
+{%- set tagList = (tagList + "]") -%}
+
+{
+  "title": "{{ post.data.title | safe }}",
+  "url": "{{post.url }}",
+  "published": "{{post.date | readableDate }}",
+  "lastModified": "{{post.data.lastModified}}",
+  "description": "{{post.data.description | safe }}",
+  "inputPath": "{{post.inputPath}}",
+  "fileSlug": "{{post.fileSlug}}",
+  "filePathStem": "{{post.filePathStem}}",
+  "gitinfo.abbrevHash": "{{post.data.abbrevHash}}",
+  "gitinfo.authorDate": "{{post.data.authorDate}}",
+  "gitinfo.authorName": "{{post.data.authorName}}",
+  "gitinfo.subject": "{{post.data.subject}}",
+  "tags": {{ tagList | safe }},
+  "epistemic": {
+    "status": "{{post.data.epistemic.status | safe }}",
+    "effort": "{{post.data.epistemic.effort | safe }}"
+  },
+  "draft": {{post.data.draft}},
+  "type": "{{post.data.type}}",
+  "banner": {
+    "src": "{{post.data.banner.src}}",
+    "thumb": "{{post.data.banner.thumb}}",
+    "attribute": "{{post.data.banner.attribute | escape }}"
+  },
+  "content": "{{ post.templateContent | safe | htmlmin }}"
+}

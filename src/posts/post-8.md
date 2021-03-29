@@ -21,12 +21,7 @@ Having found the up and down directions of the vertical axis, we can reach out i
 
 ## Hello world
 
-```
-10 REM Hello World in BASIC
- 20 PRINT "Hello World"
-```
-
-Every computer programmer starts learning a new language with a short program that outputs `hello world`. It is the most foundational building block. After all, where else would you start? In one or two lines, you've confirmed your own existence and reached out to others, the whole world no less.
+Every computer programmer starts learning a new language with a short program that outputs `"hello world"`. It is the most foundational building block. After all, where else would you start? In one or two lines, you've confirmed your own existence and reached out to others, the whole world no less.
 
 When we greet the world, we are declaring two distinct facts: _this here is my space_ and _I am friendly_. They are distinct, but related. I can afford to be friendly precisely because this is my space.
 

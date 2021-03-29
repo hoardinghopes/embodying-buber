@@ -1,0 +1,20 @@
+---
+permalink: posts.json
+---
+
+{
+    "posts": [
+{% for post in collections.posts -%}
+        {
+            "title": "{{ post.data.title | safe }}",
+            "url": "{{post.url | jsonpath }}",
+            "published": "{{post.date}}",
+            "lastModified": "{{post.data.lastModified}}",
+            "description": "{{post.data.description | safe }}"
+        }{%- if not loop.last %}, {% endif %}
+{% endfor -%}
+]
+}
+
+
+{#{{ collections.posts | dump | safe }}#}

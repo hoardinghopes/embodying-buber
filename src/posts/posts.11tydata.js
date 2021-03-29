@@ -35,5 +35,17 @@ module.exports = {
     lastModified: (data) => {
       return gitinfo.lastModified(data.page.inputPath);
     },
+    abbrevHash: (data) => {
+      return gitinfo.abbrevHash;
+    },
+    authorDate: (data) => {
+      return gitinfo.authorDate;
+    },
+    authorName: (data) => {
+      return gitinfo.authorName;
+    },
+    subject: (data) => {
+      return gitinfo.subject;
+    },
   },
 };

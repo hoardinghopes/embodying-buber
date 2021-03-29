@@ -13,7 +13,7 @@ eleventyExcludeFromCollections: true
 <p>It looks like you’re not connected to the Internet, so we can’t reach {{ site.url }} at the moment, and the page you requested has not yet been saved for offline reading.</p>
 
 <p>However, you can still read these pages:</p>
-<ul id="history">
+<div id="history"></div>
 <script type="application/javascript">
   caches.open("pages")
   .then( pagesCache => {
@@ -22,13 +22,17 @@ eleventyExcludeFromCollections: true
       let markup = "";
 
       keys.forEach((request) => {
-        markup += `<li><a href="${request.url}">${request.url}</a></li>`;
-      });
+        const data = JSON.parse(localStorage.getItem(request.url));
+        if(data) {
+          markup += `<h4><a href="${request.url}">${data.title}</a></h4>`;
+          markup += `<p>${data.description}</p>`;
+          markup += `<span>${data.updated}</span>`;
 
+        }
+      });
       document.querySelector("#history").innerHTML = markup;
     })
   })
 </script>
-</ul>
 
 {% endblock content %}

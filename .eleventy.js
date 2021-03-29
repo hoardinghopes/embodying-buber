@@ -35,7 +35,7 @@ module.exports = function (eleventyConfig) {
     let script = manifest.getScripts(which);
     if (script) {
       return `<script src="${script}" ${
-        which !== "main" ? "defer" : ""
+        which !== "main.js" ? "defer" : ""
       }></script>`;
     } else {
       console.error(

@@ -14,16 +14,15 @@ const manifestPath = path.resolve(
 const manifest = isDev
   ? {
       "main.js": "/assets/main.js",
-      "main.css": "/assets/main.css",
+      "styles.css": "/assets/styles.css",
+      "test.js": "/assets/test.js",
     }
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
 function getDetails(data) {
-  if (data === "style") {
-    return manifest["main.css"];
-  } else {
-    return manifest["main.js"];
-  }
+  if (data === "style") return manifest["styles.css"];
+  if (manifest[data]) return manifest[data];
+  return;
 }
 
 function getAll() {
@@ -38,7 +37,7 @@ module.exports = {
     return getDetails("style");
   },
   getScripts: function (which) {
-    if (which === "main") return getDetails("js");
+    return getDetails(which);
   },
   path: manifestPath,
 };

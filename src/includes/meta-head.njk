@@ -1,39 +1,41 @@
 <meta name="buildtime" content="{{site.buildtime | readableDateTime}}">
 {% include "gitinfo.njk" %}
-    <meta name="date.created" content="{{page.date}}"/>
-    <meta name="date.updated" content="{{lastModified}}"/>
+<meta name="date.created" content="{{page.date}}">
+<meta name="date.updated" content="{{lastModified}}">
+
+<meta name="theme-color" content="{{ site.theme_color }}">
 
 {% set desc = description %}
 {%- if not desc %}
   {%- set desc = content | striptags | truncate(140) -%}
 {% endif -%}
 {%- if desc %}
-    <meta name="description" content="{{ desc | escape }}">
+  <meta name="description" content="{{ desc | escape }}">
 {%- endif %}
 
-    <meta property="og:title" content="{{  title or site.name | escape }}">
-    <meta property="og:site_name" content="{{ site.name }}"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="{{ site.url + page.url }}"/>
+<meta property="og:title" content="{{  title or site.name | escape }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url + page.url }}">
 {%- if desc %}
-    <meta property="og:description" content="{{ desc | escape }}">
+  <meta property="og:description" content="{{ desc | escape }}">
 {%- endif %}
 {#- banner variable set in base.njk -#}
 {%- if banner.src %}
-    <meta name="og:image" content="{{ site.url + banner.src}}">
+  <meta name="og:image" content="{{ site.url + banner.src}}">
 
-    <meta name="twitter:image" content="{{ site.url + banner.src}}">
+  <meta name="twitter:image" content="{{ site.url + banner.src}}">
 {%- endif -%}
-    <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary_large_image">
 {%- if site.author.twitterHandle %}
-    <meta name="twitter:creator" content="@{{ site.author.twitterHandle | replace('@', '') }}"/>
+  <meta name="twitter:creator" content="@{{ site.author.twitterHandle | replace('@', '') }}">
 {%- endif %}
-    <meta name="twitter:title" content="{{title}}">
+<meta name="twitter:title" content="{{title}}">
 {%- if desc %}
-    <meta property="twitter:description" content="{{ desc | escape }}">
+  <meta property="twitter:description" content="{{ desc | escape }}">
 {%- endif %}
 
-    {%- set structuredData %}
+{%- set structuredData %}
     {
       "@context": "https://schema.org",
       "@type": "BlogPosting",
@@ -56,4 +58,6 @@
       "dateModified" : "{{lastModified}}"
     }
     {% endset -%}
-    <script type="application/ld+json">{{ structuredData | jsonmin | safe }}</script>
+<script type="application/ld+json">
+  {{ structuredData | jsonmin | safe }}
+</script>

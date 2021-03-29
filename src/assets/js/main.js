@@ -1,6 +1,8 @@
 "use strict";
-let Alpine = require("alpinejs");
-let switcher = require("./theme-switcher");
+require("alpinejs");
+
+const switcher = require("./theme-switcher");
+const offline = require("./offline");
 
 window.setUp = function () {
   let links = document.querySelectorAll("a");
@@ -24,6 +26,7 @@ window.setUp = function () {
   }
 
   switcher();
+  offline();
 
   return { show: false };
 };

@@ -12,13 +12,13 @@ module.exports = {
     banner: (data) => {
       return false;
     },
-    permalink: (data) => {
+    /*permalink: (data) => {
       if (isDev) {
         return data.permalink;
       } else {
         return data.draft ? "" : data.permalink;
       }
-    },
+    },*/
     eleventyExcludeFromCollections: (data) => {
       return isDev ? false : data.draft;
     },

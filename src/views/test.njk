@@ -1,0 +1,36 @@
+---
+permalink: /test/
+title: All JSON
+description: A list of all summaries on the site
+---
+{%- set extraScripts = "test.js" -%}
+
+{% extends "../layouts/base.njk" %}
+
+{% block content %}
+
+    <div class="main" x-data="init();" x-init="getPosts();">
+        <template x-model="post" x-if="showPost">
+            <div>
+                <h2 x-text="post.title"></h2>
+                <p x-text="post.published"></p>
+                <div x-html="post.content"></div>
+                <hr>
+            </div>
+        </template>
+
+        <ul>
+            <template x-for="result in results">
+                <li>
+                    <div>
+                        <a :href="result.url" x-on:click.prevent="getPost(result.url);">
+                            <b x-text="result.title">--title--</b>
+                        </a><br>
+                        <span x-text="result.description">--description--</span>
+                    </div>
+                </li>
+            </template>
+        </ul>
+    </div>
+
+{% endblock content %}

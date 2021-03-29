@@ -4,19 +4,18 @@ const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 
 const isDev = process.env.APP_ENV === "development";
 
-const baseFilename = isDev ? "main" : "main.[contenthash]";
-
 module.exports = {
   optimization: {
-    minimize: false,
+    minimize: true,
   },
-  entry: [
-    path.resolve(__dirname, "src", "assets", "js", "main.js"),
-    path.resolve(__dirname, "src", "assets", "css", "main.css"),
-  ],
+  entry: {
+    main: path.resolve(__dirname, "src", "assets", "js", "main.js"),
+    test: path.resolve(__dirname, "src", "assets", "js", "test.js"),
+    styles: path.resolve(__dirname, "src", "assets", "css", "main.css"),
+  },
   output: {
     path: path.resolve(__dirname, "public", "assets"),
-    filename: `${baseFilename}.js`,
+    filename: isDev ? `[name].js` : `[name].[contenthash].js`,
   },
 
   module: {
@@ -51,7 +50,9 @@ module.exports = {
 
   plugins: [
     new WebpackManifestPlugin({ publicPath: "/assets/" }),
-    new MiniCssExtractPlugin({ filename: `${baseFilename}.css` }),
+    new MiniCssExtractPlugin({
+      filename: isDev ? `[name].css` : `[name].[contenthash].css`,
+    }),
   ],
 
   resolve: {

@@ -17,13 +17,22 @@
       {% include "meta-head.njk" -%}
     {%- endif %}
 
-    <link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}"/>
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-    <link rel="preconnect" href="https://in.getclicky.com"/>
+    <link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://in.getclicky.com">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="serviceworker" href="/serviceworker.js">
+    <link rel="manifest" href="/manifest.json">
 
-    {% bundledjs "main" %}
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon-iphone-60x60-precomposed.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-ipad-76x76-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-iphone-retina-120x120-precomposed.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-ipad-retina-152x152-precomposed.png">
+
+    {% if type == "post" %}
+      <link rel="x-json-version" href="{{ page.url | jsonpath }}">
+    {% endif %}
+    {% bundledjs "main.js" %}
     {% bundledcss "head" %}
   </head>
 
@@ -47,7 +56,6 @@
         </div>
       </header>
 
-
       <main class="main">
         {% block content %}{% endblock content %}
       </main>
@@ -59,40 +67,14 @@
       </footer>
     </div>
 
-
-
     {% bundledcss "foot" %}
 
-    {# if we need page specific scripts, they should be called here, after the styles have been brought in e.g.
-
-    {% if permalink == "/stats/" %}
-      {% bundledjs "stats" %}
-    {% endif %}
-    #}
-
+    {# if we need page specific scripts, they should be called here, after the styles have been brought in e.g. #}
+    {% if extraScripts -%}
+      {% bundledjs extraScripts %}
+    {%- endif %}
 
     {% clickystats %}
 
-    {% set script %}
-    if (navigator.serviceWorker) {
-      navigator.serviceWorker.register('/serviceworker.js')
-      .then(
-        function (registration) {
-          console.log('Success!', registration.scope);
-        }
-      )
-      .catch(
-        function (error) {
-          console.error('Failure!', error);
-        }
-      );
-      if(navigator.serviceWorker.controller) {
-        window.addEventListener("load", function() {
-          navigator.serviceWorker.controller.postMessage("clean up caches");
-        });
-      }
-    }
-    {% endset %}
-  <script>{{ script | jsmin | safe }}</script>
   </body>
 </html>

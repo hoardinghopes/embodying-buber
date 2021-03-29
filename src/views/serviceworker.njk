@@ -7,9 +7,9 @@ Build date: {{site.buildtime | readableDateTime}}
 */
 
 {% if isDev %}
-{% set version %}{{ site.buildtime | ms }}{%- endset %}
+  {% set version %}{{ site.buildtime | ms }}{%- endset %}
 {% else %}
-{% set version %}{{ gitinfo.abbrevHash }}{%- endset %}
+  {% set version %}{{ gitinfo.abbrevHash }}{%- endset %}
 {% endif %}
 
 const version = "v.{{ version }}-";
@@ -30,7 +30,6 @@ function log(params) {
 
 addEventListener("install", (installEvent) => {
   skipWaiting();
-  log("The service worker is installing...");
   installEvent.waitUntil(
     caches.open(staticCacheName).then((staticCache) => {
       staticCache.addAll([
@@ -40,6 +39,11 @@ addEventListener("install", (installEvent) => {
         "/about/",
         "/favicon.ico",
         "/images/fallback.svg",
+        "/test/",
+        "/posts.json",
+        {%- for item in collections.posts %}
+        "{{ item.url | jsonpath }}"{% if not loop.last %},{% endif %}
+{%- endfor -%}
       ]);
       return staticCache.addAll([
         // must haves
@@ -53,7 +57,6 @@ addEventListener("install", (installEvent) => {
 });
 
 addEventListener("activate", function (activateEvent) {
-  log("The service worker is activated.");
   activateEvent.waitUntil(
     caches
       .keys()
@@ -78,7 +81,9 @@ addEventListener("fetch", (fetchEvent) => {
   log(`starting fetch(${request.url})`);
 
   // if URL is HTML
+  if(request.headers.get("Accept")) {
   if (request.headers.get("Accept").includes("text/html")) {
+
     // if URL is a post type
     if (/\/posts\/.+/.test(request.url)) {
       log(`requesting post type: ${request.url}`);
@@ -185,7 +190,7 @@ addEventListener("fetch", (fetchEvent) => {
       return fetch(request);
     })
   );
-});
+}});
 
 addEventListener("message", (messageEvent) => {
   // log(`MESSAGE: ${messageEvent.data}`);

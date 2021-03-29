@@ -225,3 +225,26 @@ mark {
   white-space: nowrap;
   width: 1px;
 }
+
+.btn-offline {
+  margin-top: 2rem;
+  min-width: 50%;
+  width: 50%;
+}
+
+.btn-offline:disabled {
+  background-color: none;
+}
+.btn-offline:disabled:hover {
+  color: var(--primary-light);
+  background: var(--secondary-dark);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+  box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+}
+
+/* #history is in offline.njk */
+#history {
+  padding-top: 2rem;
+}
