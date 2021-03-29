@@ -2,14 +2,17 @@
 
 {% block content %}
 
-  <article class="post">
-    <header class="post__header">
+  <article class="post h-entry">
+    <header class="post__header p-name">
       <h1>{{ title }}</h1>
 
       <div class="post__details">
-        <time datetime="{{ page.date | htmlDateString }}">
+        <time datetime="{{ page.date | htmlDateString }}" class="dt-published">
           {{ page.date | readableDate }}
         </time>
+        <p style="display:none">Published by <a class="p-author">James Knight</a>
+          <p style="display:none" class="p-summary">{{ content | excerpt | safe  }}</p>
+        </p>
         <span> | </span>
         <span>{{ content | readingTime }} read</span>
         {%- if epistemic.status %}
@@ -24,7 +27,7 @@
 
     </header>
 
-    <main class="post__content">
+    <main class="post__content e-content">
       {{ content | safe }}
     </main>
 
@@ -59,11 +62,7 @@
       </nav>
     </aside>
 
-    <section>
-      <h2>Webmentions</h2>
-      {% set webmentionsURL %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
-      {% include "webmentions.njk" %}
-    </section>
+    {% include "webmentions.njk" %}
 
   </article>
 {% endblock content %}

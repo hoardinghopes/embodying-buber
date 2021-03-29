@@ -1,4 +1,5 @@
 <!-- _includes/webmentions.njk -->
+{% set webmentionsURL %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
 <!-- Filter the cached mentions to only include ones matching the post's url -->
 {% set mentions = webmentions | getWebmentionsForUrl(metadata.url + webmentionUrl) %}
 <!-- Set reposts as mentions that are `repost-of`  -->
@@ -14,13 +15,19 @@
 <!-- Count the total replies -->
 {% set repliesSize = replies | size %}
 
-{% if repliesSize > 0 %}
+{# {% if repliesSize > 0 %} #}
+
+<section>
+    <h4>Webmentions</h4>
+
     <div class="webmention-replies">
-        <h3>{{ repliesSize }}
+        <h5>{{ repliesSize }}
             {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}
-        </h3>
+        </h5>
         {% for webmention in replies %}
             {% include 'webmention.njk' %}
         {% endfor %}
     </div>
-{% endif %}
+
+</section>
+{# {% endif %} #}
