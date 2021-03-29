@@ -79,3 +79,26 @@
   margin: 0 0 1rem 1rem;
 }
 /* purgecss end ignore */
+
+.btn-offline {
+  margin-top: 2rem;
+  min-width: 50%;
+  width: 50%;
+
+  color: var(--primary-light);
+  background: var(--secondary-dark);
+  border: solid 1px var(--background);
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.btn-offline:hover {
+  background-color: var(--text);
+  color: var(--background);
+}
+
+.btn-offline:disabled {
+  background-color: var(--background);
+  color: var(--text);
+  border: solid 1px var(--text);
+}

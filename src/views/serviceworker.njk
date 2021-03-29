@@ -28,8 +28,8 @@ function log(params) {
   }
 }
 
-addEventListener("install", (installEvent) => {
-  skipWaiting();
+self.addEventListener("install", (installEvent) => {
+  self.skipWaiting();
   installEvent.waitUntil(
     caches.open(staticCacheName).then((staticCache) => {
       staticCache.addAll([
@@ -50,13 +50,13 @@ addEventListener("install", (installEvent) => {
         {%- for item in manifestList %}
         "{{ item }}",
         {%- endfor %}
-        "/offline/",
+"/offline/",
       ]);
     })
   );
 });
 
-addEventListener("activate", function (activateEvent) {
+self.addEventListener("activate", function (activateEvent) {
   activateEvent.waitUntil(
     caches
       .keys()
@@ -76,7 +76,7 @@ addEventListener("activate", function (activateEvent) {
   );
 });
 
-addEventListener("fetch", (fetchEvent) => {
+self.addEventListener("fetch", (fetchEvent) => {
   const request = fetchEvent.request;
   log(`starting fetch(${request.url})`);
 
@@ -192,7 +192,7 @@ addEventListener("fetch", (fetchEvent) => {
   );
 }});
 
-addEventListener("message", (messageEvent) => {
+self.addEventListener("message", (messageEvent) => {
   // log(`MESSAGE: ${messageEvent.data}`);
   if (messageEvent.data === "clean up caches") {
     trimCache(pagesCacheName, 20);

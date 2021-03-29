@@ -4,14 +4,44 @@ permalink: /offline/
 eleventyExcludeFromCollections: true
 ---
 
+{%- set extraScripts = "test.js" -%}
+
 {% extends "../layouts/base.njk" %}
 
 {% block content %}
 
-<h1>{{ title }}</h1>
+<h3>{{ title }}</h3>
 
-<p>It looks like you’re not connected to the Internet, so we can’t reach {{ site.url }} at the moment, and the page you requested has not yet been saved for offline reading.</p>
+<p>It looks like you’re not connected to the Internet, so we can’t reach {{ site.url }} at the moment, and the page you requested has not yet been saved for offline reading. Instead, try selecting an article from the sidebar.</p>
 
+<hr>
+
+<div class="main offline" x-data="init();" x-init="getPosts();">
+        <template x-model="post" x-if="showPost">
+            <div>
+                <h2 x-text="post.title"></h2>
+                <p x-text="post.published"></p>
+                <div x-html="post.content"></div>
+                <hr>
+            </div>
+        </template>
+
+        <ul class="post-list">
+            <template x-for="result in results">
+                <li>
+                    <div>
+                        <a :href="result.url" x-on:click.prevent="getPost(result.url);">
+                            <b x-text="result.title">--title--</b>
+                        </a><br>
+                        <!--<span x-text="result.description">--description--</span>-->
+                    </div>
+                </li>
+            </template>
+        </ul>
+    </div>
+
+
+{#
 <p>However, you can still read these pages:</p>
 <div id="history"></div>
 <script type="application/javascript">
@@ -34,5 +64,6 @@ eleventyExcludeFromCollections: true
     })
   })
 </script>
+#}
 
 {% endblock content %}

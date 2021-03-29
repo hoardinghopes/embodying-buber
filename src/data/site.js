@@ -3,7 +3,7 @@ const isDev = process.env.APP_ENV === "development";
 module.exports = {
   name: "28 days",
   description: "Part of the 28-day challenge",
-  url: isDev ? "http://localhost" : "https://28-days.netlify.app",
+  url: isDev ? "https://localhost" : "https://28-days.netlify.app",
   buildtime: new Date(),
   theme_color: "#22161A",
   author: {
