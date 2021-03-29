@@ -10,7 +10,13 @@ module.exports = {
   },
   entry: {
     main: path.resolve(__dirname, "src", "assets", "js", "main.js"),
-    test: path.resolve(__dirname, "src", "assets", "js", "test.js"),
+    offline: path.resolve(
+      __dirname,
+      "src",
+      "assets",
+      "js",
+      "offline-display.js"
+    ),
     styles: path.resolve(__dirname, "src", "assets", "css", "main.css"),
   },
   output: {

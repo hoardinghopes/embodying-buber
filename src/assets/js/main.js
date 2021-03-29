@@ -2,7 +2,7 @@
 require("alpinejs");
 
 const switcher = require("./theme-switcher");
-const offline = require("./offline");
+const offline = require("./save-to-offline");
 
 window.setUp = function () {
   let links = document.querySelectorAll("a");

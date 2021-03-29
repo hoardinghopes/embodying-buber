@@ -15,7 +15,7 @@ const manifest = isDev
   ? {
       "main.js": "/assets/main.js",
       "styles.css": "/assets/styles.css",
-      "test.js": "/assets/test.js",
+      "offline.js": "/assets/offline.js",
     }
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 

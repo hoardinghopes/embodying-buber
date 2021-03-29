@@ -1,5 +1,5 @@
 function init() {
-  console.log(`offline.init()`);
+  // console.log(`offline.init()`);
   // courtesy of @adactio's Going Offline book
   if (navigator.serviceWorker) {
     navigator.serviceWorker

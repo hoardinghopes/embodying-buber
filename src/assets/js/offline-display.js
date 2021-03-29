@@ -6,7 +6,6 @@ window.init = function () {
       fetch("/posts.json")
         .then((response) => response.json())
         .then((response) => {
-          console.log(response.posts[0]);
           this.results = response.posts;
         })
         .catch((err) => console.log(err));
@@ -19,11 +18,21 @@ window.init = function () {
           this.post = response;
           this.post.content = he.decode(this.post.content);
           this.showPost = true;
+          this.showSideBar = false;
         })
         .catch((err) => console.log(err));
     },
+    showList: function () {
+      this.showSideBar = true;
+      this.showPost = false;
+    },
     results: [],
     showPost: false,
-    post: null,
+    post: {
+      title: "",
+      content: "",
+      published: "",
+    },
+    showSideBar: false,
   };
 };
