@@ -7,6 +7,9 @@ const isDev = process.env.APP_ENV === "development";
 const baseFilename = isDev ? "main" : "main.[contenthash]";
 
 module.exports = {
+  optimization: {
+    minimize: false,
+  },
   entry: [
     path.resolve(__dirname, "src", "assets", "js", "main.js"),
     path.resolve(__dirname, "src", "assets", "css", "main.css"),
@@ -50,4 +53,11 @@ module.exports = {
     new WebpackManifestPlugin({ publicPath: "/assets/" }),
     new MiniCssExtractPlugin({ filename: `${baseFilename}.css` }),
   ],
+
+  resolve: {
+    fallback: {
+      fs: false,
+      path: require.resolve("path-browserify"),
+    },
+  },
 };
