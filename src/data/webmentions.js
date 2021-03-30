@@ -66,7 +66,7 @@ function readFromCache() {
   return { lastFetched: null, children: [] };
 }
 
-module.exports = async function () {
+async function init() {
   console.log(">>> Reading webmentions from cache...");
   const cache = readFromCache();
 
@@ -90,4 +90,8 @@ module.exports = async function () {
     }
   }
   return cache;
+}
+
+module.exports = {
+  // init,
 };
