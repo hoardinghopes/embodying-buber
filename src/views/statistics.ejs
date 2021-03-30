@@ -51,20 +51,6 @@ let totals = [
 ];
 
 
-
-function readableDate(dateStr) {
-  // I don't know how to get any useful libraries in here, as `require` isn't recognised >:-(
-  // therefore, time to extract the date manually
-
-  let parts = dateStr.toString().split(" ");
-  let day = parts[0];
-  let month = parts[1];
-  let date = parts[2];
-  let year = parts[3];
-
-  return `${date} ${month} ${year}`;
-}
-
 function wordCount(s) {
   if (s === undefined) return  0;
 
