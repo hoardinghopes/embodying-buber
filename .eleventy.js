@@ -4,16 +4,15 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const fs = require("fs");
 const isDev = process.env.APP_ENV === "development";
 const manifest = require("./src/data/manifest");
-const markdownIt = require("markdown-it");
-const mdFootnotes = require("markdown-it-footnote");
-const mdExternalLinks = require("markdown-it-external-links");
 const { minify } = require("terser");
 const charts = require("eleventy-charts");
 const criticalCss = require("eleventy-critical-css");
 const filters = require("./src/_11ty/filters");
 const shortcodes = require("./src/_11ty/shortcodes");
+const markdownLib = require("./src/_11ty/markdownLib");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.setLibrary("md", markdownLib.getMarkdownLib());
   // Filters
   Object.keys(filters).forEach((filterName) => {
     eleventyConfig.addFilter(filterName, filters[filterName]);
@@ -47,6 +46,16 @@ module.exports = function (eleventyConfig) {
     }
   );
 
+  eleventyConfig.addCollection("notes", function (collection) {
+    let notes = new Set();
+    collection.getAllSorted().forEach(function (item) {
+      if ("note" === item.data.type) {
+        notes.add(item);
+      }
+    });
+    return [...notes].sort();
+  });
+
   eleventyConfig.addCollection("tagList", function (collection) {
     let tagSet = new Set();
     collection.getAllSorted().forEach(function (item) {
@@ -73,17 +82,6 @@ module.exports = function (eleventyConfig) {
     });
     return [...tagSet].sort();
   });
-
-  const markdownLib = markdownIt({
-    html: true,
-  })
-    .use(mdFootnotes)
-    .use(mdExternalLinks, {
-      externalClassName: "external",
-      externalRel: "noopener noreferrer external",
-      externalTarget: "_blank",
-    });
-  eleventyConfig.setLibrary("md", markdownLib);
 
   eleventyConfig.setBrowserSyncConfig({
     files: [manifest.path],

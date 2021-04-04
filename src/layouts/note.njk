@@ -1,0 +1,11 @@
+{% extends "./base.njk" %}
+
+{% block content %}
+
+    <main class="note__content e-content">
+        {{ content | safe }}
+    </main>
+
+    {% include "backlinks.njk" %}
+
+{% endblock content %}

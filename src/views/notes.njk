@@ -1,0 +1,16 @@
+---
+permalink: /notes/
+title: All Notes
+description: A list of all notes growing on the site
+---
+
+{% extends "../layouts/base.njk" %}
+
+{% block content %}
+
+  <h1>All Notes</h1>
+
+  {% set list = collections.notes %}
+  {% include "notes-list.njk" %}
+
+{% endblock content %}

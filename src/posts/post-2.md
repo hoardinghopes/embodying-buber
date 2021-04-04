@@ -24,6 +24,8 @@ We can't demand _encounter_, but we can learn to open the body to possibility.
 
 There are ways to be in a body, to be out of a body, and for a body itself to be.
 
+[[I and Thou]]
+
 Martin Buber’s idea of _encounter_ requires a specific set of conditions to be available in the body, and whilst we can't make encounter happen, perhaps we can develop those conditions in us so that encounter is at least possible, if not likely.
 
 However, the very first task is to learn how _you_ live in your body. Where do you move from in your body - do you walk forwards from your head, your chest, you core, your feet? When walking are you actually _in_ your body, or just in front of it?

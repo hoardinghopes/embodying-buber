@@ -1,20 +1,21 @@
 // _11ty/filters.js
 const htmlmin = require("./minify-html.js");
+const markdownLib = require("./markdownLib");
 const slugify = require("slugify");
 const CleanCSS = require("clean-css");
 const { DateTime } = require("luxon");
 
 // Already in eleventy-base-blog
 module.exports = {
-  getWebmentionsForUrl: (webmentions, url) => {
-    return webmentions.children.filter((entry) => entry["wm-target"] === url);
-  },
-  size: (mentions) => {
-    return !mentions ? 0 : mentions.length;
-  },
-  webmentionsByType: (mentions, mentionType) => {
-    return mentions.filter((entry) => !!entry[mentionType]);
-  },
+  // getWebmentionsForUrl: (webmentions, url) => {
+  //   return webmentions.children.filter((entry) => entry["wm-target"] === url);
+  // },
+  // size: (mentions) => {
+  //   return !mentions ? 0 : mentions.length;
+  // },
+  // webmentionsByType: (mentions, mentionType) => {
+  //   return mentions.filter((entry) => !!entry[mentionType]);
+  // },
   readableDateFromISO: (dateStr, formatStr = "dd LLL yyyy 'at' hh:mma") => {
     return DateTime.fromISO(dateStr).toFormat(formatStr);
   },
@@ -111,6 +112,10 @@ module.exports = {
     return `https://twitter.com/search?f=tweets&src=typd&q=${encodeURI(
       postUrl
     )}`;
+  },
+
+  markdownify: (string) => {
+    return markdownLib.getMarkdownLib().render(string);
   },
 };
 
