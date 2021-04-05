@@ -99,7 +99,7 @@ module.exports = {
       lower: true,
     });
   },
-
+  /*
   generateShareLink: (url, text) => {
     const shareText = `${text} by @hoardinghopes`;
     const shareUrl = `${rootUrl}${url}`;
@@ -113,7 +113,7 @@ module.exports = {
       postUrl
     )}`;
   },
-
+*/
   markdownify: (string) => {
     return markdownLib.getMarkdownLib().render(string);
   },

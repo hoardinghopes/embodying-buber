@@ -1,9 +1,10 @@
+const _ = require("lodash");
+
 // This regex finds all wikilinks in a string
 const wikilinkRegExp = /\[\[\s?([^\[\]\|\n\r]+)(\|[^\[\]\|\n\r]+)?\s?\]\]/g;
 
 function titleToFilePathCompare(link, fileSlug) {
-  const hyphenedLink = link.split(" ").join("-");
-  return hyphenedLink.toLowerCase() === fileSlug.toLowerCase();
+  return _.kebabCase(link) === fileSlug.toLowerCase();
 }
 
 module.exports = {
