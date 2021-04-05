@@ -14,15 +14,15 @@ module.exports = {
   },
   headerLinks: [
     {
-      text: "All",
+      text: "Blog",
       url: "/blog/",
       external: false,
     },
-    // {
-    //   text: "Summaries",
-    //   url: "/summaries/",
-    //   external: false,
-    // },
+    {
+      text: "Notes",
+      url: "/notes/",
+      external: false,
+    },
     {
       text: "Contact",
       url: "/contact/",
