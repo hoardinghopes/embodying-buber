@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include "head.njk" %}
+    <body>
+        {% bundledcss "notes" %}
+        {# {% include "header-links.njk" %} #}
+        <nav>
+            <div>
+                <a class="internal-link" href="{{ site.baseurl }}/">
+                    <b>{{ site.title }}</b>
+                </a>
+            </div>
+        </nav>
+
+        <div class="wrapper">
+            <main>
+                {% block content %}{% endblock content %}
+            </main>
+            <footer>{% include "footer-links.njk" %}</footer>
+        </div>
+
+        {% set wrapperQuerySelector = "content" %}
+        {% include "link-previews.njk" %}
+    </body>
+</html>

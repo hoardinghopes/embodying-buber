@@ -1,0 +1,31 @@
+{%- set nodes = "[\n" %}
+{%- set edges = "[\n" %}
+
+{%- for currentNote in collections.notes %}
+    {%- set idx = loop.index0 %}
+    {%- set node = "\t{\n" %}
+    {%- set node = node + ('\t\t"id": "' + idx + '",\n') %}
+    {%- set node = node + ('\t\t"path": "' + currentNote.data.page.url + '",\n') %}
+    {%- set node = node + ('\t\t"label": "' + currentNote.data.title + '"\n') %}
+    {%- set node = node + "\t}" %}
+    {%- if not loop.last %}
+        {%- set node = node + "," %}
+    {%- endif %}
+    {%- set node = node + "\n" %}
+    {%- set nodes = nodes + node %}
+
+    {%- for link in currentNote.data.backlinks %}
+        {%- set edge = "\t{\n" %}
+        {%- set edge = edge + ('\t\t"source": "' + loop.index0 + '",\n') %}
+        {%- set edge = edge + ('\t\t"target": "' + idx + '"\n') %}
+        {%- set edge = edge + "\t},\n" %}
+        {%- set edges = edges + edge %}
+    {%- endfor %}
+{%- endfor %}
+{%- set nodes = nodes + "]" %}
+{%- set edges = edges + "]" -%}
+
+{
+    "nodes": {{ nodes | safe }},
+    "edges": {{ edges | safe }}
+}

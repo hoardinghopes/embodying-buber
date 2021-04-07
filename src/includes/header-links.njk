@@ -11,7 +11,7 @@
           {% set currentAttribute = 'aria-current="page"' %}
         {% endif -%}
         <li class="nav-item">
-          <a href="{{ item.url | url }}" {{ currentAttribute | safe }} {{ externalAttribute | safe }}>{{ item.text }}</a>
+          <a {{ currentAttribute | safe }} {{ externalAttribute | safe }} href="{{ item.url | url }}">{{ item.text }}</a>
         </li>
       {% endfor -%}
     </ul>

@@ -18,6 +18,7 @@ module.exports = {
       "offline-display.js"
     ),
     styles: path.resolve(__dirname, "src", "assets", "css", "main.css"),
+    notes: path.resolve(__dirname, "src", "assets", "css", "notes.css"),
   },
   output: {
     path: path.resolve(__dirname, "public", "assets"),

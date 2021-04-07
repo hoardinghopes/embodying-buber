@@ -7,6 +7,10 @@ tags: ["note", "twitter", "browser extension"]
 
 I don't remember quite how, but I came across [this tweet announcing a beta browser extension](https://twitter.com/round/status/1138244047540228100). It promised a useful Chrome extension that looks sites up on Twitter to see if they've been mentioned.
 
+- [[Using a password manager]]
+- [[Setting up Jekyll with Obsidian]]
+- [[Facebook breach]]
+
 But I use Firefox.
 
 The project repository seemed simple enough, so I decided to take the project on.

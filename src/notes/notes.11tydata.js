@@ -4,7 +4,10 @@ const _ = require("lodash");
 const wikilinkRegExp = /\[\[\s?([^\[\]\|\n\r]+)(\|[^\[\]\|\n\r]+)?\s?\]\]/g;
 
 function titleToFilePathCompare(link, fileSlug) {
-  return _.kebabCase(link) === fileSlug.toLowerCase();
+  // console.log(
+  //   `comparing with ${_.kebabCase(link)} === ${_.kebabCase(fileSlug)}`
+  // );
+  return _.kebabCase(link) === _.kebabCase(fileSlug);
 }
 
 module.exports = {
@@ -17,6 +20,9 @@ module.exports = {
     backlinks: (data) => {
       const notes = data.collections.notes;
       const currentFileSlug = data.page.fileSlug;
+      // console.log(`currentFileSlug: ${currentFileSlug}`);
+      // console.log(`filePathStem: ${data.page.filePathStem}`);
+
       let backlinks = [];
 
       // Search the other notes for backlinks
@@ -39,9 +45,11 @@ module.exports = {
         );
         // If the other note links here, return related info
         if (
-          outboundLinks.some((link) =>
-            titleToFilePathCompare(link, currentFileSlug)
-          )
+          outboundLinks.some((link) => {
+            let found = titleToFilePathCompare(link, currentFileSlug);
+            // console.log(`found: ${found}`);
+            return found;
+          })
         ) {
           backlinks.push({
             url: otherNote.url,
@@ -50,6 +58,7 @@ module.exports = {
           });
         }
       }
+      // console.log(backlinks.length);
       return backlinks;
     },
   },

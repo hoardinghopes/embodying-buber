@@ -3,10 +3,13 @@ const site = require("../data/site");
 const isDev = process.env.APP_ENV === "development";
 
 module.exports = {
-  bundledcss: (headOrFoot) => {
+  bundledcss: (type) => {
     let styles = manifest.getStyles();
+    if (type === "notes") {
+      styles = manifest.getNotes();
+    }
     return `<link href="${styles}" ${
-      headOrFoot == "head" ? 'rel="preload" as="style"' : 'rel="stylesheet"'
+      type == "head" ? 'rel="preload" as="style"' : 'rel="stylesheet"'
     }>`;
   },
 
