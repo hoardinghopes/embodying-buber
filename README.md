@@ -13,7 +13,6 @@ The project started life as a clone of [Elventy Duo](https://eleventyduo.netlify
 - ~~update serviceworker via build pipe so that it references the bundled css and js files (i.e. /assets/main.css doesn't exist on live site)~~
 - ~~create stats graph as part of site build, to deliver statically~~
 - PWA?
-- webmentions?
 - update 404 to email me with news of 404 pages that folk are seeking
 
 

@@ -37,7 +37,7 @@ I decided to lean on some other wisdom, and took a look at how the [Treeverse ex
 Treeverse is a typescript project. That means it uses webpack to transpile to Javascript. That means it builds on top of various Node libraries. Time to go node!
 
 ## First things first
-Having downloaded the project I ran `yarn` and there was my first problem: I had Node v.14.15.4 installed globally, and the project did not like that. 
+Having downloaded the project I ran `yarn` and there was my first problem: I had Node v.14.15.4 installed globally, and the project did not like that.
 
 ## NVM to the rescue
 Thankfully I had installed NVM a while ago, which allows me to specify different Node versions for different projects. I dropped an .nvmrc file in the project and that set the Node version to v12.19.0. Calling `yarn` set up the project fine this time.
@@ -54,3 +54,6 @@ By ditching the Typescript, I was able to ditch `webpack` for transpiling too. T
 ## De-NPM-ing
 Well, once the project is this small, it makes precious little sense for the supporting packages to hang around. Yes, I could lint the files. I could. Yes, I could modularise the common lines out into a separate shared file. Yes, I could build out separate manifest.json files. But really? Not worth it.
 I removed the Typescript packages from package.json. Then webpack. Then everything else. Then I went back to shell scripts and could remove the final dev-dependency, `npm-run-all`.
+
+
+### Footnotes

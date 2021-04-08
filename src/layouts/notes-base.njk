@@ -1,13 +1,14 @@
+{% set css_to_bundle = "notes" %}
 <!DOCTYPE html>
 <html lang="en">
     {% include "head.njk" %}
     <body>
-        {% bundledcss "notes" %}
+
         {# {% include "header-links.njk" %} #}
         <nav>
             <div>
                 <a class="internal-link" href="{{ site.baseurl }}/">
-                    <b>{{ site.title }}</b>
+                    <b>{{ site.name }}</b>
                 </a>
             </div>
         </nav>

@@ -413,7 +413,7 @@ a:hover {
   color: black !important;
   background: #fffaf1;
 }
-a:after {
+a.external:after {
   position: relative;
   top: -0.5em;
   font-size: 0.7em;
@@ -464,4 +464,4 @@ code {
   cursor: help;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=notes.css.map */

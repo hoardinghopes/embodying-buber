@@ -30,5 +30,20 @@
         <link rel="x-json-version" href="{{ page.url | jsonpath }}">
     {% endif %}
     {% bundledjs "main.js" %}
-    {% bundledcss "head" %}
-</head>
+    {#
+        set css_to_bundle in base files
+        TODO: find a better way of handling CSS files
+    #}
+    {% bundledcss css_to_bundle %}
+
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
+    {%-set css-%}
+           pre[class*="language-"] {
+               font-size: 0.75em; /* needed to make <content> the right width
+            }
+    {%- endset %}
+        <style>
+            {{- css | cssmin -}}
+        </style>
+
+    </head>

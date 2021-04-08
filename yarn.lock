@@ -41,13 +41,13 @@
     posthtml "^0.13.0"
     posthtml-urls "1.0.0"
 
-"@11ty/eleventy-plugin-syntaxhighlight@^3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@11ty/eleventy-plugin-syntaxhighlight/-/eleventy-plugin-syntaxhighlight-3.0.4.tgz#60b134e5054953008d01ff0250705b821ac9f5b0"
-  integrity sha512-wMFIo74AZil2vk+BeaDyXd0eQcmrTIEDNrpPPEIChgRnS+pJIkFpDz0LJM73x1dUltpaVU4UlYHRD52ueMAyHQ==
+"@11ty/eleventy-plugin-syntaxhighlight@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.npm.taobao.org/@11ty/eleventy-plugin-syntaxhighlight/download/@11ty/eleventy-plugin-syntaxhighlight-3.1.0.tgz#a13d30cc89e24ab9151c96bbd00b58deb4251051"
+  integrity sha1-oT0wzIniSrkVHJa70AtY3rQlEFE=
   dependencies:
-    jsdom "^16.4.0"
-    prismjs "^1.21.0"
+    linkedom "^0.5.5"
+    prismjs "^1.23.0"
 
 "@11ty/eleventy@^0.11.1":
   version "0.11.1"
@@ -1089,6 +1089,11 @@
   integrity sha1-JR9P59FU0rrRJavhtCmyOv0mLik=
   dependencies:
     "@types/node" "*"
+
+"@ungap/event-target@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.npm.taobao.org/@ungap/event-target/download/@ungap/event-target-0.2.2.tgz#6543122625a0a793c5fa265f45717cd096b0fb7c"
+  integrity sha1-ZUMSJiWgp5PF+iZfRXF80Jaw+3w=
 
 "@webassemblyjs/ast@1.9.1":
   version "1.9.1"
@@ -2601,6 +2606,17 @@ css-select@^2.0.0:
     domutils "^1.7.0"
     nth-check "^1.0.2"
 
+css-select@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.npm.taobao.org/css-select/download/css-select-3.1.2.tgz?cache=0&sync_timestamp=1617437442336&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcss-select%2Fdownload%2Fcss-select-3.1.2.tgz#d52cbdc6fee379fba97fb0d3925abbd18af2d9d8"
+  integrity sha1-1Sy9xv7jefupf7DTklq70Yry2dg=
+  dependencies:
+    boolbase "^1.0.0"
+    css-what "^4.0.0"
+    domhandler "^4.0.0"
+    domutils "^2.4.3"
+    nth-check "^2.0.0"
+
 css-select@~1.2.0:
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/css-select/download/css-select-1.2.0.tgz?cache=0&sync_timestamp=1608486173035&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcss-select%2Fdownload%2Fcss-select-1.2.0.tgz#2b3a110539c5355f1cd8d314623e870b121ec858"
@@ -2649,6 +2665,11 @@ css-what@^3.2.1:
   version "3.4.2"
   resolved "https://registry.npm.taobao.org/css-what/download/css-what-3.4.2.tgz?cache=0&sync_timestamp=1602570920759&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcss-what%2Fdownload%2Fcss-what-3.4.2.tgz#ea7026fcb01777edbde52124e21f327e7ae950e4"
   integrity sha1-6nAm/LAXd+295SEk4h8yfnrpUOQ=
+
+css-what@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.npm.taobao.org/css-what/download/css-what-4.0.0.tgz?cache=0&sync_timestamp=1615262862801&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcss-what%2Fdownload%2Fcss-what-4.0.0.tgz#35e73761cab2eeb3d3661126b23d7aa0e8432233"
+  integrity sha1-Nec3Ycqy7rPTZhEmsj16oOhDIjM=
 
 css@^3.0.0:
   version "3.0.0"
@@ -3102,6 +3123,15 @@ dom-serializer@0:
     domelementtype "^2.0.1"
     entities "^2.0.0"
 
+dom-serializer@^1.0.1:
+  version "1.2.0"
+  resolved "https://registry.npm.taobao.org/dom-serializer/download/dom-serializer-1.2.0.tgz?cache=0&sync_timestamp=1607193128529&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdom-serializer%2Fdownload%2Fdom-serializer-1.2.0.tgz#3433d9136aeb3c627981daa385fc7f32d27c48f1"
+  integrity sha1-NDPZE2rrPGJ5gdqjhfx/MtJ8SPE=
+  dependencies:
+    domelementtype "^2.0.1"
+    domhandler "^4.0.0"
+    entities "^2.0.0"
+
 dom-serializer@~0.1.0:
   version "0.1.1"
   resolved "https://registry.npm.taobao.org/dom-serializer/download/dom-serializer-0.1.1.tgz?cache=0&sync_timestamp=1607193128529&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdom-serializer%2Fdownload%2Fdom-serializer-0.1.1.tgz#1ec4059e284babed36eec2941d4a970a189ce7c0"
@@ -3120,6 +3150,11 @@ domelementtype@^2.0.1:
   resolved "https://registry.yarnpkg.com/domelementtype/-/domelementtype-2.1.0.tgz#a851c080a6d1c3d94344aed151d99f669edf585e"
   integrity sha512-LsTgx/L5VpD+Q8lmsXSHW2WpA+eBlZ9HPf3erD1IoPF00/3JKHZ3BknUVA2QGDNu69ZNmyFmCWBSO45XjYKC5w==
 
+domelementtype@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.npm.taobao.org/domelementtype/download/domelementtype-2.2.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomelementtype%2Fdownload%2Fdomelementtype-2.2.0.tgz#9a0b6c2782ed6a1c7323d42267183df9bd8b1d57"
+  integrity sha1-mgtsJ4LtahxzI9QiZxg9+b2LHVc=
+
 domexception@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/domexception/-/domexception-2.0.1.tgz#fb44aefba793e1574b0af6aed2801d057529f304"
@@ -3133,6 +3168,13 @@ domhandler@^2.3.0:
   integrity sha512-JiK04h0Ht5u/80fdLMCEmV4zkNh2BcoMFBmZ/91WtYZ8qVXSKjiw7fXMgFPnHcSZgOo3XdinHvmnDUeMf5R4wA==
   dependencies:
     domelementtype "1"
+
+domhandler@^4.0.0, domhandler@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.npm.taobao.org/domhandler/download/domhandler-4.1.0.tgz?cache=0&sync_timestamp=1617299326465&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomhandler%2Fdownload%2Fdomhandler-4.1.0.tgz#c1d8d494d5ec6db22de99e46a149c2a4d23ddd43"
+  integrity sha1-wdjUlNXsbbIt6Z5GoUnCpNI93UM=
+  dependencies:
+    domelementtype "^2.2.0"
 
 domutils@1.5.1:
   version "1.5.1"
@@ -3149,6 +3191,15 @@ domutils@^1.5.1, domutils@^1.7.0:
   dependencies:
     dom-serializer "0"
     domelementtype "1"
+
+domutils@^2.4.3, domutils@^2.4.4:
+  version "2.5.1"
+  resolved "https://registry.npm.taobao.org/domutils/download/domutils-2.5.1.tgz?cache=0&sync_timestamp=1617299796421&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdomutils%2Fdownload%2Fdomutils-2.5.1.tgz#9b8e84b5d9f788499ae77506ea832e9b4f9aa1c0"
+  integrity sha1-m46Etdn3iEma53UG6oMum0+aocA=
+  dependencies:
+    dom-serializer "^1.0.1"
+    domelementtype "^2.2.0"
+    domhandler "^4.1.0"
 
 dot-prop@^5.2.0:
   version "5.3.0"
@@ -4154,6 +4205,11 @@ html-encoding-sniffer@^2.0.1:
   dependencies:
     whatwg-encoding "^1.0.5"
 
+html-escaper@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.npm.taobao.org/html-escaper/download/html-escaper-3.0.3.tgz#4d336674652beb1dcbc29ef6b6ba7f6be6fdfed6"
+  integrity sha1-TTNmdGUr6x3Lwp72trp/a+b9/tY=
+
 html-minifier@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npm.taobao.org/html-minifier/download/html-minifier-4.0.0.tgz#cca9aad8bce1175e02e17a8c33e46d8988889f56"
@@ -4178,6 +4234,16 @@ htmlparser2@^3.9.1, htmlparser2@^3.9.2:
     entities "^1.1.1"
     inherits "^2.0.1"
     readable-stream "^3.1.1"
+
+htmlparser2@^6.0.0:
+  version "6.0.1"
+  resolved "https://registry.npm.taobao.org/htmlparser2/download/htmlparser2-6.0.1.tgz?cache=0&sync_timestamp=1615144926274&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fhtmlparser2%2Fdownload%2Fhtmlparser2-6.0.1.tgz#422521231ef6d42e56bd411da8ba40aa36e91446"
+  integrity sha1-QiUhIx721C5WvUEdqLpAqjbpFEY=
+  dependencies:
+    domelementtype "^2.0.1"
+    domhandler "^4.0.0"
+    domutils "^2.4.4"
+    entities "^2.0.0"
 
 http-cache-semantics@^4.0.0:
   version "4.1.0"
@@ -4943,6 +5009,17 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
+linkedom@^0.5.5:
+  version "0.5.6"
+  resolved "https://registry.npm.taobao.org/linkedom/download/linkedom-0.5.6.tgz#2c058dac9476b9b8ef1886ae8f0d495e3e6606e4"
+  integrity sha1-LAWNrJR2ubjvGIaujw1JXj5mBuQ=
+  dependencies:
+    "@ungap/event-target" "^0.2.2"
+    css-select "^3.1.2"
+    html-escaper "^3.0.3"
+    htmlparser2 "^6.0.0"
+    uhyphen "^0.1.0"
+
 linkify-it@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/linkify-it/-/linkify-it-2.2.0.tgz#e3b54697e78bf915c70a38acd78fd09e0058b1cf"
@@ -5648,6 +5725,13 @@ nth-check@^1.0.2, nth-check@~1.0.1:
   integrity sha1-sr0pXDfj3VijvwcAN2Zjuk2c8Fw=
   dependencies:
     boolbase "~1.0.0"
+
+nth-check@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/nth-check/download/nth-check-2.0.0.tgz#1bb4f6dac70072fc313e8c9cd1417b5074c0a125"
+  integrity sha1-G7T22scAcvwxPoyc0UF7UHTAoSU=
+  dependencies:
+    boolbase "^1.0.0"
 
 num2fraction@^1.2.2:
   version "1.2.2"
@@ -6846,10 +6930,10 @@ pretty@^2.0.0:
     extend-shallow "^2.0.1"
     js-beautify "^1.6.12"
 
-prismjs@^1.21.0:
-  version "1.22.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.22.0.tgz#73c3400afc58a823dd7eed023f8e1ce9fd8977fa"
-  integrity sha512-lLJ/Wt9yy0AiSYBf212kK3mM5L8ycwlyTlSxHBAneXLR0nzFMlZ5y7riFPF3E33zXOF2IH95xdY5jIyZbM9z/w==
+prismjs@^1.23.0:
+  version "1.23.0"
+  resolved "https://registry.npm.taobao.org/prismjs/download/prismjs-1.23.0.tgz#d3b3967f7d72440690497652a9d40ff046067f33"
+  integrity sha1-07OWf31yRAaQSXZSqdQP8EYGfzM=
   optionalDependencies:
     clipboard "^2.0.0"
 
@@ -8453,6 +8537,11 @@ uglify-to-browserify@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/uglify-to-browserify/-/uglify-to-browserify-1.0.2.tgz#6e0924d6bda6b5afe349e39a6d632850a0f882b7"
   integrity sha1-bgkk1r2mta/jSeOabWMoUKD4grc=
+
+uhyphen@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npm.taobao.org/uhyphen/download/uhyphen-0.1.0.tgz#3cc22afa790daa802b9f6789f3583108d5b4a08c"
+  integrity sha1-PMIq+nkNqoArn2eJ81gxCNW0oIw=
 
 ultron@~1.1.0:
   version "1.1.1"

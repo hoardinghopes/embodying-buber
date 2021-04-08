@@ -7,8 +7,6 @@ tags: ["note"]
 
 
 
-# Setting up Jekyll with Obsidian
-
 This comes from a [request for help](https://community.nesslabs.com/c/digital-gardening/the-best-way-to-create-a-digital-garden#comment_wrapper_1353438) in the NessLab community.
 
 Which in turn led to [Mike Tannenbaum's Obsidian Jekyll workflow](https://refinedmind.co/obsidian-jekyll-workflow). But before I can even review that, I have to follow the [steps provided by Max Vaillancourt](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll) to set my computer up appropriately.
@@ -20,6 +18,8 @@ Max walks through installing required software, and then forking and cloning his
 As I have previously worked with Jekyll, and therefore have the prerequisites installed, I jumped to stage 2 and forked his repo.
 
 His instructions for cloning don't reflect the options available on the forked repo page (has github redesigned their layout?). It's a small thing because I know my way around github, but I imagine it's harder for an absolute beginner.
+
+[[Using a password manager]]
 
 ### 0. Prerequisites
 - Ruby 3.0.0
@@ -35,8 +35,9 @@ Attempting via SSH printed out an error message that included the statement `Per
 
 I tried again with the HTTPS URL, and it worked fine, quickly downloading the project:
 
-`git clone https://github.com/hoardinghopes/digital-garden-jekyll-template.git`
-
+```shell-session
+git clone https://github.com/hoardinghopes/digital-garden-jekyll-template.git
+```
 #### 3. Test out the site locally
 `bundle` blew up :-(
 
@@ -51,13 +52,15 @@ It should be a simple `rvm install 3.0.0`, but reading through the splurge of ou
 
 Once again I needed to update the Mac's `xcode` libraries: `xcode-select --install`. This opened a prompt and license agreement before installing. It was a large download - time for lunch *en famille*.
 
-Once that had completed I ran `rvm install 3.0.0` again, which completed happily this time. So back to running the project scripts!
+Once that had completed I ran `rvm install 3.0.0` again, which completed happily this time[^fn-rvmrc]. So back to running the project scripts!
+
+[^fn-rvmrc]: When I came back to this project the next day, my `rvm` had fallen back to Ruby 2.5.1. Adding a `.rvmrc` file to the project with a single value of `3.0.0`, and `cd`-ing out of and back into the project directory got `rvm` to pick up Ruby 3.0.0. again.
 
 `bundle` started installing lots of packages before breaking on `eventMachine`, complaining of a lack of `openssl`. Now I *know* that I have openssl installed on my machine, so simple installation wasn't the answer.
 
 [I asked the web](https://duckduckgo.com/?t=ffab&q=rvm+eventmachine+opensell+not+found) and got sent to [this page](https://izziswift.com/gem-eventmachine-fatal-error-openssl-ssl-h-file-not-found/). I chose solution #2.
 
-```
+```shell-session
 bundle config build.eventmachine --with-cppflags=-I$(brew --prefix openssl)/include
 ```
 
@@ -66,3 +69,6 @@ This little command did its stuff silently, which I suppose is better than splur
 This time, `bundle` output lots of lines saying it had already installed most things, and then highlighted the new things it could install courtesy of my detour, starting with the `eventMachine` package.
 
 Thereafter: `bundle exec jekyll serve` generated and served the project at [http://localhost:4000](http://localhost:4000).
+
+
+### Footnotes

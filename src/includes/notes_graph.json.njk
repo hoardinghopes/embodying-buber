@@ -1,31 +1,46 @@
-{%- set nodes = "[\n" %}
-{%- set edges = "[\n" %}
+{#
+    create JSON output for the Javascript that displays the graph
+    I'm using the loop.index0 (zero-based) to provide IDs for the node objects.
 
-{%- for currentNote in collections.notes %}
+    However, strangely, I need to use loop.index (one-based) to make it work with the backlink nodes.
+
+    I don't understand why this is, but here's the problem:
+
+    OBSIDIAN        ZERO-BASED BACKLINK IDs
+    ========        =======================
+    1-0             0-0
+    1-2             0-2
+    1-3             0-3
+    2-3             1-3
+
+ #}
+
+{%- set nodes = [] -%}
+{%- set edges = [] -%}
+
+{%- for currentNote in collections.notes -%}
     {%- set idx = loop.index0 %}
-    {%- set node = "\t{\n" %}
-    {%- set node = node + ('\t\t"id": "' + idx + '",\n') %}
-    {%- set node = node + ('\t\t"path": "' + currentNote.data.page.url + '",\n') %}
-    {%- set node = node + ('\t\t"label": "' + currentNote.data.title + '"\n') %}
-    {%- set node = node + "\t}" %}
-    {%- if not loop.last %}
-        {%- set node = node + "," %}
-    {%- endif %}
-    {%- set node = node + "\n" %}
-    {%- set nodes = nodes + node %}
 
-    {%- for link in currentNote.data.backlinks %}
-        {%- set edge = "\t{\n" %}
-        {%- set edge = edge + ('\t\t"source": "' + loop.index0 + '",\n') %}
-        {%- set edge = edge + ('\t\t"target": "' + idx + '"\n') %}
-        {%- set edge = edge + "\t},\n" %}
-        {%- set edges = edges + edge %}
-    {%- endfor %}
-{%- endfor %}
-{%- set nodes = nodes + "]" %}
-{%- set edges = edges + "]" -%}
+    {%- set node = "{" %}
+    {%- set node = node + ('"id": "' + idx + '",') %}
+    {%- set node = node + ('"path": "' + currentNote.data.page.url + '",') %}
+    {%- set node = node + ('"label": "' + currentNote.data.title + '"') %}
+    {%- set node = node + "}" %}
+    {%- set nodes = (nodes.push(node), nodes) %}
+
+    {%- for link in currentNote.data.backlinks -%}
+        {%- set edge = "{" %}
+        {%- set edge = edge + ('"source": "' + loop.index + '",') %}
+        {%- set edge = edge + ('"target": "' + idx + '"') %}
+        {%- set edge = edge + "}" %}
+        {%- set edges = (edges.push(edge), edges) %}
+    {%- endfor -%}
+
+{%- endfor -%}
+
+
 
 {
-    "nodes": {{ nodes | safe }},
-    "edges": {{ edges | safe }}
+    "nodes": [{{ nodes | safe }}],
+    "edges": [{{ edges | safe }}]
 }

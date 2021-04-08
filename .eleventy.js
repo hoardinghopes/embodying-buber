@@ -10,9 +10,11 @@ const criticalCss = require("eleventy-critical-css");
 const filters = require("./src/_11ty/filters");
 const shortcodes = require("./src/_11ty/shortcodes");
 const markdownLib = require("./src/_11ty/markdownLib");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLib.getMarkdownLib());
+
   // Filters
   Object.keys(filters).forEach((filterName) => {
     eleventyConfig.addFilter(filterName, filters[filterName]);
@@ -28,6 +30,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(charts);
   eleventyConfig.addPlugin(readingTime);
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addPassthroughCopy({ "src/static/": "/" });

@@ -11,14 +11,12 @@ Last night I read that [Facebook security had been breached](https://www.howtoge
 
 So I decided (at 1am, always the best time for involved technical decisions) to check and upgrade my Facebook security.
 
-- [[Setting up Jekyll with Obsidian]]
-- [[Twitter browser extension]]
 - [[Using a password manager]]
 
 
 
 
- *The best Facebook security is not to have joined Facebook, ever.* 
+ > *The best Facebook security is not to have joined Facebook, ever.*
 
 
 
@@ -62,3 +60,4 @@ So let's just say this: if you don't already have a Facebook account, don't get 
 
 
 
+### Footnotes
