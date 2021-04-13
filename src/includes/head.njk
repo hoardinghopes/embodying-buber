@@ -29,6 +29,10 @@
     {% if type == "post" %}
         <link rel="x-json-version" href="{{ page.url | jsonpath }}">
     {% endif %}
+    {# turn the offline function on | off #}
+    <script>
+        const isDev = {{site.isDev}};
+    </script>
     {% bundledjs "main.js" %}
     {#
         set css_to_bundle in base files
