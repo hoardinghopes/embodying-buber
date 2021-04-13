@@ -1,4 +1,5 @@
 ---
+date: 2021-04-05
 title: Twitter browser extension
 tags: ["note", "twitter", "browser extension"]
 ---

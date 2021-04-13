@@ -5,14 +5,13 @@ permalink: /stats/
 eleventyExcludeFromCollections: true
 ---
 
-
-{% set totalPosts = collections.posts.length %}
+{% set totalPosts = collections.notes.length %}
 {% set totalWords = 0 %}
 {% set i = 0 %}
 {% set firstPost = false %}
 {% set lastPost = false %}
 
-{%- for post in collections.posts -%}
+{%- for post in collections.notes -%}
 
 	{# we need to strip tags from the content, and then count it #}
 	{%- set newWords = post.templateContent | striptags | wordcount -%}
@@ -32,64 +31,53 @@ eleventyExcludeFromCollections: true
 		{%- set lastPost = post -%}
 	{%- endif -%}
 
-  {% set t = post.data.title %}
-  {% set d = post.data.date %}
-  {% set wc %}{{ post.templateContent | wordCount }}{% endset %}
+	{% set t = post.data.title %}
+	{% set d = post.data.date %}
+	{% set wc %}{{ post.templateContent | wordCount }}{% endset %}
 
 {%- endfor -%}
 
-
-
 {%- from "macros/post-card.njk" import card -%}
-
 
 {% extends "../layouts/base.njk" %}
 
 {% block content %}
 
-<h2>General Stats</h2>
-<ul>
-	<li>Total number of words: {{totalWords}}</li>
-	<li>Total number of posts: {{totalPosts}}</li>
-	<li>First article: <a href="{{firstPost.url}}">{{firstPost.data.title}}</a> ({{firstPost.data.date | readableDate}})
+	<h2>General Stats</h2>
+	<ul>
+		<li>Total number of words: {{totalWords}}</li>
+		<li>Total number of posts: {{totalPosts}}</li>
+		<li>First article: <a href="{{firstPost.url}}">{{firstPost.data.title}}</a> ({{firstPost.data.date | readableDate}})
 	{% set thumb = images[firstPost.fileSlug] -%}
-		{{ card(firstPost, thumb) | safe }}
-	</li>
-	<li>Most recent article: <a href="{{lastPost.url}}">{{lastPost.data.title}}</a> ({{lastPost.data.date | readableDate}})
+			{{ card(firstPost, thumb) | safe }}
+		</li>
+		<li>Most recent article: <a href="{{lastPost.url}}">{{lastPost.data.title}}</a> ({{lastPost.data.date | readableDate}})
 	{% set thumb = images[lastPost.fileSlug] -%}
-		{{ card(lastPost, thumb) | safe }}
-	</li>
-</ul>
+			{{ card(lastPost, thumb) | safe }}
+		</li>
+	</ul>
 
-
-{#
+	{#
   The hackiest hack: I want to create the graph once as a page.
   The best way to do this is in plain javascript, so as an .ejs file.
   Of course, I can't include that .ejs format in this .njk file, so I am writing /src/views/statistics.ejs out to /statistics/, and then pulling that in here via an iframe.
 #}
-{% if isDev %}
-{% set iframeURL = "/statistics/" %}
-{% else %}
-  {% set iframeURL = site.url + "/statistics/"%}
-{% endif %}
+	{% if isDev %}
+		{% set iframeURL = "/statistics/" %}
+	{% else %}
+		{% set iframeURL = site.url + "/statistics/"%}
+	{% endif %}
 
-<style media="screen">
-  .stats-iframe {
-    overflow: hidden;
-  }
-</style>
-<iframe src="{{ iframeURL }}" class="stats-iframe" width="400" height="500" scrolling="no"></iframe>
+	<style media="screen">
+		.stats-iframe {
+			overflow: hidden;
+		}
+	</style>
+	<iframe src="{{ iframeURL }}" class="stats-iframe" width="400" height="500" scrolling="no"></iframe>
 
-
-<h2>Posts per tag</h2>
-<ul>
-	{% for tag in collections.tagList %}
-		{% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-		<li>
-			<a href="{{ tagUrl | url }}" class="post-tag">#{{ tag | nbsp | safe }}&nbsp;({{collections[tag].length}})</a>
-		</li>
-	{% endfor %}
-</ul>
-
+	<h2>Posts per tag</h2>
+	<div class="tags">
+		{% include "tags-list.njk" %}
+	</div>
 
 {% endblock content %}

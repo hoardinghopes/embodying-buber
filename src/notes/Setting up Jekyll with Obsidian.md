@@ -1,4 +1,5 @@
 ---
+date: 2021-04-04
 title: Setting up Jekyll with Obsidian
 tags: [jekyll, obsidian, howto, static site generator]
 status: seedling

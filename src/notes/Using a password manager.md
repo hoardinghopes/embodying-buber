@@ -1,4 +1,5 @@
 ---
+date: 2021-04-09
 draft: true
 title: Using a password manager
 tags: ["note", "security", "password"]
@@ -6,12 +7,12 @@ tags: ["note", "security", "password"]
 
 
 ## What is it?
-A password manager is a (cloud-based) application that securely stores all your passwords in one place. It requires you to input a _master password_ to access the store. The application works with your browser, automatically filling in password fields in (login) forms. This means that you only need to remember the master password. 
+A password manager is a (cloud-based) application that securely stores all your passwords in one place. It requires you to input a _master password_ to access the store. The application works with your browser, automatically filling in password fields in (login) forms. This means that you only need to remember the master password.
 
 Most password managers also offer to generate long, complex passwords for you, as you will never need to remember them.
 
 ## How does it work?
-The password manager sets up a password vault on your local machine, in which it encrypts all your passwords. Once encrypted, those passwords are also stored on the manager's servers so that you can access them from other devices. 
+The password manager sets up a password vault on your local machine, in which it encrypts all your passwords. Once encrypted, those passwords are also stored on the manager's servers so that you can access them from other devices.
 
 However, your master password and the keys used to encrypt and decrypt the data are never sent to the manager's servers, so they can never access your passwords.
 
