@@ -465,3 +465,6 @@ code {
 }
 
 /*# sourceMappingURL=notes.css.map */
+section.footnotes {
+  font-size: smaller;
+}

@@ -1,8 +1,5 @@
 ---
-type: note
 title: Setting up Jekyll with Obsidian
-status: queued
-tags: ["note"]
 ---
 
 
@@ -19,16 +16,16 @@ As I have previously worked with Jekyll, and therefore have the prerequisites in
 
 His instructions for cloning don't reflect the options available on the forked repo page (has github redesigned their layout?). It's a small thing because I know my way around github, but I imagine it's harder for an absolute beginner.
 
-[[Using a password manager]]
+[[Twitter browser extension]]
 
 ### 0. Prerequisites
 - Ruby 3.0.0
 - RubyGems
 - Git
 
-#### 1. Create a fork of the template repository
+### 1. Create a fork of the template repository
 
-#### 2. Clone your repository locally
+### 2. Clone your repository locally
 Max's route to clone the repository locally uses SSH, which I don't expect a beginner to have installed on their machine, especially if they're following his instructions (which don't mention it), so I cloned via HTTPS.
 
 Attempting via SSH printed out an error message that included the statement `Permission denied (publickey)`. That's the giveaway: I don't have SSH keys connected to github.
@@ -43,7 +40,7 @@ git clone https://github.com/hoardinghopes/digital-garden-jekyll-template.git
 
 It turns out that I have Ruby 2.5.1 installed, and that looks to be out of date for this project. Back to 0. Prerequisites!
 
-#### 0. Prerequisites
+### 0. Prerequisites
 I have installed and upgraded Ruby several times over the last 10 years, and I always look for a better/simpler way of doing it. This means that I have [installed by compiling it](https://www.ruby-lang.org/en/downloads/), [installed via RVM](https://rvm.io/), and used [HomeBrew](https://brew.sh/). But which is the latest version that I'm using?
 
 With a bit of picking through shell scripts, I found that my latest version is provided by RVM, so I updated that way too.
@@ -71,4 +68,4 @@ This time, `bundle` output lots of lines saying it had already installed most th
 Thereafter: `bundle exec jekyll serve` generated and served the project at [http://localhost:4000](http://localhost:4000).
 
 
-### Footnotes
+

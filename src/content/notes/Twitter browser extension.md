@@ -1,15 +1,12 @@
 ---
-type: note
 title: Twitter browser extension
-status: queued
 tags: ["note", "twitter", "browser extension"]
 ---
 
 I don't remember quite how, but I came across [this tweet announcing a beta browser extension](https://twitter.com/round/status/1138244047540228100). It promised a useful Chrome extension that looks sites up on Twitter to see if they've been mentioned.
 
-- [[Using a password manager]]
 - [[Setting up Jekyll with Obsidian]]
-- [[Facebook breach]]
+
 
 But I use Firefox.
 
@@ -52,8 +49,8 @@ The Treeverse project has keeps a minimum of browser-specific code separate, and
 By ditching the Typescript, I was able to ditch `webpack` for transpiling too. There are so few lines of code in this extension that modularising it is not worth the effort. Really.
 
 ## De-NPM-ing
-Well, once the project is this small, it makes precious little sense for the supporting packages to hang around. Yes, I could lint the files. I could. Yes, I could modularise the common lines out into a separate shared file. Yes, I could build out separate manifest.json files. But really? Not worth it.
+Well, once the project is this small, it makes precious little sense for the supporting packages to hang around. Yes, I could lint the files. Yes, I could modularise the common lines out into a separate shared file. Yes, I could build out separate manifest.json files. But really? Not worth it.
 I removed the Typescript packages from package.json. Then webpack. Then everything else. Then I went back to shell scripts and could remove the final dev-dependency, `npm-run-all`.
 
 
-### Footnotes
+

@@ -1,5 +1,5 @@
-const gitinfo = require("../data/gitinfo");
-const images = require("../data/images");
+const gitinfo = require("../../data/gitinfo");
+const images = require("../../data/images");
 
 const isDev = process.env.APP_ENV === "development";
 

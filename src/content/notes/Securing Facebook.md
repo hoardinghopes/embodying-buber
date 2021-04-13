@@ -1,8 +1,7 @@
 ---
-type: note
-title: Email Security
-status: queued
-tags: ["note", "email", "security"]
+draft: true
+title: Securing Facebook
+tags: facebook, security, breach
 ---
 
 Last night I read that [Facebook security had been breached](https://www.howtogeek.com/722194/everything-you-need-to-know-about-the-facebook-data-breach/) and that over 533 million users had been affected. The data leak includes full name, phone number, locations, birthday, email address, relationship status, etc.
@@ -12,6 +11,8 @@ Last night I read that [Facebook security had been breached](https://www.howtoge
 So I decided (at 1am, always the best time for involved technical decisions) to check and upgrade my Facebook security.
 
 - [[Using a password manager]]
+- [[Email security]]
+- [[Multi-factor authentication]]
 
 
 
@@ -60,4 +61,4 @@ So let's just say this: if you don't already have a Facebook account, don't get 
 
 
 
-### Footnotes
+

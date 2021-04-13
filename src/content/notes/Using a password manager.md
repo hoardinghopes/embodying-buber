@@ -1,11 +1,26 @@
 ---
-type: note
+draft: true
 title: Using a password manager
-status: queued
 tags: ["note", "security", "password"]
 ---
 
 
+## What is it?
+A password manager is a (cloud-based) application that securely stores all your passwords in one place. It requires you to input a _master password_ to access the store. The application works with your browser, automatically filling in password fields in (login) forms. This means that you only need to remember the master password. 
+
+Most password managers also offer to generate long, complex passwords for you, as you will never need to remember them.
+
+## How does it work?
+The password manager sets up a password vault on your local machine, in which it encrypts all your passwords. Once encrypted, those passwords are also stored on the manager's servers so that you can access them from other devices. 
+
+However, your master password and the keys used to encrypt and decrypt the data are never sent to the manager's servers, so they can never access your passwords.
+
+## What's the purpose?
+A password manager will generate complex passwords for all your accounts, and keep them securely, prroducing them when you need to log in to the accounts. This alllows you to have long and different passwords for every single account.
+
+## What actually happens?
+
+## Why do it?
 
 You use a password manager, right? Right?
 
@@ -23,12 +38,12 @@ The fact is that computers *will* break into our passwords, given enough time. A
 
 [How easy is it to crack your password?](https://resources.infosecinstitute.com/topic/easy-hacker-crack-password/)
 
-## Your password is only as good as the method used to secure it(i)
-Of course, if you leave your password on a post-it note stuck to your monitor, you have might as well have left your computer unlocked. Therefore, we are all told to make our password difficult to imagine (at the same time as making it easily remember-able).
+## Your password is only as good as it is secure(i)
+Of course, if you leave your password on a post-it note stuck to your monitor, you have might as well have left your computer unlocked. Therefore, we are all told to make our password difficult to imagine (at the same time as making it easily memorable).
 
 It gets harder if you work in an organisation that requires you to change your password every few months. The irony of this approach is that it tends to encourage users to create simpler passwords or to write them down.
 
-## Your password is only as good as the method used to secure it(ii)
+## Your password is only as good as it is secure(ii)
 Now we're talking about passwords for social media accounts and online shopping. I have to keep these safe at my end, and the online business has to keep my password safe at their end. And this points to something we all intuitively know: bad actors want to get into the online business' database of passwords, so that they have access to thousands or millions of passwords (which means user details), much more than they want to break into _your_ computer because of _you_.
 
 Back in the early days of the internet, passwords could be stored in plain text format, that meant that if you could find the password, you could read it and use it as is. An extra level of security was brought in by _encrypting_ passwords, which meant that you might find the password _hash_ but that you couldn't use it because it wasn't the actual password.
@@ -77,4 +92,3 @@ Now, if I use encryption to obfuscate my password, the computer has to decipher 
 
 
 
-### Footnotes

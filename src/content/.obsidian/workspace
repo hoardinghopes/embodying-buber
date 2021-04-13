@@ -1,0 +1,122 @@
+{
+  "main": {
+    "id": "9526229927b3fc62",
+    "type": "split",
+    "children": [
+      {
+        "id": "e776f00084309a20",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Your first note.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1bbff38653709f8c",
+    "type": "split",
+    "children": [
+      {
+        "id": "d19a69564355b02f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4307832f88ea67d3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "5f3717464057f6c5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#encryption",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "5db127806a86619a",
+    "type": "split",
+    "children": [
+      {
+        "id": "879bd1211d5f4c6d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec3b6b11bf0e9242",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Your first note.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "02e50b4e69962b59",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "dbc982ccff719201",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Your first note.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "e776f00084309a20",
+  "lastOpenFiles": [
+    "Your first note.md",
+    "Multi-factor authentication.md",
+    "Using a password manager.md",
+    "end-to-end ecryption.md",
+    "cryptographic keys.md",
+    "assets/e2ee.png",
+    "assets/e2ee 1.png",
+    "Multi-factor security.md",
+    "Securing Facebook.md",
+    "Email digital signatures.md"
+  ]
+}
