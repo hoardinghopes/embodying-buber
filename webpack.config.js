@@ -6,7 +6,7 @@ const isDev = process.env.APP_ENV === "development";
 
 module.exports = {
   optimization: {
-    minimize: true,
+    minimize: !isDev,
   },
   entry: {
     main: path.resolve(__dirname, "src", "assets", "js", "main.js"),
