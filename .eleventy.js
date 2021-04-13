@@ -34,6 +34,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addPassthroughCopy({ "src/static/": "/" });
+  eleventyConfig.addPassthroughCopy({ "src/notes/assets/": "/assets/" });
 
   eleventyConfig.addNunjucksAsyncFilter(
     "jsmin",
