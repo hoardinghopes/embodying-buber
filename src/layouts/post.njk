@@ -11,17 +11,13 @@
           {{ page.date | readableDate }}
         </time>
         <p style="display:none">Published by <a class="p-author">James Knight</a>
-          <p style="display:none" class="p-summary">{{ content | excerpt | safe  }}</p>
         </p>
+        <p style="display:none" class="p-summary">{{ content | excerpt | safe  }}</p>
         <span> | </span>
         <span>{{ content | readingTime }} read</span>
-        {%- if epistemic.status %}
+        {%- if status %}
           <br><br>
-      Epistemic Status (1-5): {{- epistemic.status }}
-        {%- endif %}
-        {%- if epistemic.effort %}
-          <br>
-      Epistemic Effort (1-5): {{- epistemic.effort}}
+      Status: <span class="{{ status }}">{{ status }}</span>
         {%- endif %}
       </div>
 
