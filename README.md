@@ -29,3 +29,7 @@ Isn't Jamstack beautiful?
 - webpack asset-bundler
 - node
 - yarn
+
+## TODOs
+- get Obsidian image assets into the right public directory (/assets/images/? /static/images/? /images/?)
+- clean up `bundledcss` and `bundledjs` shortcodes for head and body
