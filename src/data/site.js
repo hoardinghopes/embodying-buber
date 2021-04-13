@@ -1,6 +1,7 @@
 const isDev = process.env.APP_ENV === "development";
 
 module.exports = {
+  isDev: isDev,
   name: "28 days",
   description: "Part of the 28-day challenge",
   domain: "28-days.netlify.app",
