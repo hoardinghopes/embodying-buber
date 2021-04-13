@@ -1,6 +1,5 @@
 "use strict";
 require("alpinejs");
-
 const switcher = require("./theme-switcher");
 const offline = require("./save-to-offline");
 
@@ -26,7 +25,9 @@ window.setUp = function () {
   }
 
   switcher();
-  offline();
+  if (!isDev) {
+    offline();
+  }
 
   return { show: false };
 };
