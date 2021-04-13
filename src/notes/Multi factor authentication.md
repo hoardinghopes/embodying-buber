@@ -10,14 +10,12 @@ status: seedling
 Also known as MFA and two-factor authentication or 2FA, multi-factor authentication adds a second step to the login process, allowing a user to authenticate themselves with two or more pieces of evidence (factors). The evidence includes knowledge (something you know, like a password), possession (something you have, like a phone), and inherence (something you are, like a fingerprint).
 
 
-![](assets/2fa.jpg)
+![](/assets/2fa.jpg)
 
-![](assets/mfa.jpg)
+![](/assets/mfa.jpg)
 
 ## How does it work?
 That depends. Some versions will send a confirmation link to an alterrnative email address; some will send you a code in a text; some will ask you to input a number randomly generated on your phone.
-
-[[Twitter browser extension]]
 
 ## Why should I use it?
 Most hacking attempts throw possible passwords at the login form. With a second step that's off the computer (e.g. on your phone), you've made it much harder for the hacker.

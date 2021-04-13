@@ -1,14 +1,17 @@
 ---
 title: Aloha!
+28d: 6
 date: 2021-02-20
 description: Hello:goodbye
 tags: [foolish, interludes]
 status: seedling
 ---
 
-This fascinating exercise comes my study at Frankie Briers' _Wise Fool School_[^fn-frankie]. Each week of the course, he invited us to take on a practice and see what emerged from it. This particular week's exercise was _Aloha_.
+This fascinating exercise comes my study at Frankie Briers' _Wise Fool School_[^fn-frankie]. Each week of the course, he invited us to take on a practice and see what emerged from it. This particular week's exercise was _Aloha_[^fn-contd].
 
 [^fn-frankie]: I highly recommend [this 6-week course](https://www.francisbriers.com/wise-fool-school). It's delightful, rather than demanding, and Frankie is a sparkly-eyed wise man. [Just watching him](https://www.youtube.com/watch?v=c3qQvdq10HA) is good for the heart. Finally, he's a poet – of course, how else can we get beyond the constraints of language – and has written a lovely [_Tao Te Ching_](https://www.amazon.co.uk/Tao-Ching-Ineffable-spiritual-translated-ebook/dp/B00TQ0J25E/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=&sr=).
+
+[^fn-contd]: Continued in [[Aloha revisited]].
 
 > In Hawai'ian, _Aloha_ means both _hello_ and _goodbye_. And also: _love_. So we can say hello with love, and we can say goodbye with love.
 >

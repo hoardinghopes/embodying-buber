@@ -1,5 +1,6 @@
 ---
 date: 2021-03-06
+28d: 20
 title: Different voices of head, heart & hara
 description: "It's dark in here."
 tags: [awareness, inwards, writing, encounter, interludes]

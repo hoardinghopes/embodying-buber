@@ -1,5 +1,6 @@
 ---
 date: 2021-02-15
+28d: 1
 title: I and Thou
 description: The philosophical question behind this blog
 tags: [i and thou, start here]
@@ -8,7 +9,9 @@ status: seedling
 
 ### <abbr title="Too long; didn't read">tl;dr</abbr>
 
-Austrian-born philospher Martin Buber^[_I and Thou_, Martin Buber, 1923] wrote that there are two modes of engaging with others. The predominant mode places _I_ over the objectified other (_It_). This is the mode that modern man almost exclusively uses.
+Austrian-born philospher Martin Buber[^fn-ref] wrote that there are two modes of engaging with others. The predominant mode places _I_ over the objectified other (_It_). This is the mode that modern man almost exclusively uses.
+
+[^fn-ref]: _I and Thou_, Martin Buber, 1923, summarised more closely in [I don't exist](/notes/i-dont-exist/).
 
 The second mode, which creates a unique and transforming relationship with the Other, has been neglected in the modern world to the detriment of us all.
 
@@ -65,3 +68,5 @@ I am slowly and gently exploring what this theory might mean. In relation to peo
 Of course, I can't try stuff out and then ask these non-speakers _how was it for you?_ so I am left to my own devices. Can I create space for transformation in my body and space such that I experience things differently?
 
 I think I'm practising love, and I don't know what that means. All at the same time.
+
+Continued in [The body of _I-and-Thou_](/notes/the-body-of-i-and-thou/).

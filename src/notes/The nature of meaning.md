@@ -1,5 +1,6 @@
 ---
 date: 2021-03-13
+28d: 27
 title: The nature of meaning
 description: "I. Robot."
 tags: [encounter, writing, nature]

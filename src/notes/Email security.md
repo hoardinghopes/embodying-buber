@@ -40,7 +40,7 @@ However, the mail server itself has the keys to decrypt the message once it arri
 
 
 ### 2. End-to-end encryption
-[[end-to-end ecryption | In this method], the email is encrypted by the sender so that it can only be opened by the intended recipient. In this case, it cannot be decrypted on the mail server because the recipient's identity has been tied into the encryption process. It will remain encrypted wherever it goes, until the recipient uses their key to open it.
+[In this method](/notes/end-to-end-encryption/) email is encrypted by the sender so that it can only be opened by the intended recipient. In this case, it cannot be decrypted on the mail server because the recipient's identity has been tied into the encryption process. It will remain encrypted wherever it goes, until the recipient uses their key to open it.
 
 
 

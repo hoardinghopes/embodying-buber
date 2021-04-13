@@ -1,5 +1,6 @@
 ---
 date: 2021-03-14
+28d: 28
 title: Silencing
 description: "Inspired by 'A Language Older than Words', by Derrick Jensen"
 tags: [awareness, body, writing, encounter]

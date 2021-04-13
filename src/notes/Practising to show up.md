@@ -1,5 +1,6 @@
 ---
 date: 2021-03-09
+28d: 23
 title: Practising to show up
 description: "Can any body hear me?"
 tags: [awareness, inwards, 4 directions, interludes]

@@ -1,5 +1,6 @@
 ---
 date: 2021-02-16
+28d: 2
 title: The Body of I and Thou
 description: From philosophy to physicality
 tags: [i and thou, start here, body]

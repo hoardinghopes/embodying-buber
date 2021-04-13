@@ -1,5 +1,6 @@
 ---
 date: 2021-02-27
+28d: 13
 title: It's all in the anticipation
 description: "What would it be like to have a bit more ease?"
 tags: [4 directions, awareness, body, standing]

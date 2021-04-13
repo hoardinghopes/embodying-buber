@@ -1,5 +1,6 @@
 ---
 date: 2021-03-10
+28d: 24
 title: Spinning the ropes
 description: "Cross-body learning"
 tags: [awareness, body, 4 directions, interludes]

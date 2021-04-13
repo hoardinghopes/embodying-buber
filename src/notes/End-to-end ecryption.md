@@ -28,4 +28,6 @@ End-to-end email encryption requires both sender and recipient to have a pair of
 - **prevents mass surveillance**: there's a reason government's don't like the public using end-to-end encryption
 
 
-![[assets/e2ee 1.png]]
+![[/assets/e2ee.png]]
+
+![](/assets/e2ee.png)

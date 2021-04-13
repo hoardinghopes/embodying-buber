@@ -10,7 +10,7 @@ We're locked down in the Highlands of Scotland – a fantastic part of the worl
 
 During such walks, my attention wanders off with the scudding clouds, and is brought back _here and now_ by my body. That's a fine relationship, and one worthy of exploration. Perhaps one of the most explored and least known relationships, the mind-body connection interests me, and so much of my writing here will be in the form of an enquiry.
 
-For years, this enquiry has been generalised – just _trying stuff out_ – but since studying with Alexander Technique teacher [Bruce Fertman](https://peacefulbodyschool.com/) I have been asking with a purpose: finding the [_I-and-Thou_ body](/posts/the-body-of-i-and-thou/) of [Martin Buber](/posts/i-and-thou/).
+For years, this enquiry has been generalised – just _trying stuff out_ – but since studying with Alexander Technique teacher [Bruce Fertman](https://peacefulbodyschool.com/) I have been asking with a purpose: finding the [_I-and-Thou_ body](/notes/the-body-of-i-and-thou/) of [Martin Buber](/notes/i-and-thou/).
 
 Sometimes I will describe and narrate my experiments. Where I do so, I am implicitly inviting you to join in. If you have time, room, and inclination to join in, please do so, and let me know what you find. I may find time to add a commenting function to this site, but if I don't, you can also contact me [via twitter](https://twitter.com/hoardinghopes) (or the Ness Labs community, if you are a member).
 

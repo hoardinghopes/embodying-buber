@@ -14,8 +14,7 @@ So I decided (at 1am, always the best time for involved technical decisions) to 
 
 - [[Using a password manager]]
 - [[Email security]]
-- [[Multi-factor authentication]]
-
+- [[Multi factor authentication]]
 
 
 

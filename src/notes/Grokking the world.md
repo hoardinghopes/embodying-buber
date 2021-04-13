@@ -1,5 +1,6 @@
 ---
 date: 2021-03-12
+28d: 26
 title: Grokking the world
 description: "That way madness lies"
 tags: ["encounter", "writing", "magic", "outwards"]

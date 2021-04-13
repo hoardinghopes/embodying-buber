@@ -15,8 +15,8 @@ module.exports = {
   },
   headerLinks: [
     {
-      text: "Blog",
-      url: "/blog/",
+      text: "28 days",
+      url: "/28-days/",
       external: false,
     },
     {

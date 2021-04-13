@@ -1,5 +1,6 @@
 ---
 date: 2021-02-19
+28d: 5
 title: Don't bring me down
 description: "Step 2: lengthen and release (part 2)"
 tags: [4 directions, release]
@@ -19,7 +20,7 @@ To achieve this, we must find and melt current tensions, stiffnesses and flaccid
 
 ## Don't bring me down
 
-[Gravity still doesn't care](/posts/lift-me-up/). But we perhaps we return today with a quiet, momentary awareness of the pulse riding up our back. If so, our exploration can move forwards. If not yet, take some time to [review the previous post](/posts/you-lift-me-up/). It's worth doing; let it take time.
+[Gravity still doesn't care](/notes/lift-me-up/). But we perhaps we return today with a quiet, momentary awareness of the pulse riding up our back. If so, our exploration can move forwards. If not yet, take some time to [review the previous post](/notes/you-lift-me-up/). It's worth doing; let it take time.
 
 Gravity is not something we need to fight. We can allow the _biotensegrity_ of our bones – creating length in balance with our tissues tightening around them – to create a dynamic equilibrium of moving parts. But to do that, we will need to release our patterns of stiffness and tension. Today we make a start.
 

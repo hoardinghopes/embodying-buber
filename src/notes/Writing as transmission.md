@@ -1,5 +1,6 @@
 ---
 date: 2021-03-11
+28d: 25
 title: Writing as transmission
 description: "Mind the gap"
 tags: [encounter, body, writing, magic]
@@ -30,7 +31,7 @@ _But do you get the experience that I'm sharing?_
 
 I have compressed a thousand subtle conscious and unconscious sensations into 500 words. Should I have any hope that you'll get the thousand sensations back out again?
 
-I was struggling to write [this piece](/posts/encountering-real-magic/) a while ago, and told a friend. _Write it as a poem_, he suggested. Well, I can assure you that I didn't – _I am not a poet_, as my school teachers liked to point out – so we're all safe there.
+I was struggling to write [this piece](/notes/encountering-real-magic/) a while ago, and told a friend. _Write it as a poem_, he suggested. Well, I can assure you that I didn't – _I am not a poet_, as my school teachers liked to point out – so we're all safe there.
 
 Poetry is something I studied at school[^fn-poets] with more or less engagement. The black words on white paper, arrayed in uneven lines with deliberate spacings that spoke silently to the author's intent, were parsed lesson after lesson.
 

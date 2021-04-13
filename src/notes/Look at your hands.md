@@ -1,5 +1,6 @@
 ---
 date: 2021-03-03
+28d: 17
 title: Look at your hands
 description: "The hand is an act of God"
 tags: [awareness, body, encounter, release]
@@ -32,7 +33,7 @@ See how comfortable that is? Notice how little effort you've applied to the mug.
 
 Can you sense something else too – that your relationship with the mug is different? That you are less holding an object and more relating to an entity? That your hands are receiving the mug as well as holding it?[^fn-buber]
 
-[^fn-buber]: Looking back towards [my earlier Buber articles](/posts/the-body-of-i-and-thou/), I suggested that we can't create Buberian _encounter_ on demand, but that we can set up the conditions that might allow _encounter_ to arise. If that's true, the more two-way our hands relate to the mug, the closer we are getting to setting up those conditions.
+[^fn-buber]: Looking back towards [my earlier Buber articles](/notes/the-body-of-i-and-thou/), I suggested that we can't create Buberian _encounter_ on demand, but that we can set up the conditions that might allow _encounter_ to arise. If that's true, the more two-way our hands relate to the mug, the closer we are getting to setting up those conditions.
 
 Of course, I'm not talking about holding a cup of tea. That's just a convenient study. I'm thinking about anything we strive for – object, idea, person, target, goal, ambition. How we hold ourselves vis-à-vis our goals decides the quality of our relationship with those goals. And the importance of the quality of our relationship with our goals ... is tomorrow's subject.
 

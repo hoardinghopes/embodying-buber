@@ -1,5 +1,6 @@
 ---
 date: 2021-02-18
+28d: 4
 title: Lift me up
 description: "Step 1: lengthen and release (part 1)"
 tags: [4 directions, lengthen]

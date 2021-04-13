@@ -1,5 +1,6 @@
 ---
 date: 2021-03-08
+28d: 22
 title: Writing the three centres ...
 description: "Parlez-vous Français?"
 tags: [intention, outwards, writing, interludes]

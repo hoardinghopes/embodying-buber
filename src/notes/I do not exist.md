@@ -1,4 +1,5 @@
 ---
+28d: 30
 date: 2021-03-17
 title: I don't exist
 description: The philosophical question behind this blog
@@ -10,7 +11,9 @@ status: seedling
 
 I am formed and brought to life by relationship with others (incuding non-animate and non-human others).
 
-Philosopher Martin Buber^[_I and Thou_, Martin Buber, 1923] wrote that there are two ways of being in the world. The most common mode is ego-centric. I am real, everything (everyone) else is an object in relation to me. I relate to them for what I can get from them.
+Philosopher Martin Buber[^fn-ref] wrote that there are two ways of being in the world. The most common mode is ego-centric. I am real, everything (everyone) else is an object in relation to me. I relate to them for what I can get from them.
+
+[^fn-ref]: _I and Thou_, Martin Buber, 1923, summarised in [I and Thou](/notes/i-and-thou/).
 
 The second mode places everything on an even footing – everything has its own value (beyond my ability to extract that value). In this second mode, a relationship is marked by the way it alters both parties.
 

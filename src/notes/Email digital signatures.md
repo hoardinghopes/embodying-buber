@@ -22,7 +22,7 @@ In other words,  whilst [[End-to-end ecryption]] protects the privacy of your me
 ## How does it work?
 Let's say that Alice wants to send a signed message to Bob. She already has [[Cryptographic keys]] set up. She signs the message using her private key, and Bob verifies it by checking it against her public key.
 
-![[assets/491px-Private_key_signing.png]]
+![[/assets/491px-Private_key_signing.png]]
 
 This has the effect of verifying Alice as the sender and prevents her from denying it, because only she has the private key that signed the message. Also, because of the way signing works, this proves that the content has not be altered since signing.
 

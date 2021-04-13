@@ -1,5 +1,6 @@
 ---
 date: 2021-02-28
+28d: 14
 title: Taking my own medicine
 description: "Do as you would have others do"
 tags: [writing, interludes]

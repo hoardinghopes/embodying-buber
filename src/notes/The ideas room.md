@@ -1,5 +1,6 @@
 ---
 date: 2021-03-05
+28d: 19
 title: The ideas room
 description: "It's dark in here."
 tags: [awareness, inwards, writing, encounter, interludes]

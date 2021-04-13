@@ -1,5 +1,6 @@
 ---
 date: 2021-03-07
+28d: 21
 title: In the beginning was the Word ...
 description: "Hello?"
 tags: [awareness, inwards, writing, encounter, interludes]

@@ -1,5 +1,6 @@
 ---
 date: 2021-03-04
+28d: 18
 title: The quality of your desire
 description: "obviously."
 tags: [awareness, body, encounter, interludes]

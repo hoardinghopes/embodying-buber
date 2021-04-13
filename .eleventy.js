@@ -60,6 +60,16 @@ module.exports = function (eleventyConfig) {
     return [...notes].sort();
   });
 
+  eleventyConfig.addCollection("twenty8days", function (collection) {
+    let notes = new Set();
+    collection.getAllSorted().forEach(function (item) {
+      if (item.data["28d"]) {
+        notes.add(item);
+      }
+    });
+    return [...notes].sort();
+  });
+
   eleventyConfig.addCollection("tagList", function (collection) {
     let tagSet = new Set();
     collection.getAllSorted().forEach(function (item) {

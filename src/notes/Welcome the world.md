@@ -1,5 +1,6 @@
 ---
 date: 2021-02-22
+28d: 8
 title: Welcome the world
 description: "Step 3: extend your mind"
 tags: [4 directions, outwards]

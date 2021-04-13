@@ -81,6 +81,7 @@ Now, if I use encryption to obfuscate my password, the computer has to decipher 
 - get yourself an app
 - text messages to phones are not secure
 - emails are not secure
+- [[Multi factor authentication]]
 
 
 

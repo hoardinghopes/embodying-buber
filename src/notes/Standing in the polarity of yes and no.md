@@ -1,5 +1,6 @@
 ---
 date: 2021-02-24
+28d: 10
 title: Standing in the polarity of Yes and No
 description: The community of trees
 tags: [foolish, standing, walking]
