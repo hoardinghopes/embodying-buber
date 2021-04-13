@@ -114,6 +114,6 @@ const clean = function (post) {
   // this is filtering the HTML, not the markdown
   let content = post.replace(/(<([^>]+)>)/gi, ""); //remove tags
   content = content.replace("tl;dr", ""); // remove tl;dr
-  content = content.replace(/([\[\d\]]*)/g, ""); // remove any footnote remnants
+  content = content.replace(/(\[\d\])/g, ""); // remove any footnote remnants
   return content;
 };
