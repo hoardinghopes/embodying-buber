@@ -3,8 +3,8 @@
 }
 
 .form-holder {
-  width: 100%;
-  padding: 2rem;
+  width: 90%;
+  padding: 2rem 0;
   margin: 4rem auto;
   background: var(--secondary-dark);
   border-radius: 10px;

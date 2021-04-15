@@ -70,3 +70,4 @@ Of course, I can't try stuff out and then ask these non-speakers _how was it for
 I think I'm practising love, and I don't know what that means. All at the same time.
 
 Continued in [The body of _I-and-Thou_](/notes/the-body-of-i-and-thou/).
+Also, [[I do not exist]].

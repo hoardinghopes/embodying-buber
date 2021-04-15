@@ -1,26 +1,47 @@
 {% set css_to_bundle = "notes" %}
+{# {% set css_to_bundle = "head" %} #}
 <!DOCTYPE html>
+<!-- notes-base.njk -->
+<!-- {{page.inputPath}} -->
 <html lang="en">
-    {% include "head.njk" %}
-    <body>
+  {% include "head.njk" %}
 
-        {% include "header-links.njk" %}
-        <nav>
-            <div>
-                <a class="internal-link" href="{{ site.baseurl }}/">
-                    <b>{{ site.name }}</b>
-                </a>
-            </div>
-        </nav>
+  <body
+    x-cloak
+    x-data="setUp();"
+    @load.window="setTimeout(function(){ show = true}, 500)"
+    @flash.window="show = false;changePage($event)"
+    x-show.transition.opacity.duration.450ms="show"
+  >
 
-        <div class="wrapper">
-            <main>
-                {% block content %}{% endblock content %}
-            </main>
-            <footer>{% include "footer-links.njk" %}</footer>
-        </div>
+    <header class="header">
+      <div class="header__content">
+        <h1 class="site-title">
+          <a href={{ "/" | url }}>
+            {{site.name}}
+          </a>
+        </h1>
+        {% include "header-links.njk" -%}
+      </div>
+    </header>
 
-        {% set wrapperQuerySelector = "content" %}
-        {% include "link-previews.njk" %}
-    </body>
+    <div class="wrapper">
+      <main class="main">
+        {% block content %}{% endblock content %}
+      </main>
+
+    </div>
+
+    {% include "footer-links.njk" %}
+    {# {% bundledcss "foot" %} #}
+
+    {# if we need page specific scripts, they should be called here, after the styles have been brought in e.g. (currently only used by offline.njk #}
+    {% if extraScripts -%}
+      {% bundledjs extraScripts %}
+    {%- endif %}
+
+    {% include "link-previews.njk" %}
+
+    {% clickystats %}
+  </body>
 </html>

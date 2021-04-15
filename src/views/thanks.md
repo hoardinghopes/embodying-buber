@@ -1,7 +1,7 @@
 ---
 title: Thanks for your feedback
 permalink: "/thanks/"
-layout: about.njk
+layout: "../layouts/about.njk"
 ---
 
 ## Seriously, thanks for your feedback.
@@ -12,14 +12,14 @@ I am so grateful to you, that I googled _a thank you poem for form submission_, 
 
 By Joanna Fuchs
 
-> I want to tell you "Thank you,"  
-> But it doesn’t seem enough.  
-> Words don’t seem sufficient––  
+> I want to tell you "Thank you,"
+> But it doesn’t seem enough.
+> Words don’t seem sufficient––
 > "Blah, blah" and all that stuff.
 >
-> Please know I have deep feelings  
-> About your generous act.  
-> I really appreciate you;  
+> Please know I have deep feelings
+> About your generous act.
+> I really appreciate you;
 > You’re special, and that’s a fact!
 
 ### Would you be serious?

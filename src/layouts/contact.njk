@@ -1,30 +1,30 @@
-{% extends "./base.njk" %}
+{% extends "./notes-base.njk" %}
 
 {% block content %}
 
-<div class="contact">
-  <h1>{{ title }}</h1>
-  {{ content | safe }}
-</div>
-
-<div class="form-holder">
-<form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks/">
-  <div class="inner-wrap">
-    <p class="hidden">
-    <label>Don’t fill this field out if you’re human: <input name="bot-field" /></label>
-  </p>
-    <label>Name<input type="text" name="name" /></label>
-    <label>Email<input type="email" name="email" /></label>
+  <div class="contact">
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
   </div>
-  <div class="inner-wrap">
-    <label>Message<textarea name="message"></textarea></label>
-      <button type="submit">{{ submitText }}</button>
-    </div>
-</form>
-<div id="thanks-message">
-  <h2>Thanks for sending your feedback</h2>
-</div>
-</div>
 
+  <div class="form-holder">
+    <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks/">
+      <div class="inner-wrap">
+        <p class="hidden">
+          <label>Don’t fill this field out if you’re human: <input name="bot-field"/></label>
+        </p>
+        <label>Name<input type="text" name="name"/></label>
+        <label>Email<input type="email" name="email"/></label>
+      </div>
+      <div class="inner-wrap">
+        <label>Message<textarea name="message"></textarea>
+        </label>
+        <button type="submit">{{ submitText }}</button>
+      </div>
+    </form>
+    <div id="thanks-message">
+      <h2>Thanks for sending your feedback</h2>
+    </div>
+  </div>
 
 {% endblock content %}

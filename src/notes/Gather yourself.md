@@ -69,3 +69,9 @@ When we have a clear sense of Centre within us, we can allow the world to reach 
 Whilst it's a good idea to meet the world, many of us tend to leave ourselves behind when we do so, and then find we are at the mercy of incoming pressure. I encourage you to touch in with your Centre when you face the world.
 
 The incoming pressure will reach you anyway, _how do you want to be when you receive them_?
+
+## Part 1 of 4
+- [[Lift me up]]
+- [[Do not bring me down]]
+- [[Welcome the world]]
+- [[Gather yourself]]

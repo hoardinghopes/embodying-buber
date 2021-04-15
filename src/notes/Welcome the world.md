@@ -96,3 +96,9 @@ It takes time to learn a new physical skill. We can encourage that through contr
 8. Notice how this feels in your body. How do you know you're doing it and not just imagining it? What are the sensations that make this clear?
 
 For **contrast**, start by standing in the same spot but making yourself as small as possible before extending out. Think _invisible_. For **exaggeration**, maximise your physical expansion (but without taking yourself off balance in any direction). For **repetition**, do this whenever you come into this room. In due time – when your body is familiar with the feeling of expansion and can create it easily, you might extend out to the four corners of any room as you enter it.
+
+## Part 1 of 4
+- [[Lift me up]]
+- [[Do not bring me down]]
+- [[Welcome the world]]
+- [[Gather yourself]]

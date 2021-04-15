@@ -84,3 +84,9 @@ Most of us have experienced moments of _encounter_ already. Living in the Scotti
 Well, that's nice, but I don't want to be a passive partner in this. I want to make myself available for such an _encounter_. So I walk the dog somewhere different every day, I try to retrieve that sense of being breathed (clue: it requires a light, long posture and the release of tension); I try to ponder, rather than think, as I walk.
 
 Sometimes it works, sometimes it doesn't. But, if I can identify the conditions that seem to accompany _encounter_ and work on them, then it may arise more often. Worth a try?
+
+## Part 1 of 4
+- [[Lift me up]]
+- [[Do not bring me down]]
+- [[Welcome the world]]
+- [[Gather yourself]]

@@ -72,3 +72,9 @@ Start breathing through your feet up the length of your legs and body. Allow the
 It's worth breaking something really simple like breathing into parts, so that you can give each part closer attention and notice what's happening throughout your body. But in the long run, we want to put it back together whilst maintaining awareness of the subtleties. Every breath in lengthens us, every exhale releases tightness from us.
 
 Bit by bit, we can start to regain the equilibrium that an effective _biotensegral_ body seeks. We hold ourselves up less; we collapse less. If we spend less effort on holding ourselves up, we are less tight; if we are less tight, we are more open. If we are more open, I think we are fulfilling one of the pre-conditions of _encounter_.
+
+## Part 1 of 4
+- [[Lift me up]]
+- [[Do not bring me down]]
+- [[Welcome the world]]
+- [[Gather yourself]]

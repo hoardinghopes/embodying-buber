@@ -20,3 +20,8 @@ You have taught me to dance in delight, to groove until my sweat rolls off onto 
 You have taken me to wondrous places that truly opened my mind to the enormous variety of this world. Thank you.
 
 You have tapped me on the shoulder to remind me – and even waited quietly and patiently for me to notice – that you’re always here, holding me, supporting me and loving me in all my mental doubts and fears. Thank you for being always here, always now, and always unconditional.
+
+- [[Encountering real magic]]
+- [[The first conversation]]
+- [[The ideas room]]
+- [[Writing as transmission]]

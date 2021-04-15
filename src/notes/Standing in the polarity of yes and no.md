@@ -7,7 +7,7 @@ tags: [foolish, standing, walking]
 status: seedling
 ---
 
-This is another [Wise Fool School](https://www.francisbriers.com/wise-fool-school) production by _Frankie Briers_. He invited us to stand in the polarity of Yes and No. This has a very particular practice as a standing meditation. He explains:
+This is [[Aloha|another]] [Wise Fool School](https://www.francisbriers.com/wise-fool-school) production by _Frankie Briers_. He invited us to stand in the polarity of Yes and No. This has a very particular practice as a standing meditation. He explains:
 
 > The polarity of Yes and No is present in us at any moment: bone structure is saying no to gravity; soft tissue is saying yes to gravity. So how relaxed can you get without going floppy? Can you create _tone_ without _tension_?.
 >

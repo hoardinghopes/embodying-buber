@@ -1,4 +1,9 @@
 function init() {
+  // 0. if the theme-switcher element doesn't exist, go no further
+  if (!document.getElementById("dark")) {
+    return;
+  }
+
   // 1. get the previous value as already stored locally
   var siteTheme = window.localStorage.getItem("site-theme");
 

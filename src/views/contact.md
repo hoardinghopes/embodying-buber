@@ -4,7 +4,7 @@ layout: contact.njk
 submitText: Send your feedback
 ---
 
-# Hello
+## Hello
 
 Thank you for visiting this site. It's obviously a work in progress.
 To that end, I am grateful to receive any feedback you might have to offer.

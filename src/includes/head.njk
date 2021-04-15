@@ -10,16 +10,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% if not draft -%}
+    {% if not site.isDev -%}
         {% include "meta-head.njk" -%}
-    {%- endif %}
 
+        <link rel="serviceworker" href="/serviceworker.js">
+        <link rel="manifest" href="/manifest.json">
+    {% endif %}
     <link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://in.getclicky.com">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="serviceworker" href="/serviceworker.js">
-    <link rel="manifest" href="/manifest.json">
 
     <link rel="apple-touch-icon" href="/images/apple-touch-icon-iphone-60x60-precomposed.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-touch-icon-ipad-76x76-precomposed.png">
@@ -38,13 +38,12 @@
         set css_to_bundle in base files
         TODO: find a better way of handling CSS files
     #}
-    {% bundledcss css_to_bundle %}
-
+    {%- bundledcss css_to_bundle %}
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism.css" rel="stylesheet">
-    {%-set css-%}
-           pre[class*="language-"] {
-               font-size: 0.75em; /* needed to make <content> the right width
-            }
+    {%- set css -%}
+        pre[class*="language-"] {
+           font-size: 0.75em; /* needed to make <content> the right width
+        }
     {%- endset %}
         <style>
             {{- css | cssmin -}}

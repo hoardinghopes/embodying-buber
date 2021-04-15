@@ -1,17 +1,7 @@
 {#
     create JSON output for the Javascript that displays the graph
-    I'm using the loop.index0 (zero-based) to provide IDs for the node objects.
+    I'm using the URL to provide IDs for the node objects.
 
-    However, strangely, I need to use loop.index (one-based) to make it work with the backlink nodes.
-
-    I don't understand why this is, but here's the problem:
-
-    OBSIDIAN        ZERO-BASED BACKLINK IDs
-    ========        =======================
-    1-0             0-0
-    1-2             0-2
-    1-3             0-3
-    2-3             1-3
 
  #}
 
@@ -22,7 +12,7 @@
     {%- set idx = loop.index0 %}
 
     {%- set node = "{" %}
-    {%- set node = node + ('"id": "' + idx + '",') %}
+    {%- set node = node + ('"id": "' + currentNote.data.page.url + '",') %}
     {%- set node = node + ('"path": "' + currentNote.data.page.url + '",') %}
     {%- set node = node + ('"label": "' + currentNote.data.title + '"') %}
     {%- set node = node + "}" %}
@@ -30,8 +20,8 @@
 
     {%- for link in currentNote.data.backlinks -%}
         {%- set edge = "{" %}
-        {%- set edge = edge + ('"source": "' + loop.index + '",') %}
-        {%- set edge = edge + ('"target": "' + idx + '"') %}
+        {%- set edge = edge + ('"source": "' + currentNote.data.page.url + '",') %}
+        {%- set edge = edge + ('"target": "' + link.url + '"') %}
         {%- set edge = edge + "}" %}
         {%- set edges = (edges.push(edge), edges) %}
     {%- endfor -%}

@@ -1,41 +1,54 @@
 {% extends "./notes-base.njk" %}
 
 {% block content %}
-    <article>
-        <div>
-            <h1>{{ title }}</h1>
-        </div>
+  <article class="post h-entry">
+    <header class="post__header p-name">
+      <h2>{{ title }}</h2>
+      <div class="post__details">
+        <p style="display:none">Published by <a class="p-author" href="/about/">James Knight</a>
+        </p>
+        <p style="display:none" class="p-summary">{{ content | excerpt | safe  }}</p>
+        <time datetime="{{ page.date | htmlDateString }}" class="dt-published">
+          {{ page.date | readableDate }}
+        </time>
+        <span> | </span>
+        <span>{{ content | readingTime }} read</span>
+        {%- if status %}
+          <span> | </span>
+      Status: <span class="{{ status }}">{{ status }}</span>
+        {%- endif %}
+      </div>
+    </header>
 
-        <div id="notes-entry-container">
-            <content>
-                {{ content | safe }}
-            </content>
+    <div class="post__content e-content" id="notes-entry-container">
+      <div id="content">
+        {{ content | safe }}
+      </div>
+      <aside id="backlinks-aside" style="font-size: 0.9em">
+        <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
+        {% if backlinks.length > 0 %}
+          <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
+            {% for backlink in backlinks %}
+              <div class="backlink-box">
+                <a class="internal-link" href="{{ backlink.url }}">{{ backlink.title }}</a><br>
+                <div style="font-size: 0.9em">{{ backlink.preview | markdownify | safe }}</div>
+              </div>
+            {% endfor %}
+          </div>
+        {% else %}
 
-            <side style="font-size: 0.9em">
-                <h3 style="margin-bottom: 1em">Notes mentioning this note</h3>
-                {% if backlinks.length > 0 %}
-                    <div style="display: grid; grid-gap: 1em; grid-template-columns: repeat(1fr);">
-                        {% for backlink in backlinks %}
-                            <div class="backlink-box">
-                                <a class="internal-link" href="{{ backlink.url }}">{{ backlink.title }}</a><br>
-                                <div style="font-size: 0.9em">{{ backlink.preview | markdownify | safe }}</div>
-                            </div>
-                        {% endfor %}
-                    </div>
-                {% else %}
-
-                    <div style="font-size: 0.9em">
-                        <p>
+          <div style="font-size: 0.9em">
+            <p>
           There are no notes linking to this note.
         </p>
-                    </div>
-                {% endif %}
-            </side>
-        </div>
-    </article>
+          </div>
+        {% endif %}
+      </aside>
+    </div>
+  </article>
 
-    <hr>
+  <hr>
 
-    {# {% include "notes_graph.njk" %} #}
+  {% include "notes_graph.njk" %}
 
 {% endblock content %}
