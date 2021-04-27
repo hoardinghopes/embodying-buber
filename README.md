@@ -28,7 +28,7 @@ Isn't Jamstack beautiful?
 - github SCM
 - webpack asset-bundler
 - node
-- yarn
+- pnpm
 
 ## TODOs
 - get Obsidian image assets into the right public directory (/assets/images/? /static/images/? /images/?)
