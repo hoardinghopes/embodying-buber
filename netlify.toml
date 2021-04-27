@@ -1,10 +1,12 @@
+[[plugins]]
+  package = "/.netlify/netlify-plugin-pnpm"
+
 [build.environment]
   NPM_FLAGS="--prefix=/dev/null"
 
 [build]
   publish = "public"
-# "node ./netlify-scripts/create-env.js && pnpm build"
-  command = "pnpm build"
+  command = "node ./netlify-scripts/create-env.js && npm run build"
 
 [[headers]]
   for = "/*"

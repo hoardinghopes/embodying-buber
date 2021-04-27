@@ -4,7 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skipping pnpm install",
     "clean": "rm -rf ./public",
     "debug": "DEBUG=Eleventy* eleventy --serve",
     "dev": "run-p dev:*",
