@@ -1,7 +1,6 @@
 ---
 date: 2021-04-11
 title: Multi-factor authentication
-draft: true
 tags: [passwords, security, authentication]
 status: seedling
 ---

@@ -1,6 +1,5 @@
 ---
 date: 2021-04-08
-draft: true
 tags: [security, encryption, ee2e]
 title: End to end encryption
 status: seedling

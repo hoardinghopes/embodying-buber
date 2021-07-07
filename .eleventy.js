@@ -11,6 +11,7 @@ const filters = require("./src/_11ty/filters");
 const shortcodes = require("./src/_11ty/shortcodes");
 const markdownLib = require("./src/_11ty/markdownLib");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const site = require("./src/data/site.js");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary("md", markdownLib.getMarkdownLib());
@@ -54,7 +55,13 @@ module.exports = function (eleventyConfig) {
     let notes = new Set();
     collection.getAllSorted().forEach(function (item) {
       if ("note" === item.data.type) {
-        notes.add(item);
+        if (site.isDev) {
+          notes.add(item);
+        } else {
+          if (!item.data.draft) {
+            notes.add(item);
+          }
+        }
       }
     });
     return [...notes].sort();
@@ -63,8 +70,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("twenty8days", function (collection) {
     let notes = new Set();
     collection.getAllSorted().forEach(function (item) {
-      if (item.data["28d"]) {
-        notes.add(item);
+      if (!item.data.draft && !site.isDev) {
+        if (item.data["28d"]) {
+          notes.add(item);
+        }
       }
     });
     return [...notes].sort();
@@ -73,24 +82,26 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("tagList", function (collection) {
     let tagSet = new Set();
     collection.getAllSorted().forEach(function (item) {
-      if ("tags" in item.data) {
-        let tags = item.data.tags;
+      if (!item.data.draft && !site.isDev) {
+        if ("tags" in item.data) {
+          let tags = item.data.tags;
 
-        tags = tags.filter(function (item) {
-          switch (item) {
-            case "all":
-            case "nav":
-            case "post":
-            case "posts":
-            case "summary":
-            case "summaries":
-              return false;
+          tags = tags.filter(function (item) {
+            switch (item) {
+              case "all":
+              case "nav":
+              case "post":
+              case "posts":
+              case "summary":
+              case "summaries":
+                return false;
+            }
+            return true;
+          });
+
+          for (const tag of tags) {
+            tagSet.add(tag);
           }
-          return true;
-        });
-
-        for (const tag of tags) {
-          tagSet.add(tag);
         }
       }
     });

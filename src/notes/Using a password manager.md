@@ -1,6 +1,5 @@
 ---
 date: 2021-04-09
-draft: true
 title: Using a password manager
 tags: ["note", "security", "password"]
 ---
@@ -17,7 +16,7 @@ The password manager sets up a password vault on your local machine, in which it
 However, your master password and the keys used to encrypt and decrypt the data are never sent to the manager's servers, so they can never access your passwords.
 
 ## What's the purpose?
-A password manager will generate complex passwords for all your accounts, and keep them securely, prroducing them when you need to log in to the accounts. This alllows you to have long and different passwords for every single account.
+A password manager will generate complex passwords for all your accounts, and keep them securely for when you need to log in to the accounts. This alllows you to have long and different passwords for every single account.
 
 ## What actually happens?
 
