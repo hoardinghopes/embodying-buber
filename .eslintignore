@@ -1,0 +1,17 @@
+
+npm-debug.*
+
+public
+bak
+_cache
+
+src/notes/.obsidian
+src/notes/templates
+
+
+
+src/assets/js/link-previews.js
+src/assets/js/main.js
+src/assets/js/offline-display.js
+src/assets/js/save-to-offline.js
+src/assets/js/theme-switcher.js
