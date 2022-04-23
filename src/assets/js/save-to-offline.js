@@ -1,3 +1,6 @@
+/* eslint-disable camelcase, func-names, no-console, no-shadow, no-unused-vars */
+/* eslint-env browser */
+
 function init() {
   // console.log(`offline.init()`);
   // courtesy of @adactio's Going Offline book
@@ -50,7 +53,7 @@ function init() {
                 description: document
                   .querySelector("meta[name='description']")
                   .getAttribute("content"),
-                published: document.querySelector("time").innerHTML,
+                published: document.querySelector("time").innerHTML
               };
               localStorage.setItem(window.location.href, JSON.stringify(data));
               offlinebutton.innerText = "saved for offline";

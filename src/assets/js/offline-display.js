@@ -1,8 +1,12 @@
+/* eslint no-undef: "error" */
+/* eslint-disable no-console */
+/* eslint-env browser */
+
 const he = require("he");
 
-window.init = function () {
+function init() {
   return {
-    getPosts: function () {
+    getPosts() {
       fetch("/posts.json")
         .then((response) => response.json())
         .then((response) => {
@@ -10,7 +14,7 @@ window.init = function () {
         })
         .catch((err) => console.log(err));
     },
-    getPost: function (input) {
+    getPost(input) {
       console.log(input);
       fetch(input)
         .then((response) => response.json())
@@ -22,7 +26,7 @@ window.init = function () {
         })
         .catch((err) => console.log(err));
     },
-    showList: function () {
+    showList() {
       this.showSideBar = true;
       this.showPost = false;
     },
@@ -31,8 +35,9 @@ window.init = function () {
     post: {
       title: "",
       content: "",
-      published: "",
+      published: ""
     },
-    showSideBar: false,
+    showSideBar: false
   };
-};
+}
+window.init = init;

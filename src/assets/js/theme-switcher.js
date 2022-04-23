@@ -1,11 +1,25 @@
+/* eslint-disable func-names */
+/* eslint-env browser */
+
 function init() {
+  // https://mwichary.medium.com/dark-theme-in-a-day-3518dde2955a
+  function changeTheme(theme) {
+    const el = document.documentElement;
+    el.classList.add("color-theme-in-transition");
+    el.setAttribute("data-theme", theme);
+    window.localStorage.setItem("site-theme", theme);
+    window.setTimeout(function () {
+      el.classList.remove("color-theme-in-transition");
+    }, 1000);
+  }
+
   // 0. if the theme-switcher element doesn't exist, go no further
   if (!document.getElementById("dark")) {
     return;
   }
 
   // 1. get the previous value as already stored locally
-  var siteTheme = window.localStorage.getItem("site-theme");
+  const siteTheme = window.localStorage.getItem("site-theme");
 
   // 2. use it to set the toggle
   if (siteTheme === "dark") {
@@ -25,17 +39,6 @@ function init() {
       changeTheme(e.target.id);
     }
   });
-
-  // https://mwichary.medium.com/dark-theme-in-a-day-3518dde2955a
-  function changeTheme(theme) {
-    let el = document.documentElement;
-    el.classList.add("color-theme-in-transition");
-    el.setAttribute("data-theme", theme);
-    window.localStorage.setItem("site-theme", theme);
-    window.setTimeout(function () {
-      el.classList.remove("color-theme-in-transition");
-    }, 1000);
-  }
 }
 
 module.exports = init;
