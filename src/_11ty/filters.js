@@ -1,9 +1,16 @@
-// _11ty/filters.js
-const htmlmin = require("./minify-html.js");
-const markdownLib = require("./markdownLib");
 const slugify = require("slugify");
 const CleanCSS = require("clean-css");
 const { DateTime } = require("luxon");
+const markdownLib = require("./markdownLib");
+const htmlmin = require("./minify-html");
+
+function clean(post) {
+  // this is filtering the HTML, not the markdown
+  let content = post.replace(/(<([^>]+)>)/gi, ""); // remove tags
+  content = content.replace("tl;dr", ""); // remove tl;dr
+  content = content.replace(/(\[\d\])/g, ""); // remove any footnote remnants
+  return content;
+}
 
 // Already in eleventy-base-blog
 module.exports = {
@@ -27,7 +34,7 @@ module.exports = {
 
   excerpt: (post) => {
     const content = clean(post);
-    return content.substr(0, content.lastIndexOf(" ", 200)) + "...";
+    return `${content.substr(0, content.lastIndexOf(" ", 200))}...`;
   },
 
   jsonmin: (input) => {
@@ -87,33 +94,11 @@ module.exports = {
       replacement: "-",
       // the default slugify filter doesn't remove these characters
       remove: /[&,+()$~%.'":*?<>{}!]/g,
-      lower: true,
+      lower: true
     });
   },
-  /*
-  generateShareLink: (url, text) => {
-    const shareText = `${text} by @hoardinghopes`;
-    const shareUrl = `${rootUrl}${url}`;
-    return `https://twitter.com/intent/tweet/?text=${encodeURI(
-      shareText
-    )}&url=${encodeURI(shareUrl)}`;
-  },
-  generateDiscussionLink: (url) => {
-    const postUrl = `${rootUrl}${url}`;
-    return `https://twitter.com/search?f=tweets&src=typd&q=${encodeURI(
-      postUrl
-    )}`;
-  },
-*/
+
   markdownify: (string) => {
     return markdownLib.getMarkdownLib().render(string);
-  },
-};
-
-const clean = function (post) {
-  // this is filtering the HTML, not the markdown
-  let content = post.replace(/(<([^>]+)>)/gi, ""); //remove tags
-  content = content.replace("tl;dr", ""); // remove tl;dr
-  content = content.replace(/(\[\d\])/g, ""); // remove any footnote remnants
-  return content;
+  }
 };

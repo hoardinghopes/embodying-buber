@@ -10,10 +10,10 @@ const plugins = [
     stage: 1,
     preserve: true,
     features: {
-      "custom-properties": true,
-    },
+      "custom-properties": true
+    }
   }),
-  postcssColorMod,
+  postcssColorMod
 ];
 
 const isDev = process.env.APP_ENV === "development";
@@ -25,11 +25,11 @@ if (!isDev) {
   [].push.apply(plugins, [
     purgecss({
       content: ["src/**/*.njk", "src/**/*.md", "src/**/*.js", "src/**/*.ejs"],
-      defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
+      defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || []
     }),
     cssnano({
-      preset: "default",
-    }),
+      preset: "default"
+    })
   ]);
 }
 

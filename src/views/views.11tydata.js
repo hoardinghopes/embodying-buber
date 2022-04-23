@@ -1,5 +1,6 @@
 const images = require("../data/images");
 const gitinfo = require("../data/gitinfo");
+
 const isDev = process.env.APP_ENV === "development";
 
 module.exports = {
@@ -9,11 +10,11 @@ module.exports = {
     banner: (data) => {
       return images[data.page.fileSlug];
     },
-    isDev: (data) => {
+    isDev: () => {
       return isDev;
     },
     lastModified: (data) => {
       return gitinfo.lastModified(data.page.inputPath);
-    },
-  },
+    }
+  }
 };

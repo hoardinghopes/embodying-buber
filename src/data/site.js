@@ -1,7 +1,7 @@
 const isDev = process.env.APP_ENV === "development";
 
 module.exports = {
-  isDev: isDev,
+  isDev,
   name: "28 days",
   description: "Part of the 28-day challenge",
   domain: "28-days.netlify.app",
@@ -11,48 +11,48 @@ module.exports = {
   author: {
     name: "James Knight",
     email: "james@hoardinghopes.com",
-    twitterHandle: "hoardinghopes",
+    twitterHandle: "hoardinghopes"
   },
   headerLinks: [
     {
       text: "28 days",
       url: "/28-days/",
-      external: false,
+      external: false
     },
     {
       text: "Notes",
       url: "/notes/",
-      external: false,
+      external: false
     },
     {
       text: "Contact",
       url: "/contact/",
-      external: false,
+      external: false
     },
     {
       text: "About",
       url: "/about/",
-      external: false,
-    },
+      external: false
+    }
   ],
   footerLinks: [
     {
       text: "RSS",
       url: "/feed.xml",
-      external: true,
+      external: true
     },
 
     {
       text: "Stats",
       url: "/stats/",
-      external: false,
-    },
+      external: false
+    }
   ],
   showFooterAttribution: false,
   clickystats: {
     install: true,
     script: `<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101301338);</script>
       <script async src='https://static.getclicky.com/js'></script>
-      <noscript><img alt='Clicky' width='1' height='1' src='https://in.getclicky.com/101301338ns.gif' style='position:absolute; left: -1000, top: -1000'/></noscript>`,
-  },
+      <noscript><img alt='Clicky' width='1' height='1' src='https://in.getclicky.com/101301338ns.gif' style='position:absolute; left: -1000, top: -1000'/></noscript>`
+  }
 };

@@ -120,8 +120,8 @@ module.exports = function (eleventyConfig) {
           res.write(content_404);
           res.end();
         });
-      },
-    },
+      }
+    }
   });
 
   if (!isDev) {
@@ -139,7 +139,7 @@ module.exports = function (eleventyConfig) {
       passthroughFileCopy: true,
       templateFormats: ["html", "njk", "md"],
       htmlTemplateEngine: "njk",
-      markdownTemplateEngine: "njk",
-    },
+      markdownTemplateEngine: "njk"
+    }
   };
 };

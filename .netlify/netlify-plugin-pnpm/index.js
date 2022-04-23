@@ -6,5 +6,5 @@ module.exports = {
     } catch (error) {
       return build.failBuild(error);
     }
-  },
+  }
 };

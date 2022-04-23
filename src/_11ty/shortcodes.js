@@ -1,5 +1,6 @@
 const manifest = require("../data/manifest");
 const site = require("../data/site");
+
 const isDev = process.env.APP_ENV === "development";
 
 module.exports = {
@@ -9,7 +10,7 @@ module.exports = {
       styles = manifest.getNotes();
     }
     return `<link href="${styles}" ${
-      type == "head" ? 'rel="preload" as="style"' : 'rel="stylesheet"'
+      type === "head" ? 'rel="preload" as="style"' : 'rel="stylesheet"'
     }>`;
   },
 
@@ -23,16 +24,14 @@ module.exports = {
   },
 
   bundledjs: (which) => {
-    let script = manifest.getScripts(which);
+    const script = manifest.getScripts(which);
     if (script) {
       return `<script src="${script}" ${
         which !== "main.js" ? "defer" : ""
       }></script>`;
-    } else {
-      console.error(
-        `ERROR: no '${which}' script found (.eleventy.js 'bundledjs' shortcode)`
-      );
-      return "";
     }
-  },
+    throw new Error(
+      `ERROR: no '${which}' script found (.eleventy.js 'bundledjs' shortcode)`
+    );
+  }
 };

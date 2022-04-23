@@ -16,9 +16,8 @@ module.exports = {
     permalink: (data) => {
       if (isDev) {
         return data.permalink;
-      } else {
-        return data.draft ? "" : data.permalink;
       }
+      return data.draft ? "" : data.permalink;
     },
     eleventyExcludeFromCollections: (data) => {
       return isDev ? false : data.draft;
@@ -31,17 +30,17 @@ module.exports = {
     lastModified: (data) => {
       return gitinfo.lastModified(data.page.inputPath);
     },
-    abbrevHash: (data) => {
+    abbrevHash: () => {
       return gitinfo.abbrevHash;
     },
-    authorDate: (data) => {
+    authorDate: () => {
       return gitinfo.authorDate;
     },
-    authorName: (data) => {
+    authorName: () => {
       return gitinfo.authorName;
     },
-    subject: (data) => {
+    subject: () => {
       return gitinfo.subject;
-    },
-  },
+    }
+  }
 };

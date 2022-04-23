@@ -7,13 +7,13 @@ const sanitize = require("sanitize-filename");
 let mdl;
 
 const markdownLib = markdownIt({
-  html: true,
+  html: true
 })
   .use(mdFootnotes)
   .use(mdExternalLinks, {
     externalClassName: "external",
     externalRel: "noopener noreferrer external",
-    externalTarget: "_blank",
+    externalTarget: "_blank"
   })
   .use(
     mdWikiLinks({
@@ -21,11 +21,11 @@ const markdownLib = markdownIt({
       makeAllLinksAbsolute: true,
       uriSuffix: "/",
       postProcessPageName: (pageName) => {
-        pageName = pageName.trim();
-        pageName = pageName.split("/").map(sanitize).join("/");
-        pageName = pageName.replace(/\s+/g, "-");
-        return pageName.toLowerCase();
-      },
+        let pgn = pageName.trim();
+        pgn = pgn.split("/").map(sanitize).join("/");
+        pgn = pgn.replace(/\s+/g, "-");
+        return pgn.toLowerCase();
+      }
     })
   );
 
@@ -35,10 +35,10 @@ markdownLib.renderer.rules.footnote_block_open = () =>
   "<h4>Footnotes</h4>\n" +
   '<ol class="footnotes-list">\n';
 
-const getMarkdownLib = function () {
+function getMarkdownLib() {
   if (!mdl) mdl = markdownLib;
 
   return mdl;
-};
+}
 
 module.exports = { getMarkdownLib };

@@ -1,3 +1,10 @@
+---
+date: 2021-08-10
+title: Content Security Policy
+tags: [content security policy, csp, js, css]
+status: seedling
+---
+
 I got here from [there](https://sia.codes/posts/render-blocking-resources/)
 
 I was prompted to run our site against [WebPageTest](https://www.webpagetest.org) today, to see how well it performed. The results were pleasing __and__ there was still room for improvement, so I set to work.
