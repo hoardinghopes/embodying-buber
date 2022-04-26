@@ -70,9 +70,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("twenty8days", function (collection) {
     let notes = new Set();
     collection.getAllSorted().forEach(function (item) {
-      if (!item.data.draft && !site.isDev) {
-        if (item.data["28d"]) {
+      if (item.data["28d"]) {
+        if (site.isDev) {
           notes.add(item);
+        } else {
+          if (!item.data.draft) {
+            notes.add(item);
+          }
         }
       }
     });
