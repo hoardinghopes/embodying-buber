@@ -14,6 +14,8 @@ module.exports = {
     twitterHandle: "hoardinghopes"
   },
   headerLinks: [
+    /*
+    { text: "All", url: "/blog/", external: false },
     {
       text: "28 days",
       url: "/28-days/",
@@ -23,7 +25,7 @@ module.exports = {
       text: "Notes",
       url: "/notes/",
       external: false
-    },
+    }, */
     {
       text: "Contact",
       url: "/contact/",
@@ -36,7 +38,7 @@ module.exports = {
     }
   ],
   footerLinks: [
-    {
+    /* {
       text: "RSS",
       url: "/feed.xml",
       external: true
@@ -46,7 +48,7 @@ module.exports = {
       text: "Stats",
       url: "/stats/",
       external: false
-    }
+    } */
   ],
   showFooterAttribution: false,
   clickystats: {
