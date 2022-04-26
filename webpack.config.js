@@ -9,19 +9,19 @@ module.exports = {
     minimize: !isDev
   },
   entry: {
-    main: path.resolve(__dirname, "src", "assets", "js", "main.js"),
+    main: path.resolve(__dirname, "src", "client", "js", "main.js"),
     offline: path.resolve(
       __dirname,
       "src",
-      "assets",
+      "client",
       "js",
       "offline-display.js"
     ),
-    styles: path.resolve(__dirname, "src", "assets", "css", "main.css"),
-    notes: path.resolve(__dirname, "src", "assets", "css", "notes.css")
+    styles: path.resolve(__dirname, "src", "client", "css", "main.css"),
+    notes: path.resolve(__dirname, "src", "client", "css", "notes.css")
   },
   output: {
-    path: path.resolve(__dirname, "public", "assets"),
+    path: path.resolve(__dirname, "public", "client"),
     filename: isDev ? `[name].js` : `[name].[contenthash].js`
   },
 
@@ -56,7 +56,7 @@ module.exports = {
   },
 
   plugins: [
-    new WebpackManifestPlugin({ publicPath: "/assets/" }),
+    new WebpackManifestPlugin({ publicPath: "/client/" }),
     new MiniCssExtractPlugin({
       filename: isDev ? `[name].css` : `[name].[contenthash].css`
     })
