@@ -1,12 +1,10 @@
 /* eslint no-undef: "error" */
 /* eslint-disable no-continue */
 /* eslint-env browser */
-/* global isDev */
 
 require("alpinejs");
-const switcher = require("./theme-switcher");
-const offline = require("./save-to-offline");
-const previews = require("./link-previews");
+// const switcher = require("./theme-switcher");
+// const previews = require("./link-previews");
 
 function setUp() {
   const links = document.querySelectorAll("a");
@@ -29,11 +27,8 @@ function setUp() {
     );
   }
 
-  switcher();
-  previews();
-  if (!isDev) {
-    offline();
-  }
+  // switcher();
+  // previews();
 
   return { show: false };
 }
