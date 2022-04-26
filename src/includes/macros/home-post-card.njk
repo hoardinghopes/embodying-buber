@@ -1,4 +1,6 @@
-{% macro card(post, image) %}
+{% macro card(post) %}
+{% set image = post.data.banner %}
+
 
     {% set url = post.url if post.url else
         "/" %}
@@ -33,7 +35,7 @@
         </div>
         {% endif %}
         <div class="description {% if not image.src %}full{% endif %}">
-            <h1><a href="{{url}}">{{ title }}</a></h1>
+            <h1><a href="{{url}}">{{ post.data.28d }}. {{ title }}</a></h1>
             <p>{{ date | readableDate }} - {{post.templateContent | striptags | wordcount }} words</p>
             <p>{{ post.templateContent | excerpt }}</p>
             <p class="read-more">

@@ -11,7 +11,7 @@
     @flash.window="show = false;changePage($event)"
     x-show.transition.opacity.duration.450ms="show"
   >
-    <div class="layout-wrapper">
+    <div class="layout-wrapper"{% if banner %} style="background-image: url('{{ banner.src }}')"{% endif %}>
 
       <header class="header">
         <div class="header__content">
@@ -30,6 +30,7 @@
 
       <footer class="footer">
         <div class="footer__content">
+          {% if banner %}{{ banner.attribute | safe }}{% endif %}
           {% include "footer-links.njk" %}
         </div>
       </footer>

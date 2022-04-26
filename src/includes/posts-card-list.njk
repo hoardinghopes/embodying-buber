@@ -2,10 +2,8 @@
 
 <ul class="post-list">
   {% for post in postslist %}
-
     <li>
-      {% set image = images[post.fileSlug] -%}
-      {{ card(post, image) | safe }}
+      {{ card(post) | safe }}
     </li>
   {% endfor %}
 </ul>
