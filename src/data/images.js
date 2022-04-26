@@ -42,7 +42,7 @@ module.exports = {
     attribute:
       '<span>Background photo by <a href="https://unsplash.com/@an_ku_sh?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Ankush Minda</a> on <a href="https://unsplash.com/s/photos/release?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>'
   },
-  "do-not-bring-me-down": {
+  "dont-bring-me-down": {
     src: "/images/backgrounds/milada-vigerova-0ArA_q8Gjt8-unsplash.jpg",
     thumb: "/images/thumbs/milada-vigerova-0ArA_q8Gjt8-unsplash.jpg",
     attribute:

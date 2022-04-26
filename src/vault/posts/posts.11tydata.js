@@ -10,6 +10,7 @@ module.exports = {
   permalink: "{{title | slug}}/index.html",
   draft: false,
   type: "post",
+  status: "seedling",
   eleventyComputed: {
     banner: (data) => {
       const key = slugify(data.page.fileSlug).toLowerCase();

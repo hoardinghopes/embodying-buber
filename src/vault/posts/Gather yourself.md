@@ -5,7 +5,7 @@ date: 2021-02-23
 title: Gather yourself
 description: "Step 4: return to centre"
 tags: [4 directions, inwards]
-status: seedling
+status: sapling
 ---
 
 ### Summary
