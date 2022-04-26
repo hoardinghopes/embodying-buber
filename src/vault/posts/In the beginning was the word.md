@@ -7,7 +7,7 @@ tags: [awareness, inwards, writing, encounter, interludes]
 status: seedling
 ---
 
-### <abbr title="Too long; didn't read">tl;dr</abbr>
+### Summary
 
 Learn to speak from the whole of you by talking to each part in turn.
 

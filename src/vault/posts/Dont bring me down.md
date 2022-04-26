@@ -7,7 +7,7 @@ tags: [4 directions, release]
 status: seedling
 ---
 
-### <abbr title="Too long; didn't read">tl;dr</abbr>
+### Summary
 
 1. Breathe a long, slow inhale up the length of your back, feeling it encourage your head higher.
 2. **Allow a long, slow exhale to stroke down your front, releasing your ribcage, and encouraging a soft smile.**
@@ -20,7 +20,7 @@ To achieve this, we must find and melt current tensions, stiffnesses and flaccid
 
 ## Don't bring me down
 
-[Gravity still doesn't care](/notes/lift-me-up/). But we perhaps we return today with a quiet, momentary awareness of the pulse riding up our back. If so, our exploration can move forwards. If not yet, take some time to [review the previous post](/notes/you-lift-me-up/). It's worth doing; let it take time.
+[Gravity still doesn't care](/lift-me-up/). But we perhaps we return today with a quiet, momentary awareness of the pulse riding up our back. If so, our exploration can move forwards. If not yet, take some time to [review the previous post](/lift-me-up/). It's worth doing; let it take time.
 
 Gravity is not something we need to fight. We can allow the _biotensegrity_ of our bones – creating length in balance with our tissues tightening around them – to create a dynamic equilibrium of moving parts. But to do that, we will need to release our patterns of stiffness and tension. Today we make a start.
 
@@ -75,6 +75,6 @@ Bit by bit, we can start to regain the equilibrium that an effective _biotensegr
 
 ## Part 1 of 4
 - [[Lift me up]]
-- [[Do not bring me down]]
+- [Don't bring me down](/dont-bring-me-down/)
 - [[Welcome the world]]
 - [[Gather yourself]]

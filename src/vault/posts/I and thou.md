@@ -7,7 +7,7 @@ tags: [i and thou, start here]
 status: seedling
 ---
 
-### <abbr title="Too long; didn't read">tl;dr</abbr>
+### Summary
 
 Austrian-born philospher Martin Buber[^fn-ref] wrote that there are two modes of engaging with others. The predominant mode places _I_ over the objectified other (_It_). This is the mode that modern man almost exclusively uses.
 
@@ -69,5 +69,5 @@ Of course, I can't try stuff out and then ask these non-speakers _how was it for
 
 I think I'm practising love, and I don't know what that means. All at the same time.
 
-Continued in [The body of _I-and-Thou_](/notes/the-body-of-i-and-thou/).
-Also, [[I do not exist]].
+Continued in [The body of _I-and-Thou_](/the-body-of-i-and-thou/).
+Also, [[I dont exist]].

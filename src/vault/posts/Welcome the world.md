@@ -7,7 +7,7 @@ tags: [4 directions, outwards]
 status: seedling
 ---
 
-### <abbr title="Too long; didn't read">tl;dr</abbr>
+### Summary
 
 1. Breathe a long, slow inhale up the length of your back, feeling it encourage your head higher.
 2. Allow a long, slow exhale to stroke down your front, releasing your ribcage, and encouraging a soft smile.
@@ -99,6 +99,6 @@ For **contrast**, start by standing in the same spot but making yourself as smal
 
 ## Part 1 of 4
 - [[Lift me up]]
-- [[Do not bring me down]]
+- [Don't bring me down](/dont-bring-me-down/)
 - [[Welcome the world]]
 - [[Gather yourself]]

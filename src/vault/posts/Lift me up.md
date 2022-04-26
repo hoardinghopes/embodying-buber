@@ -7,7 +7,7 @@ tags: [4 directions, lengthen]
 status: seedling
 ---
 
-### <abbr title="Too long; didn't read">tl;dr</abbr>
+### Summary
 
 1. **Breathe a long, slow inhale up the length of your back, feeling it encourage your head higher**
 
@@ -31,7 +31,7 @@ Modern tents use _tensegrity_ to hold themselves upright. Their poles are stiff 
 
 Multiple bent rods attached to the tent sheet are all trying to straighten themselves but can't because they would straighten in different directions away from each other^[![Serpentine Wall](/images/wavy-wall.jpg)I recently found out about [a traditional wavy brick wall](https://en.permawiki.org/wiki/Serpentine_wall) that is actually stronger than normal brick walls using half the amount of bricks. The waves in the wall function as bows that want to straighten against the pull of their neighbouring bows. In other words, one wave's urge to straighten is constrained by the next wave's urge to straighten in the other direction.], and the sheet can't stretch to allow that.
 
-_Biotensegrity_ works in a similar fashion in living organisms, which means that it doesn't just stabilise us, it also supports us through movement.
+_Biotensegrity_ works in a similar fashion in living organisms, which means that it doesn't just stabilise us, it also moves us.
 
 ## Today
 
@@ -87,6 +87,6 @@ Sometimes it works, sometimes it doesn't. But, if I can identify the conditions 
 
 ## Part 1 of 4
 - [[Lift me up]]
-- [[Do not bring me down]]
+- [Don't bring me down](/dont-bring-me-down/)
 - [[Welcome the world]]
 - [[Gather yourself]]

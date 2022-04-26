@@ -7,7 +7,7 @@ tags: [i and thou, start here, body]
 status: seedling
 ---
 
-### <abbr title="Too long; didn't read">tl;dr</abbr>
+### Summary
 
 The structural habits of our body filter our experience of the world around us and reduce the incoming data that contributes to our thought and behavioural patterns.
 
@@ -22,8 +22,6 @@ We can't demand _encounter_, but we can learn to open the body to possibility.
 ## Living in a body
 
 There are ways to be in a body, to be out of a body, and for a body itself to be.
-
-[[I and Thou]]
 
 Martin Buber’s idea of _encounter_ requires a specific set of conditions to be available in the body, and whilst we can't make encounter happen, perhaps we can develop those conditions in us so that encounter is at least possible, if not likely.
 

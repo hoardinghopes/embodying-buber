@@ -7,7 +7,7 @@ tags: [awareness, body, encounter, interludes]
 status: seedling
 ---
 
-### <abbr title="Too long; didn't read">tl;dr</abbr>
+### Summary
 
 We do or we don't want things (actual things, or relationships, or ideas). We desire them, or we avoid them or we fear them. Any which way, we are _in a relationship_ with the thing as we see it. Just as we might be in a relationship with another person (happy/loving, unhappy/disliking, etc).
 

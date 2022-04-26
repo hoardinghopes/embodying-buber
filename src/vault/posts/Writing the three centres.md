@@ -7,7 +7,7 @@ tags: [intention, outwards, writing, interludes]
 status: seedling
 ---
 
-### <abbr title="Too long; didn't read">tl;dr</abbr>
+### Summary
 
 Another way into hearing your whole self speak is to write from each part in turn.
 
