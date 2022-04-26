@@ -17,7 +17,7 @@ const markdownLib = markdownIt({
   })
   .use(
     mdWikiLinks({
-      baseURL: "/notes/",
+      baseURL: "/",
       makeAllLinksAbsolute: true,
       uriSuffix: "/",
       postProcessPageName: (pageName) => {
