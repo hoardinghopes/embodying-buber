@@ -7,5 +7,4 @@ bak
 .env
 _cache
 src/assets/js/autogram.js
-src/notes/.obsidian
-src/notes/templates
+src/vault/.obsidian
