@@ -12,8 +12,6 @@
 
     {% if not site.isDev -%}
         {% include "meta-head.njk" -%}
-
-        <link rel="serviceworker" href="/serviceworker.js">
         <link rel="manifest" href="/manifest.json">
     {% endif %}
     <link rel="canonical" href="{{ page.url | url | absoluteUrl(site.url) }}">
