@@ -7,16 +7,16 @@ const manifestPath = path.resolve(
   "..",
   "..",
   "public",
-  "assets",
+  "client",
   "manifest.json"
 );
 
 const manifest = isDev
   ? {
-      "main.js": "/assets/main.js",
-      "styles.css": "/assets/styles.css",
-      "offline.js": "/assets/offline.js",
-      "notes.css": "/assets/notes.css"
+      "main.js": "/client/main.js",
+      "styles.css": "/client/styles.css",
+      "offline.js": "/client/offline.js",
+      "notes.css": "/client/notes.css"
     }
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
