@@ -47,7 +47,7 @@ Say _no_ again. Notice what you notice.
 
 ## Bonus round
 
-Hopefully by now you've experienced the differences between the centres. In this round, you get to align them with each other and speak from that unified whole. Activate each centre in turn (sometimes it helps to place your hands on each centre as you go). If activating one overwhelms or turns off another, repeat the process until you sense that all three centrres are equally awake.
+Hopefully by now you've experienced the differences between the centres (if not, rinse and repeat). In this round, you get to align them with each other and speak from that unified whole. Activate each centre in turn (sometimes it helps to place your hands on each centre as you go). If activating one overwhelms or turns off another, repeat the process until you sense that all three centrres are equally awake.
 
 Say _no_ from all three centres, and notice how that feels.
 
@@ -63,7 +63,7 @@ That's a basic exercise. Not basic as in beginner or easy. Basic as in setting a
 
 Perhaps you might practice making a statement in order to see how you unify behind it. Your head may wobble with the work involved in _I am writing a book_, your heart may recognise how it's your life's work bearing fruit, your hara may just say _get on with it then_.
 
-You could hold a statement in each centre in turn, and see whether they say _yes_ or _no_ to it. You could find out from there what each centre wants in order to support the statement.
+You could hold a statement in each centre in turn, and see whether they say _yes_ or _no_ to it. You could find out from there what each centre needs in order to be able to support the statement.
 
 ## ... mighty oak trees grow
 

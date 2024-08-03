@@ -1,5 +1,5 @@
 <ul class="post-list">
-  {% for post in postslist | reverse %}
+  {% for post in postslist %}
     <li class="post-list__item">
       <div>
         <div class="post-list__meta">
@@ -8,9 +8,9 @@
           </time>
           <span> | </span>
           {% if post.data.type == "post" -%}
-          <span>{{ post | readingTime }} read</span>
+            <span>{{ post | readingTime }} read</span>
           {% else  %}
-          <span>{{ post.templateContent | wordCount }} words</span>
+            <span>{{ post.templateContent | wordCount }} words</span>
           {% endif  -%}
         </div>
         <div class="post-list__tags">
@@ -34,7 +34,8 @@
         article
         {% else -%}
         summary
-        {% endif %}</a>
+        {% endif %}
+      </a>
     </li>
   {% endfor %}
 </ul>

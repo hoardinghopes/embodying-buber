@@ -8,19 +8,41 @@
   </div>
 
   <div class="form-holder">
-    <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks/">
+    <form id="contact-form" name="contact" method="POST" action="/thanks/"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      x-data="formSetUp"
+      x-on:submit="submit"
+      x-on:input="input">
+
       <div class="inner-wrap">
         <p class="hidden">
           <label>Don’t fill this field out if you’re human: <input name="bot-field"/></label>
         </p>
-        <label>Name<input type="text" name="name"/></label>
-        <label>Email<input type="email" name="email"/></label>
+
+        <label for="name" class="required">Name<span x-show="fields.name.errorMessage" x-text="fields.name.errorMessage" class="error-message"></span></label>
+
+        <input id="name" type="text" name="name" value=""
+            class="required" required="required"
+            x-bind:class="{'invalid':fields.name.errorMessage}"
+            data-rules='["required"]'>
+
+        <label for="email" class="required">Email address<span x-show="fields.email.errorMessage" x-text="fields.email.errorMessage" class="error-message"></span></label>
+
+        <input name="email" type="email" id="email"
+            class="required email" required="required"
+            x-bind:class="{'invalid':fields.email.errorMessage}"
+            data-rules='["required","email"]'>
       </div>
+
       <div class="inner-wrap">
-        <label>Message<textarea name="message"></textarea>
-        </label>
-        <button type="submit">{{ submitText }}</button>
+        <label for="message" class="required">Query<span x-show="fields.message.errorMessage" x-text="fields.message.errorMessage" class="error-message"></span></label>
+
+        <textarea name="message" cols="40" rows="10" aria-required="true" required="required" data-rules='["required"]' x-bind:class="{'invalid':fields.message.errorMessage}" aria-invalid="false"></textarea>
+
+        <button class="submit-button" type="submit" name="subscribe"  x-text="buttonLabel" :disabled="disabled">Send your feedback</button>
       </div>
+
     </form>
     <div id="thanks-message">
       <h2>Thanks for sending your feedback</h2>

@@ -86,7 +86,9 @@ Well, that's nice, but I don't want to be a passive partner in this. I want to m
 Sometimes it works, sometimes it doesn't. But, if I can identify the conditions that seem to accompany _encounter_ and work on them, then it may arise more often. Worth a try?
 
 ## Part 1 of 4
-- [[Lift me up]]
-- [Don't bring me down](/dont-bring-me-down/)
-- [[Welcome the world]]
-- [[Gather yourself]]
+
+- Lift me up
+- [Don't bring me down](/dont-bring-me-down)
+- [Welcome the world](/welcome-the-world)
+- [Gather yourself](/gather-yourself)
+

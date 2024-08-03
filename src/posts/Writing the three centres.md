@@ -19,7 +19,7 @@ She wants to study French at university, and is completing her French Higher (Sc
 
 Unilaterally, the school has decided not to offer the Advanced course because so many children want to take the National 5 French course (two years earlier) that it fills the timetable. In other words, they are prioritising children coming into the French stream over those wishing to complete the French stream.
 
-But that's the context, it's not actually what I want to write about.
+That's the context; it's not actually what I want to write about.
 
 I want to write that I am shaking; as soon as I raise my fingers over the keyboard, they tremble and I hit multiple keys at once. I am furious that my daughter and her classmates have been put in this position. I am livid.
 
@@ -27,7 +27,9 @@ In other words, my body is running a higher (and potentially more destructive) e
 
 ### Considering this from the three centres
 
-Part of working with the three centres is figuring out the point of view of each, so I tried to write about why it's important:
+Part of working with the three centres is figuring out the point of view of each, so I tried to write about why it's important[^fn-fake]:
+
+[^fn-fake]: I should add that these separate writings were not written separately, so they are just faking/mimic-ing the specific centres.
 
 #### Head
 
@@ -37,7 +39,7 @@ This is becoming a school in name only if it does not offer a single foreign lan
 
 #### Heart
 
-Tilly loves French more than any other course she's taking currently. Everything else is _alright_. Only French is _good_. Already, as this news has arrived over the weekend, we've seen a drop in her energy and motivation. Her heart has taken a knock.
+Tilly enjoys French more than any other course she's taking. Everything else is _alright_. Only French is _good_. Already, as this news has arrived over the weekend, we've seen a drop in her energy and motivation. Her heart has taken a knock.
 
 I love Tilly. Her enthusiasm brings my life to life. Her joy is my joy. Her adventures are mine. Her pain and upset are also mine.
 
@@ -45,7 +47,7 @@ I love Tilly. Her enthusiasm brings my life to life. Her joy is my joy. Her adve
 
 I am going to change this. I don't know what that looks like, and I don't know what resistance I will face, but I'm going to get our children Advanced Higher French lessons back in the timetable.
 
-(I should add that these separate writings were not written separately, so they are just faking/mimic-ing the specific centres).
+
 
 ### Speaking up from the centres
 
@@ -93,7 +95,7 @@ I walked over unified and calmly. I had the sense of support from others in the 
 
 ### Conclusion?
 
-I am still angry and impatient (I'm waiting for them to call me back). But, rather than that anger being all I'm aware of, I have re-connected with my love for Tilly and her love for French. I have experienced that this involves other people too who want to continue their French study.
+I am still angry and impatient (I'm waiting for the school to call me back). But, rather than that anger being all I'm aware of, I have re-connected with my love for Tilly and her love for French. I have experienced that this involves other people too who want to continue their French study.
 
 I am more centred in my anger than previously, and as a result I expect to deal with the phone call more effectively than I would have done earlier.
 

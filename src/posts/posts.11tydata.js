@@ -1,8 +1,7 @@
 const slugify = require("slugify");
-const gitinfo = require("../../data/gitinfo");
-const images = require("../../data/images");
-
-const isDev = process.env.APP_ENV === "development";
+const gitinfo = require("../data/gitinfo");
+const images = require("../data/images");
+const env = require("../data/env");
 
 module.exports = {
   layout: "post",
@@ -20,18 +19,16 @@ module.exports = {
       return { src: "", thumb: "", attribute: "" };
     },
     permalink: (data) => {
-      if (isDev) {
+      if (env.IS_DEV) {
         return data.permalink;
       }
       return data.draft ? "" : data.permalink;
     },
     eleventyExcludeFromCollections: (data) => {
-      return isDev ? false : data.draft;
+      return env.IS_DEV ? false : data.draft;
     },
     numberedTitle: (data) => {
-      const parts = data.page.fileSlug.split("-");
-      const num = parts[parts.length - 1];
-      return `${num}: ${data.title}`;
+      return `${data['28d']}: ${data.title}`;
     },
     lastModified: (data) => {
       return gitinfo.lastModified(data.page.inputPath);

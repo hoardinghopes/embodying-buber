@@ -1,5 +1,5 @@
 {# <!-- Added a fieldset, ARIA roles, and heading (can be outer or within a legend if you prefer. Thanks to Steve Faulkner and Heydon Pickering https://twitter.com/stevefaulkner/status/1021327778334019585 & https://twitter.com/heydonworks/status/1021329851066830848 --> #}
-
+<!--
 <div class="theme-switch">
 	<fieldset aria-label="theme switcher" role="radiogroup">
 		<label for="light">Light</label>
@@ -11,4 +11,10 @@
 		</div>
 		<label for="dark">Dark</label>
 	</fieldset>
+</div>
+-->
+<div class="theme-switcheroo hidden" x-ref="switch">
+	<button @click="toggle">
+  Toggle Theme
+</button>
 </div>

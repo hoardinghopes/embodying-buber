@@ -1,10 +1,9 @@
 const gitlog = require("gitlog").default;
-
-const isDev = process.env.APP_ENV === "development";
+const env = require("./env");
 let details;
 
 function getInfo(infoType) {
-  if (isDev) return "";
+  if (env.IS_DEV) return "";
 
   if (details === undefined) {
     const options = {
@@ -21,7 +20,7 @@ function getInfo(infoType) {
 
 function getLastModified(filePath) {
   // console.log(`getLastModified( ${filePath} )`);
-  if (isDev) return "";
+  if (env.IS_DEV) return "";
   const options = {
     repo: `${__dirname}/../../.git`, // we're in /src/data/
     number: 1,

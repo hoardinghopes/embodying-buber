@@ -35,7 +35,7 @@ I was struggling to write [this piece](/notes/encountering-real-magic/) a while 
 
 Poetry is something I studied at school[^fn-poets] with more or less engagement. The black words on white paper, arrayed in uneven lines with deliberate spacings that spoke silently to the author's intent, were parsed lesson after lesson.
 
-They were interrrogated again on my bed or at my desk in the evenings. Somewhere between the smell of the books, the glyphs on the page, the darkness and chill out beyond the window, the poet's meaning was offered up to me. If only I had the eyes, the heart, and the patience to find it!
+They were interrrogated again on my bed or at my desk in the evenings. Somewhere between the smell of the books, the glyphs on the page, the darkness and chill out beyond the window, the poet's meaning was being offered up to me. If only I had the eyes, the heart, and the patience to find it!
 
 [^fn-poets]: I remember Metaphysical Poet [Andrew Marvel](https://poetryarchive.org/poet/andrew-marvell/) for his [_vegetable love_](https://poetryarchive.org/poem/to-his-coy-mistress/) and the incomparable [Philip Larkin](https://poetryarchive.org/poet/philip-larkin/) for his morose and exquisitely disappointed view of the world. I was lucky enough to study at Hull University, where Larkin had been the university librarian, and to take the same journey as he describes in [_The Whitsun Weddings_](https://poetryarchive.org/poem/whitsun-weddings/). Reading – or even better, hearing – Larkin is visceral.
 
@@ -45,7 +45,7 @@ We had guides, of course. For too short a while, Miss Maxwell whose youthful eas
 
 But they required us to interrogate the poems, to scan the lines, to identify the metre, to highlight instances of onomatopoeia, alliteration, assonance, enjambment. We were apprentice mechanics taking a car apart to isolate, identify, and appraise the value of each component.
 
-We were never shown how to put the car together again. Nor encouraged to build a car of our own, even a go-kart. We never even knew of the magic that the master mechanics had in their fingers, nor their reasons for doing their work.
+We were never shown how to put the car together again. Nor encouraged to build a car of our own, not even a go-kart. We never even knew of the magic that the master mechanics had in their fingers, nor their reasons for doing their work.
 
 The poet was never invited to reach out from the book into my classroom and touch my heart with his.
 

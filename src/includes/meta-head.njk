@@ -1,10 +1,9 @@
-<meta charset='utf-8'>
 <meta name="buildtime" content="{{site.buildtime | readableDateTime}}">
 {% include "gitinfo.njk" %}
+<meta name="environment" content="{{env.IS_DEV}}">
 <meta name="date.created" content="{{page.date}}">
 <meta name="date.updated" content="{{lastModified}}">
 <meta name="package.version" content="{{pkg.version}}">
-
 
 <meta name="theme-color" content="{{ site.theme_color }}">
 

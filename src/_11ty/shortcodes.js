@@ -1,34 +1,30 @@
 const manifest = require("../data/manifest");
 const site = require("../data/site");
+const env = require("../data/env");
 
-const isDev = process.env.APP_ENV === "development";
 
 module.exports = {
   bundledcss: (type) => {
-    let styles = manifest.getStyles();
-    if (type === "notes") {
-      styles = manifest.getNotes();
-    }
-    return `<link href="${styles}" ${
-      type === "head" ? 'rel="preload" as="style"' : 'rel="stylesheet"'
-    }>`;
+    const styles = manifest.getStyles();
+    return `
+    <link rel="preload" href="${styles}" as="style" />
+    <link href="${styles}" rel="stylesheet" type="text/css">
+    `;
   },
 
-  clickystats: () => {
-    if (!isDev) {
-      if (site.clickystats.install) {
-        return site.clickystats.script;
+  stats: (which) => {
+    if (!env.IS_DEV) {
+      if (site.stats[which].install) {
+        return site.stats[which].script;
       }
     }
     return "";
   },
 
   bundledjs: (which) => {
-    const script = manifest.getScripts(which);
+    const script = manifest.getScript();
     if (script) {
-      return `<script src="${script}" ${
-        which !== "main.js" ? "defer" : ""
-      }></script>`;
+      return `<script src="${script}"></script>`;
     }
     throw new Error(
       `ERROR: no '${which}' script found (.eleventy.js 'bundledjs' shortcode)`

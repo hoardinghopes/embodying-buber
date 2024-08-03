@@ -1,30 +1,31 @@
-const isDev = process.env.APP_ENV === "development";
-const path = require("path");
-const fs = require("fs");
+const env = require("../data/env");
+const path = require("node:path");
+const fs = require("node:fs");
 
 const manifestPath = path.resolve(
   __dirname,
   "..",
   "..",
-  "public",
-  "client",
-  "manifest.json"
+  "_site",
+  "mix-manifest.json"
 );
 
-const manifest = isDev
+const manifest = env.IS_DEV
   ? {
-      "main.js": "/client/main.js",
-      "styles.css": "/client/styles.css",
-      "offline.js": "/client/offline.js",
-      "notes.css": "/client/notes.css"
-    }
+    "/assets/main.js": "/assets/main.js",
+    "/assets/styles.css": "/assets/styles.css",
+  }
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: "utf8" }));
 
+
+
 function getDetails(data) {
-  if (data === "notes") return manifest["notes.css"];
-  if (data === "style") return manifest["styles.css"];
-  if (manifest[data]) return manifest[data];
-  return null;
+  try {
+    if (manifest[data]) return manifest[data];
+  }
+  catch (error) {
+    throw new Error(`no manifest entry found for ${data}`);
+  }
 }
 
 function getAll() {
@@ -35,14 +36,11 @@ module.exports = {
   getAll() {
     return getAll();
   },
-  getNotes() {
-    return getDetails("notes");
-  },
   getStyles() {
-    return getDetails("style");
+    return getDetails("/assets/styles.css");
   },
-  getScripts(which) {
-    return getDetails(which);
+  getScript() {
+    return getDetails("/assets/main.js");
   },
   path: manifestPath
 };

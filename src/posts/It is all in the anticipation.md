@@ -37,7 +37,7 @@ The secret to the centering process is not to end it (_steps 1, 2, 3, 4, and don
 
 _What would it be like to have a bit more ease?_
 
-Be humble, assume that there is always a response and that you might not be awake enough to recognise it or understand it. Remember that the body doesn't speak in words. Be patient – if not today, maybe tomorrow, or next week, or next month – the body _will answer_. Just keep asking the question with real curiosity and anticipation.
+Be humble. Assume that there is always a response and that you might not be awake enough to recognise it or understand it. Remember that the body doesn't speak in words. Be patient. If not today, maybe tomorrow, or next week, or next month – the body _will answer_. Just keep asking the question with real curiosity and anticipation.
 
 ## A little bit more _ease_?
 
@@ -57,13 +57,13 @@ With a bit of digging, it seems that being more visible is the context that I wi
 
 ## Should haves, would haves, and ought-tos
 
-Sometimes we think we _should have_ more of a particular quality. _I ought to be more patient with my children_. So we ask the body for that quality. But can you hear the pressure of that request? The _should have_ can weigh too heavily on the body. If so, that's not the quality for you right now. Maybe a another time, when the injunction has lessened somewhat.
+Sometimes we think we _should have_ more of a particular quality. _I ought to be more patient with my children_. So we ask the body for that quality. But can you hear the pressure of that request? The _should-have_ can weigh too heavily. If so, that's not the quality for you right now. Maybe another time, when the injunction has lessened somewhat.
 
 ## Anything worth doing is worth doing well
 
-The body is responding to your question, but it needs time for that response to become clear _to you_, and for the body to adapt around the response (i.e. to make it meaningful and functional). So: take time. I work with my chosen quality for a year.
+The body is responding to your question, but it needs time for that response to become clear _to you_, and for the body to adapt around the response (i.e. to make it meaningful and functional). So take time. I work with my chosen quality for a year.
 
-For the first two or three months, my enquiry is just surfacing the quality so that I become aware of the body's response. (If, by the end of the third month, I'm still not aware of a response, I choose a different word.) Then the investigation deepens, as I become more familiar with the body's reply, and the body becomes more adept at structuring that quality into being.
+For the first two or three months, my enquiry is just surfacing the quality so that I become aware of the body's response (if, by the end of the third month, I'm still not aware of a response, I choose a different word). Then the investigation deepens, as I become more familiar with the body's reply, and the body becomes more adept at structuring that quality into being.
 
 By the end of the year, my body is adding the quality before I've asked the question.
 

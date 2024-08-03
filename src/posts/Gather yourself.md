@@ -70,8 +70,10 @@ Whilst it's a good idea to meet the world, many of us tend to leave ourselves be
 
 The incoming pressure will reach you anyway, _how do you want to be when you receive them_?
 
-## Part 1 of 4
-- [[Lift me up]]
-- [Don't bring me down](/dont-bring-me-down/)
-- [[Welcome the world]]
-- [[Gather yourself]]
+## Part 4 of 4
+
+- [Lift me up](/lift-me-up)
+- [Don't bring me down](/dont-bring-me-down)
+- [Welcome the world](/welcome-the-world)
+- Gather yourself
+

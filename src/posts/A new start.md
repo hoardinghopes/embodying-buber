@@ -15,7 +15,7 @@ I enjoyed the CCF – I liked polishing my boots shinier than the other boys. My
 
 The year ended with a week-long camp at Sennybridge military base in Wales. The local cadet force had been volunteered to be our enemy, and we had to track them down. We marched over the hills, ambushed random adults walking their dogs, set up tin-can tripwire perimeters around overnight camps. We were the only visiting school force to capture one of the local militia's team to their admiration (they caught 7 of us, and fed us hot tea and baked beans on toast).
 
-This was the early 1980s. Britain had recently re-discovered its military pride through removing Argentinian forces from the Falkland Islands. It was a conflict that momentarily brought a very divided country together - flags flew everywhere, people happily sang the national anthem and cheered on _our boys_.
+This was mid 1980s. Britain had recently re-discovered its military pride through removing Argentinian forces from the Falkland Islands. It was a conflict that momentarily brought a very divided country together - flags flew everywhere, people happily sang the national anthem and cheered on _our boys_.
 
 Our small school force, out in Welsh moorland, was engaging in the same life-and-death conflict with the Welsh lads (until they gave us the tea, then we were best mates), even to the extend of re-enacting the final action of the Falklands Conflict: the Battle of Goose Green[^fn-goosegreen].
 
@@ -29,7 +29,7 @@ We yomped down the slope towards the enemy position (an abandoned and falling-do
 
 [^fn-blanks]: An officer who had taken part in the real conflict led us down the slope, shouting _fire!_ at fixed intervals. We had 10 blank bullets in our magazines, and one in the chamber. Our march down the slope took all 11 bullets so that, as he screamed _fire at will_ and we ran the last few yards, our empty rifles were quieted, and our conquest was strangely silent. For my part, my first bullet had jammed in the chamber and I could neither fire it nor remove it. I yelled _bang!_ at the regulation intervals, and personally won the Battle of Goose Green by shouting louder than the enemy.
 
-As we pointed our empty barrels at the Welsh boys and told them to drop their weapons – just as in all the Sunday afternoon black-and-white war films I'd ever seen – our officer warned us to keep going. It wasn't over. The Welsh had built a redoubt beyond the barn and installed a machine gun there. Two of us ran, screaming, at them. Two of us, functionally unarmed, overran three or four boys with machine guns. It was all good fun.
+As we pointed our empty barrels at the Welsh boys and told them to drop their weapons just as in all the Sunday afternoon black-and-white war films I'd ever seen – our officer warned us to keep going. It wasn't over. The Welsh had built a redoubt beyond the barn and installed a machine gun there. Two of us ran, screaming, at them. Two of us, functionally unarmed, overran three or four boys with machine guns. It was all good fun.
 
 However, there's a point to this tale. I learned in that moment that it's never over when you finish. It's never over when you cross the line. It's never over when you think you can finally breathe out. _There's always something waiting for you just beyond_.
 

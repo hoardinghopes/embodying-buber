@@ -43,7 +43,9 @@ I don't jump into the lochs with her. So what do I do?
 
 Today, one of my father's old records is playing as I write. I remember him spending his weekends sitting quietly just listening – _encountering_, perhaps. (I'm not, it's too trill for me, and I'm busy wrestling with these words).
 
-Instead, _I yearn_. The unwritten thesis throughout all these words has been that there is _encounter_ waiting for us. We can't make it happen, we can't control when/if it does. All we can do is prepare ourselves so that we are open to the possibility of it. If I am a little less caught up in the human world, perhaps more of me is available to be brought into the whole, if only momentarily.
+Instead, _I yearn_. The unwritten thesis throughout all these words has been that there is _encounter_ waiting for us. We can't make it happen, we can't control when/if it does. All we can do is prepare ourselves so that we are open to the possibility of it. If I am a little less caught up in the human world[^fn-in-not-of], perhaps more of me is available to be brought into the whole, if only momentarily.
+
+[^fn-in-not-of]: "Be in the world, but not of the world."
 
 I endeavour to see things slightly differently, recognising that my eyes cannot see all there is to be seen. I listen carefully, knowing that I can't hear all noise. Those beautiful, joyous springtime birds outside my window are also singing notes beyond human audio range. What are they communicating in those moments? And to whom?
 

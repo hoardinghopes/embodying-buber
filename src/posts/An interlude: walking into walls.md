@@ -20,7 +20,7 @@ However, if you do it whole-heartedly, you might just find a point.
 
 That's the first sensation. Can you feel it? Is it obvious or subtle? Is it constant, or does it come and go? Is your awareness of it constant, or does your awareness fade from time to time? How would you describe it?
 
-> I take a long slow breath up my back, which serves to remind me that I am my own time-keeper, and that this experiment is at my pace. My back lengthens, my shoulders broaden. I step foward. My awareness of my front dissipates.
+> I take a long slow breath up my back, which serves to remind me that I am my own time-keeper, and that this experiment is at my pace. My back lengthens, my shoulders broaden. I step forward. My awareness of my front dissipates.
 
 That happens. For the first while, you might expect your awareness to be more obvious when you are otherwise still, and for movement to scatter the fragments of sensation aside as motion comes to the fore.
 

@@ -11,15 +11,21 @@ There's a universe between what you can see and you can't see; there's a multitu
 
 Nothing? Or _everything_?
 
-> Be not afeard. This isle is full of noises,
-> Sounds and sweet airs that give delight and hurt not.
-> Sometimes a thousand twangling instruments
-> Will hum about mine ears, and sometime voices
-> That, if I then had waked after long sleep,
-> Will make me sleep again; and then, in dreaming,
-> The clouds methought would open and show riches
-> Ready to drop upon me, that when I waked
-> I cried to dream again. (Shakespeare's _The Tempest_, III.ii.)
+<!-- markdownlint-disable MD033 -->
+<blockquote>
+<pre class="verse">
+Be not afeard. This isle is full of noises,
+Sounds and sweet airs that give delight and hurt not.
+Sometimes a thousand twangling instruments
+Will hum about mine ears, and sometime voices
+That, if I then had waked after long sleep,
+Will make me sleep again; and then, in dreaming,
+The clouds methought would open and show riches
+Ready to drop upon me, that when I waked
+I cried to dream again. (Shakespeare's <em>The Tempest</em>, III.ii.)
+</pre>
+</blockquote>
+<!-- markdownlint-enable MD033 -->
 
 When _Caliban_ spoke these words, his dream world sounded so much richer than our diurnal existence. There's mystery, there's music; the clouds play with him. Above all, he glimpses a world he desperately he wants to return to.
 
@@ -29,7 +35,7 @@ Where does the line between sanity and insanity lie?
 
 I walked out with my dog this morning, chatting to him as I went. He listened, as dogs do – half-an-ear cocked towards me, the rest seeking out the fresh morning – and occasionally bumped his nose against my hand in support of my words.
 
-Hidden in the trees lining the garden, the birds sang out, full-throated Springtime singing changing to other sharper calls as we passed below them. Now I'm used to these birds, I know when they're singing their territory into being or their burgeoning lust into egg-making, and I know when they're talking about me. They have a different tone for describing me that comes with a particular intensity cutting through everything else: The human's out again!
+Hidden in the trees lining the garden, the birds sang out, full-throated springtime singing changing to other sharper calls as we passed below them. Now I'm used to these birds, I know when they're singing their territory into being or their burgeoning lust into egg-making, and I know when they're talking about me. They have a different tone for describing me that comes with a particular intensity cutting through everything else: The human's out again!
 
 It's clear as I write that you comprehend me. You know what I'm talking about. You'll likely smile at my anthropomorphising the animals around me, but you will understand and you won't think me mad.
 
@@ -43,11 +49,17 @@ So far, so good. But the Wiki entry goes further. I paraphrase:
 
 To a psychiatrist every human experience is a symptom of abnormality, perhaps. But then where does his normality lie – doesn't our very humanity demand that we make meaning by seeing connections where there are, ostensibly, none?
 
-> Lovers and madmen have such seething brains,
-> Such shaping fantasies, that apprehend
-> More than cool reason ever comprehends.
-> The lunatic, the lover and the poet
-> Are of imagination all compact. (_A Midummer Night's Dream_, V.i.)
+<!-- markdownlint-disable MD033 -->
+<blockquote>
+<pre class="verse">
+Lovers and madmen have such seething brains,
+Such shaping fantasies, that apprehend
+More than cool reason ever comprehends.
+The lunatic, the lover and the poet
+Are of imagination all compact. (<em>A Midummer Night's Dream</em>, V.i.)
+</pre>
+</blockquote>
+<!-- markdownlint-enable MD033 -->
 
 ---
 

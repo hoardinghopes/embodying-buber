@@ -15,10 +15,10 @@
         <p style="display:none" class="p-summary">{{ content | excerpt | safe  }}</p>
         <span> | </span>
         <span>{{ content | readingTime }} read</span>
-        {%- if status %}
+        {#%- if status %}
           <br><br>
       Status: <span class="{{ status }}">{{ status }}</span>
-        {%- endif %}
+        {%- endif %#}
       </div>
 
     </header>
@@ -36,21 +36,22 @@
       </div>
 
       <nav class="post__pagination">
-        {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
-        {%- if nextPost %}
-
-          <a href="{{ nextPost.url | url }}">
-            <span>←</span>
-            <span>{{ nextPost.data.title }}</span>
-          </a>
-
-        {% endif %}
 
         {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
         {%- if previousPost %}
 
-          <a href="{{ previousPost.url | url }}">
-            <span>{{ previousPost.data.title }}</span>
+          <a href="{{ previousPost.url | url }}"class="no-underline">
+            <span>←</span>
+            <span class="underline">{{ previousPost.data.title }}</span>
+          </a>
+
+        {% endif %}
+
+        {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+        {%- if nextPost %}
+
+          <a href="{{ nextPost.url | url }}" class="no-underline">
+            <span class="underline">{{ nextPost.data.title }}</span>
             <span>→</span>
           </a>
 

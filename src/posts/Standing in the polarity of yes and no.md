@@ -25,7 +25,7 @@ Late morning – our surrounding hills hidden by clouds, rain pouring down, loch
 
 > Anyhoo, walking is standing, isn’t it? Sort of? When I got onto the path, I thought I would _yes-no-yes-no_ my way along.
 
-For a long time, I have walked as an action. More recently, I have been trying to walk as a non-action - each step created by the release of stretched tendons; a bit more boing, boing than stomp, stomp. When it works, I have a clearer sense of ease, less effort, and more contact with Mother Earth. The trees change imperceptibly but definitely. Instead of striding forwards into the landscape, I remain still and the landscape approaches me.
+For a long time, I have walked as an action. More recently, I have been trying to walk as a non-action - each step created by the release of stretched tendons; a bit more *boing-boing* than *stomp-stomp*. When it works, I have a clearer sense of ease, less effort, and more contact with Mother Earth. The trees change imperceptibly but definitely. Instead of striding forwards into the landscape, I remain still and the landscape approaches me.
 
 So, how about letting the ground come up to support me, rather than treading down onto it? Today, this experiment was made particularly challenging by the weather conditions and the walking boots I was wearing. My newly-tenderised feet were yearning to _feel_, but the boots had them muffled in thick walls.
 

@@ -1,16 +1,9 @@
-{% set css_to_bundle = "head" %}
 <!DOCTYPE html>
 <!-- {{page.inputPath}} -->
-<html lang="en">
+<html lang="en" x-data="setUp" :data-theme="darkMode? 'dark':''">
   {% include "head.njk" %}
 
-  <body
-    x-cloak
-    x-data="setUp();"
-    @load.window="setTimeout(function(){ show = true}, 500)"
-    @flash.window="show = false;changePage($event)"
-    x-show.transition.opacity.duration.450ms="show"
-  >
+  <body>
     <div class="layout-wrapper"{% if banner %} style="background-image: url('{{ banner.src }}')"{% endif %}>
 
       <header class="header">
@@ -28,22 +21,22 @@
         {% block content %}{% endblock content %}
       </main>
 
-      <footer class="footer">
-        <div class="footer__content">
-          {% if banner %}{{ banner.attribute | safe }}{% endif %}
-          {% include "footer-links.njk" %}
-        </div>
-      </footer>
+      {% if (site.footerLinks.length > 0) 
+        or banner %}
+        <footer class="footer">
+          <div class="footer__content">
+            {% if banner %}{{ banner.attribute | safe }}
+            {% endif %}
+            {% if site.footerLinks.length > 0 %}
+              {% include "footer-links.njk" %}
+            {% endif %}
+          </div>
+        </footer>
+      {% endif %}
     </div>
 
-    {% bundledcss "foot" %}
+    {% stats "umami" %}
 
-    {# if we need page specific scripts, they should be called here, after the styles have been brought in e.g. #}
-    {% if extraScripts -%}
-      {% bundledjs extraScripts %}
-    {%- endif %}
-
-    {% clickystats %}
-
+    {% bundledjs "main.js" %}
   </body>
 </html>

@@ -73,8 +73,10 @@ It's worth breaking something really simple like breathing into parts, so that y
 
 Bit by bit, we can start to regain the equilibrium that an effective _biotensegral_ body seeks. We hold ourselves up less; we collapse less. If we spend less effort on holding ourselves up, we are less tight; if we are less tight, we are more open. If we are more open, I think we are fulfilling one of the pre-conditions of _encounter_.
 
-## Part 1 of 4
-- [[Lift me up]]
-- [Don't bring me down](/dont-bring-me-down/)
-- [[Welcome the world]]
-- [[Gather yourself]]
+## Part 2 of 4
+
+- [Lift me up](/lift-me-up)
+- Don't bring me down
+- [Welcome the world](/welcome-the-world)
+- [Gather yourself](/gather-yourself)
+

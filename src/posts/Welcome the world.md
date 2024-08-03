@@ -12,7 +12,6 @@ status: seedling
 1. Breathe a long, slow inhale up the length of your back, feeling it encourage your head higher.
 2. Allow a long, slow exhale to stroke down your front, releasing your ribcage, and encouraging a soft smile.
 3. **Reach out to the corners of the room in front of you, as if welcoming friends to your personal party.**
-   <!--3. Allow your arms and body to settle whilst that expansive state continues.-->
 
 Having found the up and down directions of the vertical axis, we can reach out into the world.
 
@@ -97,8 +96,9 @@ It takes time to learn a new physical skill. We can encourage that through contr
 
 For **contrast**, start by standing in the same spot but making yourself as small as possible before extending out. Think _invisible_. For **exaggeration**, maximise your physical expansion (but without taking yourself off balance in any direction). For **repetition**, do this whenever you come into this room. In due time – when your body is familiar with the feeling of expansion and can create it easily, you might extend out to the four corners of any room as you enter it.
 
-## Part 1 of 4
-- [[Lift me up]]
-- [Don't bring me down](/dont-bring-me-down/)
-- [[Welcome the world]]
-- [[Gather yourself]]
+## Part 3 of 4
+
+- [Lift me up](/lift-me-up)
+- [Don't bring me down](/dont-bring-me-down)
+- Welcome the world
+- [Gather yourself](/gather-yourself)

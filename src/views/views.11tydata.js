@@ -1,7 +1,6 @@
 const images = require("../data/images");
 const gitinfo = require("../data/gitinfo");
-
-const isDev = process.env.APP_ENV === "development";
+const env = require("../data/env");
 
 module.exports = {
   type: "other",
@@ -11,7 +10,7 @@ module.exports = {
       return images[data.page.fileSlug];
     },
     isDev: () => {
-      return isDev;
+      return env.IS_DEV;
     },
     lastModified: (data) => {
       return gitinfo.lastModified(data.page.inputPath);
