@@ -1,5 +1,4 @@
 [[plugins]]
-  package = "/.netlify/netlify-plugin-pnpm"
 
 [build.environment]
   NPM_FLAGS="--prefix=/dev/null"
