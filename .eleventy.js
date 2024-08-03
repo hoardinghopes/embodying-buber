@@ -1,15 +1,11 @@
 const fs = require("node:fs");
 const htmlmin = require("./src/_11ty/minify-html.js");
+const purgeCssPlugin = require("eleventy-plugin-purgecss");
 const readingTime = require("eleventy-plugin-reading-time");
-// const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { minify } = require("terser");
-// const charts = require("eleventy-charts");
-const criticalCss = require("eleventy-critical-css");
 const filters = require("./src/_11ty/filters");
 const shortcodes = require("./src/_11ty/shortcodes");
 const markdownLib = require("./src/_11ty/markdownLib");
-// const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const site = require("./src/data/site.js");
 const env = require("./src/data/env.js");
 
 console.log("development environment:", env.IS_DEV)
@@ -29,10 +25,7 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.setUseGitIgnore(false);
 
-  // eleventyConfig.addPlugin(charts);
   eleventyConfig.addPlugin(readingTime);
-  // eleventyConfig.addPlugin(pluginRss);
-  // eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addPassthroughCopy({ "src/static/": "/" });
@@ -110,11 +103,6 @@ module.exports = (eleventyConfig) => {
       }
     }
   });
-
-  // if (!env.IS_DEV) {
-  //   eleventyConfig.addTransform("htmlmin", htmlmin.minifyHTML);
-  //   eleventyConfig.addPlugin(criticalCss, { minify: true });
-  // }
 
   if (!env.IS_DEV) {
     // Minify HTML & CSS when building for production
