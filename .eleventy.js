@@ -1,45 +1,45 @@
+const fs = require("node:fs");
 const htmlmin = require("./src/_11ty/minify-html.js");
 const readingTime = require("eleventy-plugin-reading-time");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const fs = require("fs");
-const isDev = process.env.APP_ENV === "development";
-const manifest = require("./src/data/manifest");
+// const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { minify } = require("terser");
-const charts = require("eleventy-charts");
+// const charts = require("eleventy-charts");
 const criticalCss = require("eleventy-critical-css");
 const filters = require("./src/_11ty/filters");
 const shortcodes = require("./src/_11ty/shortcodes");
 const markdownLib = require("./src/_11ty/markdownLib");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+// const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const site = require("./src/data/site.js");
+const env = require("./src/data/env.js");
 
-module.exports = function (eleventyConfig) {
+console.log("development environment:", env.IS_DEV)
+
+module.exports = (eleventyConfig) => {
   eleventyConfig.setLibrary("md", markdownLib.getMarkdownLib());
 
   // Filters
-  Object.keys(filters).forEach((filterName) => {
+  for (const filterName of Object.keys(filters)) {
     eleventyConfig.addFilter(filterName, filters[filterName]);
-  });
+  }
 
   // Shortcodes
-  Object.keys(shortcodes).forEach((shortcodeName) => {
+  for (const shortcodeName of Object.keys(shortcodes)) {
     eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName]);
-  });
+  }
 
   eleventyConfig.setUseGitIgnore(false);
 
-  eleventyConfig.addPlugin(charts);
+  // eleventyConfig.addPlugin(charts);
   eleventyConfig.addPlugin(readingTime);
-  eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(syntaxHighlight);
+  // eleventyConfig.addPlugin(pluginRss);
+  // eleventyConfig.addPlugin(syntaxHighlight);
 
   eleventyConfig.setDataDeepMerge(true);
   eleventyConfig.addPassthroughCopy({ "src/static/": "/" });
-  eleventyConfig.addPassthroughCopy({ "src/notes/assets/": "/assets/" });
 
   eleventyConfig.addNunjucksAsyncFilter(
     "jsmin",
-    async function (code, callback) {
+    async (code, callback) => {
       try {
         const minified = await minify(code);
         callback(null, minified.code);
@@ -51,46 +51,30 @@ module.exports = function (eleventyConfig) {
     }
   );
 
-  eleventyConfig.addCollection("notes", function (collection) {
-    let notes = new Set();
-    collection.getAllSorted().forEach(function (item) {
-      if ("note" === item.data.type) {
-        if (site.isDev) {
-          notes.add(item);
-        } else {
-          if (!item.data.draft) {
-            notes.add(item);
-          }
-        }
-      }
-    });
-    return [...notes].sort();
-  });
-
-  eleventyConfig.addCollection("twenty8days", function (collection) {
-    let notes = new Set();
-    collection.getAllSorted().forEach(function (item) {
+  eleventyConfig.addCollection("posts", (collection) => {
+    const set = new Set();
+    for (const item of collection.getAllSorted()) {
       if (item.data["28d"]) {
-        if (site.isDev) {
-          notes.add(item);
+        if (env.IS_DEV) {
+          set.add(item);
         } else {
           if (!item.data.draft) {
-            notes.add(item);
+            set.add(item);
           }
         }
       }
-    });
-    return [...notes].sort();
+    }
+    return [...set].sort();
   });
 
-  eleventyConfig.addCollection("tagList", function (collection) {
-    let tagSet = new Set();
-    collection.getAllSorted().forEach(function (item) {
-      if (!item.data.draft && !site.isDev) {
+  eleventyConfig.addCollection("tagList", (collection) => {
+    const tagSet = new Set();
+    for (const item of collection.getAllSorted()) {
+      if (!item.data.draft && !env.IS_DEV) {
         if ("tags" in item.data) {
           let tags = item.data.tags;
 
-          tags = tags.filter(function (item) {
+          tags = tags.filter((item) => {
             switch (item) {
               case "all":
               case "nav":
@@ -108,16 +92,15 @@ module.exports = function (eleventyConfig) {
           }
         }
       }
-    });
+    }
     return [...tagSet].sort();
   });
 
   eleventyConfig.setBrowserSyncConfig({
-    files: [manifest.path],
     callbacks: {
-      ready: function (err, bs) {
+      ready: (err, bs) => {
         bs.addMiddleware("*", (req, res) => {
-          const content_404 = fs.readFileSync("public/404.html");
+          const content_404 = fs.readFileSync("_site/404.html");
           // Add 404 http status code in request header.
           res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
           // Provides the 404 content without redirect.
@@ -128,15 +111,24 @@ module.exports = function (eleventyConfig) {
     }
   });
 
-  if (!isDev) {
+  // if (!env.IS_DEV) {
+  //   eleventyConfig.addTransform("htmlmin", htmlmin.minifyHTML);
+  //   eleventyConfig.addPlugin(criticalCss, { minify: true });
+  // }
+
+  if (!env.IS_DEV) {
+    // Minify HTML & CSS when building for production
     eleventyConfig.addTransform("htmlmin", htmlmin.minifyHTML);
-    eleventyConfig.addPlugin(criticalCss, { minify: true });
+    eleventyConfig.addPlugin(purgeCssPlugin, {
+      config: "./purgecss.config.js",
+      quiet: false,
+    });
   }
 
   return {
     dir: {
       input: "src",
-      output: "public",
+      output: "_site",
       includes: "includes",
       data: "data",
       layouts: "layouts",

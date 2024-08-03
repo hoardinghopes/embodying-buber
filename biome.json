@@ -1,0 +1,17 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.0.0/schema.json",
+  "linter": {
+    "enabled": true,
+    "ignore": [".husky", ".sass-cache", "node_modules", "_site"],
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "noForEach": "off"
+      }
+    }
+  },
+  "formatter": {
+    "ignore": [".husky", ".sass-cache", "node_modules", "_site"],
+    "indentStyle": "space"
+  }
+}
