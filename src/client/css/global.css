@@ -8,6 +8,7 @@ html {
 body {
   background-color: var(--background);
 }
+
 /*
 body::-webkit-scrollbar {
   width: 6px;
@@ -18,6 +19,7 @@ body {
   scrollbar-color: color-mod(var(--color) alpha(90%)) var(--background); */
   height: 100%;
 }
+
 /*
 body::-webkit-scrollbar-track {
   background: var(--background);
@@ -66,7 +68,7 @@ hr {
   background: var(--text);
   opacity: 0.2;
   height: 1px;
-  margin-top: 2rem;
+  margin: 2rem auto;
 }
 
 a {
@@ -130,27 +132,30 @@ th {
 td:only-child {
   text-align: center;
 }
+
 /* purgecss start ignore */
-* + h1,
-* + h2 {
+*+h1,
+*+h2 {
   margin-top: 5rem;
 }
 
-* + h3,
-* + h4,
-* + h5 {
+*+h3,
+*+h4,
+*+h5 {
   margin-top: 3rem;
 }
 
-* + p {
+*+p {
   margin-top: 2rem;
 }
 
-h2 + p,
-h3 + p,
-h4 + p {
+h2+p,
+h3+p,
+h4+p,
+h4+ol {
   margin-top: 1rem;
 }
+
 /* purgecss end ignore */
 iframe,
 audio,
@@ -179,6 +184,7 @@ blockquote p {
   font-size: var(--text-lg);
   color: var(--primary-light);
 }
+
 /* purgecss end ignore */
 pre {
   white-space: pre-wrap;
@@ -207,6 +213,14 @@ code {
 
 pre code {
   background: transparent;
+}
+
+pre.verse {
+  padding: 0;
+  margin-top: 0;
+  font-family: var(--serif);
+  font-size: var(--text-lg);
+  color: var(--primary-light);
 }
 
 mark {

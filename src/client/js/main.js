@@ -2,41 +2,26 @@
 /* eslint-disable no-continue */
 /* eslint-env browser */
 
-require("alpinejs");
-// const switcher = require("./theme-switcher");
-// const previews = require("./link-previews");
+import Alpine from "alpinejs";
+window.Alpine = Alpine;
 
-function setUp() {
-  const links = document.querySelectorAll("a");
-  let link = null;
+import "./form"
 
-  for (let i = 0; i < links.length; i += 1) {
-    link = links[i];
-    /* footnote links live within <sup> elements */
-    if (link.parentNode.nodeName === "SUP") {
-      continue;
+window.setUp = () => {
+  return {
+    darkMode: false,
+    init() {
+      if (window.localStorage.getItem("site-theme") === "dark") {
+        this.darkMode = true;
+      }
+      this.$refs.switch.classList.toggle("hidden");
+    },
+
+    toggle() {
+      this.darkMode = !this.darkMode;
+      window.localStorage.setItem("site-theme", this.darkMode ? 'dark' : 'light');
     }
-    /* footnotes (which have a return link) have "footnote-backref" class */
-    if (link.classList.contains("footnote-backref")) {
-      continue;
-    }
-    /* <a href="xxx"><em>link text</em></a> means we have to give the href to the <em> as it will be the event target */
-    link.setAttribute(
-      "x-on:click.prevent",
-      `$dispatch('flash','${link.href}')`
-    );
   }
+};
 
-  // switcher();
-  // previews();
-
-  return { show: false };
-}
-window.setUp = setUp;
-
-function changePage(e) {
-  setTimeout(() => {
-    window.location.href = e.detail;
-  }, 450);
-}
-window.changePage = changePage;
+Alpine.start();
