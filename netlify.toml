@@ -1,5 +1,5 @@
 [[plugins]]
-  package = "/.netlify/netlify-plugin-pnpm"
+  package = "@netlify/plugin-lighthouse"
 
 [build.environment]
   NPM_FLAGS="--prefix=/dev/null"
