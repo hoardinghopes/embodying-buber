@@ -20,7 +20,7 @@
     "mix": "mix",
     "prod": "pnpm run production",
     "production": "pnpm run prod:mix && pnpm run prod:11ty",
-    "prod:11ty": "NODE_ENV=production eleventy --serve",
+    "prod:11ty": "NODE_ENV=production eleventy",
     "prod:mix": "mix --production",
     "preview": "pnpm run prod:mix && NODE_ENV=production eleventy --serve",
     "stage": "pnpm run stage:mix && pnpm run stage:eleventy",
