@@ -3,7 +3,7 @@
 <html lang="en" x-data="setUp" :data-theme="darkMode? 'dark':''">
   {% include "head.njk" %}
 
-  <body>
+  <body class="{{title | slug}}">
     <div class="layout-wrapper"{% if banner %} style="background-image: url('{{ banner.src }}')"{% endif %}>
 
       <header class="header">

@@ -19,3 +19,7 @@
     margin: 0.5rem 1rem;
   }
 }
+
+.about-this-site .layout-wrapper {
+  background-size: unset;
+}

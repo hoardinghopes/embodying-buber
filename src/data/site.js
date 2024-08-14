@@ -2,10 +2,10 @@
 const env = require("../data/env");
 
 module.exports = {
-  name: "28 days",
-  description: "Part of the 28-day challenge",
-  domain: "28-days.netlify.app",
-  url: env.IS_DEV ? "https://localhost" : "https://28-days.netlify.app",
+  name: "Embodying Buber",
+  description: "Helping the body to make sense of Martin Buber",
+  domain: "embodying-buber.netlify.app",
+  url: env.IS_DEV ? "https://localhost" : "https://embodying-buber.netlify.app",
   buildtime: new Date(),
   theme_color: "#22161A",
   author: {

@@ -1,7 +1,7 @@
 {
-  "name": "28-days",
+  "name": "embodying-buber",
   "version": "2.0.0",
-  "description": "28 days' worth of writing",
+  "description": "Helping the body to make sense of Martin Buber",
   "author": {
     "name": "James Knight",
     "email": "tech@jamesknightcoaching.com"
@@ -20,7 +20,7 @@
     "mix": "mix",
     "prod": "pnpm run production",
     "production": "pnpm run prod:mix && pnpm run prod:11ty",
-    "prod:11ty": "NODE_ENV=production eleventy",
+    "prod:11ty": "NODE_ENV=production eleventy --serve",
     "prod:mix": "mix --production",
     "preview": "pnpm run prod:mix && NODE_ENV=production eleventy --serve",
     "stage": "pnpm run stage:mix && pnpm run stage:eleventy",
