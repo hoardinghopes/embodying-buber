@@ -13,7 +13,7 @@ The structural habits of our body filter our experience of the world around us a
 
 If we want to try something new, we have to create the possibility of becoming something new. Specifically, what is the shape of the body that is ready for Martin Buber's _encounter_?
 
-A simplistic view of the body is to think of it in terms of _open_ and _closed_. Perhaps an open body will provide the fertile ground that we need to encourage _encounter_.
+A simplistic view of the body is to think of it in terms of _open_ and _closed_. An concentrating body might be a closed body, tight in its efforts to repel distractions and external pressures. Perhaps the opposite – an open body – will provide the fertile ground that we need to encourage _encounter_.
 
 We can't demand _encounter_, but we can learn to open the body to possibility.
 

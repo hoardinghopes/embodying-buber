@@ -9,7 +9,7 @@ status: seedling
 
 ### Summary
 
-Austrian-born philospher Martin Buber[^fn-ref] wrote that there are two modes of engaging with others. The predominant mode places _I_ over the objectified other (_It_). This is the mode that modern man almost exclusively uses.
+Austrian-born philospher Martin Buber[^fn-ref] wrote that there are two modes of engaging with others. The predominant mode places _I_ over the objectified other (_It_). This is the mode that modern humanity almost exclusively uses.
 
 [^fn-ref]: _I and Thou_, Martin Buber, 1923, summarised more closely in [I don't exist](/notes/i-dont-exist/).
 
@@ -33,25 +33,25 @@ Buber suggests that these relationships have two very different qualities and mo
 
 ## I and It
 
-_I-It_ is a familiar mode of engaging with the world for most of us. In this mode, we collect data, analyse, classify, and theorise about it. The _It_ is a thing to be utilised, to be known, or to be put to some purpose. There is necessarily some distance between the experiencing _I_ and the experienced _It_. One is subject, and the other object^[Most of our relationships with people are based upon their usefulness to us – what we can get out from them – and consequently most of our relationship are about trying to (re-)gain what we are missing.].
+_I-It_ is a familiar mode of engaging with the world for most of us. In this mode, we collect data, analyse, classify, and theorise about it. The _It_ is a thing to be used and utilised, to be known, or to be put to some purpose. There is necessarily some distance between the experiencing _I_ and the experienced _It_. One is subject, and the other object^[Most of our relationships with people are based upon their usefulness to us – what we can get out from them – and consequently most of our relationship are about trying to (re-)gain what we are missing.].
 
 It is, almost exclusively, how we get through our days in this world.
 
 ## I and Thou
 
-Although _I-It_ is the predominant mode of engaging with the world, another is both possible and necessary if we are to be fully human. The mode of _I-Thou_ is one of encounter, where we enter into relationship with the object encountered, we participate in something with that object, and both the _I_ and the _Thou_ are transformed by the event of the relationship^[Isn't this how our eyes meet across a crowded room? Isn't this the wonderful and transformative sensation of falling in love? Buber is suggesting, among other things, that _encounter_ is available to us in many other scenarios and with other beings (not just human) too.].
+Although _I-It_ is the predominant mode of engaging with the world, another is both possible and necessary if we are to be fully human. The mode of _I-Thou_ is one of encounter, where we become aware of the relationship with the object encountered, we participate with that object, and both the _I_ and the _Thou_ are transformed by the event of the relationship^[Isn't this how our eyes meet across a crowded room? Isn't this the wonderful and transformative sensation of falling in love? Buber is suggesting, among other things, that _encounter_ is available to us in many other scenarios and with other beings (not just human) too.].
 
 ## The _It_ World
 
-Having identified these two fundamental modes of engaging, Buber states that the modern world is entirely based upon the mode of _I-It_. Politics, economics, public institutions, even much of personal life, are all fundamentally grounded in the fact that we view every other being as an _It_, rather than as a _You_.
+Having identified these two fundamental modes of engaging, Buber states that the modern world is entirely based upon the mode of _I-It_. Politics, economics, public institutions, even much of personal life, are all fundamentally grounded in the fact that we view every other being as an _It_, rather than as a _You_^[It's worth noticing that a single relationship can switch from _I-It_ to _I-You_ in a moment, e.g. my partner's chatting as she offers me a cup of tea, I listen because I want the tea, but I find myself drawn into her interior world and the tale reveals her to me in a completely new light].
 
-From there, it is a short step to recognising that the existential angst we all experience at points in our lives is the result of our strict reliance on our objectifying and objectified experience to the exclusion of _encounter_.
+From there, he takes a short and persuasive step to suggest that the existential angst we all experience at points in our lives is the result of our strict reliance on our objectifying and objectified experience to the exclusion of _encounter_.
 
 ## Strange Encounters
 
 The solution to the angst is to open ourselves up to _encounter_ and re-build our _I_ in relation to _You_. But every encounter is fleeting – as soon as we reflect upon the _You_ it perforce becomes an _It_ again.
 
-We feel that there could be something more, something more lasting and fulfilling. This "more" is encounter with god or absolute relation. We cannot create this, but only ready ourselves for it.
+Once we have experienced an encounter, we feel that there could be something more – something more lasting and fulfilling. This "more" is encounter with god or absolute relation. We cannot create this, but only ready ourselves for it.
 
 Once we have experienced it, we are transformed, and we come to see every other being as a _You_, and gain a sense of loving responsibility for the whole world. Thus we no longer feel alienated from the world and do not worry about the meaninglessness of life.
 

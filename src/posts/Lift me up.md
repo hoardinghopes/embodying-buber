@@ -17,7 +17,7 @@ Once you can feel your verticality being moved by your breath, begin to attend t
 
 ## Don't bring me down
 
-Gravity doesn't care. It will drag us down to the earth, and smush us there until we are a pool a single atom deep. It is constantly coursing through our bodies, all the time, from the first splitting of the fertilised cell in the womb to the decomposition of the body in the coffin at the end of a lifetime.
+Gravity doesn't care. It will drag us down to earth, and smush us there until we are a pool a single atom deep. It is constantly coursing through our bodies, all the time, from the first splitting of the fertilised cell in the womb to the decomposition of the body in the coffin at the end of a lifetime.
 
 Where do we live? In gravity^[[Just like fish don't know they're in water](https://sive.rs/fish).].
 
@@ -29,7 +29,7 @@ As soon as we move, we fall out of that perfect (impossible) alignment, and have
 
 Modern tents use _tensegrity_ to hold themselves upright. Their poles are stiff hollow struts, with elastic rope running through them. The poles want to fall apart, the rope pulls them together into a long rod.
 
-Multiple bent rods attached to the tent sheet are all trying to straighten themselves but can't because they would straighten in different directions away from each other^[![Serpentine Wall](/images/wavy-wall.jpg)I recently found out about [a traditional wavy brick wall](https://en.permawiki.org/wiki/Serpentine_wall) that is actually stronger than normal brick walls using half the amount of bricks. The waves in the wall function as bows that want to straighten against the pull of their neighbouring bows. In other words, one wave's urge to straighten is constrained by the next wave's urge to straighten in the other direction.], and the sheet can't stretch to allow that.
+Multiple bent rods attached to the tent sheet are all trying to straighten themselves but can't because they would straighten in different directions away from each other^[I recently found out about [a traditional wavy brick wall](https://en.permawiki.org/wiki/Serpentine_wall) that is actually stronger than normal brick walls using half the amount of bricks. <img src="/images/wavy-wall.jpg" alt="Serpentine Wall" /> The waves in the wall function as bows that want to straighten against the pull of their neighbouring bows. In other words, one wave's urge to straighten is constrained by the next wave's urge to straighten in the other direction.], and the sheet can't stretch to allow that.
 
 _Biotensegrity_ works in a similar fashion in living organisms, which means that it doesn't just stabilise us, it also moves us.
 

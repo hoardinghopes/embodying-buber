@@ -66,3 +66,8 @@ body {
 .hidden {
   display: none;
 }
+
+a.footnote-backref {
+  text-decoration: none;
+  font-size: var(--text-xs);
+}
