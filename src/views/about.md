@@ -14,4 +14,3 @@ During such walks, my attention wanders off with the scudding clouds, and is bro
 For years, this enquiry has been generalised – just _trying stuff out_ – but since studying with Alexander Technique teacher [Bruce Fertman](https://peacefulbodyschool.com/) I have been asking with a purpose: finding the [_I-and-Thou_ body](/the-body-of-i-and-thou/) of [Martin Buber](/i-and-thou/).
 
 Sometimes I will describe and narrate my experiments. Where I do so, I am implicitly inviting you to join in. If you have time, room, and inclination to join in, please do so, and let me know what you find. If you like, you can [[contact|give me feedback]].
-
