@@ -11,7 +11,7 @@ status: seedling
 
 Austrian-born philospher Martin Buber[^fn-ref] wrote that there are two modes of engaging with others. The predominant mode places _I_ over the objectified other (_It_). This is the mode that modern humanity almost exclusively uses.
 
-[^fn-ref]: _I and Thou_, Martin Buber, 1923, summarised more closely in [I don't exist](/notes/i-dont-exist/).
+[^fn-ref]: _I and Thou_, Martin Buber, 1923, summarised more closely in [I don't exist](/i-dont-exist/).
 
 The second mode, which creates a unique and transforming relationship with the Other, has been neglected in the modern world to the detriment of us all.
 

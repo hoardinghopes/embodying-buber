@@ -60,7 +60,7 @@ She also wrote of the work required of us; centering is not just for feeling goo
 
 > When we greet the world, we are declaring two distinct facts: _this here is my space_ and _I am friendly_. They are distinct, but related. I can afford to be friendly precisely because this is my space[^fn-self].
 
-[^fn-self]: [I wrote these two lines](/notes/welcome-the-world/) a couple of days ago, and think they're worth repeating here. I can be friendly to the world because I have a space of my own. At its most pared down, my Centre is my home in my body. Legs are busy driving us from A to B, arms are either pulling in or pushing away. My mind is calculating and cogitating. We can miss the quiet fact that there is a space within that is always peaceful and welcoming to us.
+[^fn-self]: [I wrote these two lines](/welcome-the-world/) a couple of days ago, and think they're worth repeating here. I can be friendly to the world because I have a space of my own. At its most pared down, my Centre is my home in my body. Legs are busy driving us from A to B, arms are either pulling in or pushing away. My mind is calculating and cogitating. We can miss the quiet fact that there is a space within that is always peaceful and welcoming to us.
 
 In a world that is engaging and distracting, that is demanding our attention all the time, returning to our Centre offers us stability. It actually offers the world stability too. _Hello world; welcome home_ becomes our embodied statement because we can find home wherever we are. That is clearly a gift to ourselves and others at the same time.
 

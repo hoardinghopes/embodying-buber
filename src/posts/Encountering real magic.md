@@ -7,7 +7,7 @@ tags: [magic, encounter, gratitude, nature]
 status: seedling
 ---
 
-I'm trying to find a way back to [Buber](/notes/i-and-thou/), not because I've left him behind, but because I haven't made the connection explicit for a while. My intention is to cultivate the conditions that make an _I-and-Thou_ encounter possible, but I haven't explicitly been saying _these are the conditions_.
+I'm trying to find a way back to [Buber](/i-and-thou/), not because I've left him behind, but because I haven't made the connection explicit for a while. My intention is to cultivate the conditions that make an _I-and-Thou_ encounter possible, but I haven't explicitly been saying _these are the conditions_.
 
 Today's post occurred a couple of years ago. I was visiting my recently deceased mother's grave for the first time since her headstone had gone up. As you might imagine, it was a day of strong feelings. I took the whole day and set off first in search of _Grandpa's Loch_. Since his death in the early 1980s, this family fishing spot had been consumed back into the moorlands.
 

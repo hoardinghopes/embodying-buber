@@ -1,7 +1,7 @@
 ---
 layout: home
 permalink: "/"
-title: "28 Days"
+title: "Home"
 ---
 
 # Embodying Buber.
