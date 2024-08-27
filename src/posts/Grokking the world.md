@@ -69,7 +69,7 @@ Scallywag and I also go out last thing at night, for a scent-led exploration of 
 
 I have an app on my phone for the night sky. I can point it up towards a particular bright spot, and the screen will show me the star with name and a blurb. It also draws lines between neighbouring stars to identify the constellations they all belong to.
 
-Of course, they don't belong to constellations _except in our imaginations_. There's nothing to say that the constituent stars of _Ursa Minor_ rest close to each other in the universe, and there's definitely nothing between them that makes any imagined connection important, except the meaning and use we give to it.
+But, of course, they don't belong to constellations _except in our imaginations_. There's nothing to say that the constituent stars of _Ursa Minor_ rest close to each other in the four dimensions of the universe, and there's definitely nothing between them that makes any imagined connection important, except the meaning and use we give to it.
 
 _Ursa Minor_ was known by the ancient Greeks as _the Phoenician_ because it was the primary constellation that the Phoenicians used for navigation (the last star in the tail of the constellation is _Polaris_, the North Star). In other words, no matter what it was called, that collection of bright dots appearing in the sky had life-and-death meaning for ancient navigators.
 

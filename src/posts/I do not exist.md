@@ -17,8 +17,10 @@ Philosopher Martin Buber[^fn-ref] wrote that there are two ways of being in the 
 
 The second mode places everything on an even footing – everything has its own value (beyond my ability to extract that value). In this second mode, a relationship is marked by the way it alters both parties.
 
-That one of these modes sounds obvious and the other doesn't really make sense is a sign of the predominance of the first mode, which Buber framed as _I-It_. This is the mode in which we collect data, analyse, classify, extract. The _It_ is a thing to be utilised, known or put to work. There is necessarily a sense of distance between the experiencing _I_ and the experienced _It_. The _It_ is object to the _I_'s subject.
+That one of these modes sounds obvious and the other doesn't really make sense is a sign of the predominance of the first mode, which Buber framed as _I-It_. This is the mode in which we collect data, analyse, classify, extract. The _It_ is a thing to be used and utilised, known and put to work. There is necessarily a sense of distance between the experiencing _I_ and the experienced _It_. The _It_ is object to the _I_'s subject.
 
-The second mode of *I-Thou* is both possible and necessary if we are to be fully human. It is a mode of _encounter_, where we enter into relationship with the object encountered, we participate in something  with that object, and both *I* and *Thou* are transformed by the relationship.
+The second mode of _I-Thou_ is both possible and necessary if we are to be fully human. It is a mode of _encounter_, where we enter into relationship with the object encountered, we participate in something  with that object, and both _I_ and _Thou_ are transformed by the relationship.
+
+In the first mode, the _I_ is dominant: I am the centre of the universe – everything else circles around me and provides value for me. In the second mode, the _I_ is but a part of the relationship. Everything is the centre of the universe. Everything dances and interrelates, including me.
 
 This website explores how to move from theory to life-enhancing practice.
