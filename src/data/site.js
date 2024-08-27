@@ -28,6 +28,11 @@ module.exports = {
       text: "About",
       url: "/about/",
       external: false
+    },
+    {
+      text: "Buber",
+      url: "/about-buber/",
+      external: false
     }
   ],
   footerLinks: [
