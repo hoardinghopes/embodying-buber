@@ -10,8 +10,17 @@
   margin-top: 0;
 }
 
+
+
 @media (min-width: 35.9375em) {
-  .about img {
+  .about figure {
+    width: 200px;
+    float: right;
+    margin-left: 2rem;
+    font-size: small
+  }
+
+  .about img:not(figure img) {
     width: 200px;
     float: right;
     margin-left: 1rem;

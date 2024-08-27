@@ -20,20 +20,15 @@
   /* border-bottom: 1px solid rgba(230, 230, 230, 1); */
 }
 
-.site-title {
+a.site-title {
   font-size: var(--text-xl);
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.site-title a {
-  /* color: rgb(6 6 6); */
   color: var(--text);
   text-decoration: none;
 }
 
-.site-title a:hover {
-  /* color: rgb(41, 41, 41); */
+a.site-title:hover {
   color: var(--highlight);
 }
 

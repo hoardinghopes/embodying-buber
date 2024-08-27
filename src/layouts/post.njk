@@ -15,10 +15,6 @@
         <p style="display:none" class="p-summary">{{ content | excerpt | safe  }}</p>
         <span> | </span>
         <span>{{ content | readingTime }} read</span>
-        {#%- if status %}
-          <br><br>
-      Status: <span class="{{ status }}">{{ status }}</span>
-        {%- endif %#}
       </div>
 
     </header>

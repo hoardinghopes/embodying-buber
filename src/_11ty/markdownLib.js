@@ -32,7 +32,7 @@ const markdownLib = markdownIt({
 markdownLib.renderer.rules.footnote_block_open = () =>
   "<hr>\n" +
   '<section class="footnotes">\n' +
-  "<h4>Footnotes</h4>\n" +
+  "<h3>Footnotes</h3>\n" +
   '<ol class="footnotes-list">\n';
 
 function getMarkdownLib() {

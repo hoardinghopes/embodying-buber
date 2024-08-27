@@ -10,6 +10,7 @@ body {
   -webkit-text-size-adjust: 100%;
   font-family: var(--sans);
 }
+
 /* purgecss start ignore */
 h1,
 h2,
@@ -34,6 +35,10 @@ h3 {
   font-size: var(--text-2xl);
 }
 
+.footnotes h3 {
+  font-size: var(--text-xl);
+}
+
 h4 {
   font-size: var(--text-xl);
 }
@@ -41,4 +46,5 @@ h4 {
 p {
   font-size: var(--text-lg);
 }
+
 /* purgecss end ignore */
